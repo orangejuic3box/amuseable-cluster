@@ -129,14 +129,6 @@ def var_input_dist(inputs1,inputs2):
     the difference between the keyboard inputs, differences are binary,
     either 0 or 1, if the set of key transitions are equivalent.
     '''
-    # i = 1
-    # for dic in [inputs1, inputs2]: 
-    #     print("input" + str(i),len(dic))
-    #     for key, val in dic.items():
-    #         print(key,val)
-    #     print()
-    #     i +=1
-    
     keynames = ["space", "up", "down", "left", "right", "spacePrev", "upPrev", "downPrev", "leftPrev", "rightPrev"]
     input_list1 = [[] for _ in range(5)]
     input_list2 = [[] for _ in range(5)]
@@ -152,28 +144,11 @@ def var_input_dist(inputs1,inputs2):
         else:
             input_list2[i%5].append(None)
 
-    # print(input_list1)
-    # print(input_list2)
-    # input1_count = Counter(tuple(pair) for pair in input_list1)
-    # input2_count = Counter(tuple(pair) for pair in input_list2)
-    # matches = input1_count & input2_count
-    # num_matches = sum(matches.values())
-    # if Counter(input_list1) == Counter(input_list2):
-    #     print("EXACT MATCH")
     if set(tuple(pair) for pair in input_list1) == set(tuple(pair) for pair in input_list2):
         # print("EXACT MATCH")
         return 0
     else:
         return 1
-
-    # print(str(num_matches)+"/5 MATCHES")
-
-    
-
-    # if num_matches != 5:
-    #     return 1
-    # else:
-    #     return 0
 
 
 def distance(dp, center, rules_db):
