@@ -17,7 +17,7 @@ return centroids
 import random
 import json
 import ast
-# from collections import Counter
+from collections import Counter
 
 k = 3
 
@@ -37,13 +37,9 @@ def process_json(filepath, name):
             fact[2] = id, number corresponds to rule#
             '''
             curr_rule = fact["id"]
-            # print("current rule is ", curr_rule)
             if curr_rule != on_rule: #means onto new rule number
                 #add prev rule list to the rules dictionary
-                # print("adding to rules dictionary")
-                # print(rule)
                 rules[name+str(on_rule)] = [rule,conditions]
-                # rules["name_rule#"] = [["preEffect", "postEffect"], [[factname,factval], [factname, factval]]
                 conditions = []
                 rule = []
                 on_rule = curr_rule
@@ -52,15 +48,12 @@ def process_json(filepath, name):
             if fact["type"] == '0':
                 #this is a condition of the rule
                 fact, value = fact["fact"].split(": ")
-                # print(fact)
-                # print(value)
+
                 value = ast.literal_eval(value)
                 pair = [fact, value]
                 conditions.append(pair)
-                # conditions.append(fact["fact"])
         #add last rule and its conditions
         rules[name+str(on_rule)] = [rule,conditions]
-        # print(rule)
         print(len(rules), "rules were processed")
     print()
     return rules
@@ -144,11 +137,195 @@ def var_input_dist(inputs1,inputs2):
         else:
             input_list2[i%5].append(None)
 
-    if set(tuple(pair) for pair in input_list1) == set(tuple(pair) for pair in input_list2):
+    # count1 = Counter(tuple(pair) for pair in input_list1)
+    # count2 = Counter(tuple(pair) for pair in input_list2)
+
+    # print("COUNT1: ", count1)
+    # print("COUNT2: ", count2)
+
+    if Counter(tuple(pair) for pair in input_list1) == Counter(tuple(pair) for pair in input_list2):
         # print("EXACT MATCH")
         return 0
     else:
         return 1
+    
+def fact_distance(a_fact, b_fact):
+    '''
+    Parameters:
+        a_fact ()
+        b_fact ()
+    Return:
+    
+    This function takes in 2 facts and calculates the distance between them.
+    Automatic max distance of 1 if the types are different. If the fact types match,
+    they are sent to their specific distance function.
+    '''
+
+
+    pass
+
+def rule_distance(a_rule, b_rule, rules_db):
+    '''
+    Parameters:
+        a_rule () - 
+        b_rule () - 
+        rules_db () - 
+    Return:
+    
+    This function takes in name of 2 rules in the database and calculates the distance
+    between them. Distance is calculated  by finding the distance between their pre-effects,
+    post-effects, and conditions.
+    '''
+    print("RULE DISTANCE", a_rule, b_rule)
+    #rules_db[rule_name] = [ [preeffect, posteffect], [condition, condition, condition] ]
+    a_effects = rules_db[a_rule][0]
+    b_effects = rules_db[b_rule][0]
+
+    pre_dist = fact_distance(a_effects[0], b_effects[0])
+    post_dist = fact_distance(a_effects[1], b_effects[1])
+    
+    print("pre: ", pre_dist, "post: ", post_dist)
+    # apre = rules_db[arule][0]
+    pass
+
+
+def calculate_clusters(centers, rules_db, clusters):
+    '''
+    This function calculates the clusters by mapping each dp in rules_db
+    to the closest center in centers.
+    Returns: a dictionary of the clusters where the key is the centers and
+    its value is a list of dp that are in that "cluster"
+    '''
+    cluster_distances = {}
+    for i in range(k):
+        cluster_distances[centers[i]] = []
+        # cluster_distances.append([centers[i]])
+    print(cluster_distances)
+    print("calculate clusters: centers", centers)
+    for dp in rules_db:
+        min_distance = float('inf') #postive infinity
+        #find closest center by calculating distance to center
+        # print(dp)
+        print("---    ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---")
+        print("DATAPOINT NAME: ", dp)
+        closest_center = "None"
+        for center in centers:
+            # print("Checking the distance between CENTER", center, "AND DATAPOINT", dp)
+            # dist = distance(dp, center, rules_db)
+            dist = rule_distance(dp, center, rules_db)
+            if dist < min_distance:
+                #reached threshold for this center
+                closest_center = center
+                min_distance = dist #this is now the distance to beat
+        print(dp, "got added to", closest_center)
+        cluster_distances[closest_center].append(min_distance)
+        clusters[closest_center].append(dp)
+    # print(len(clusters),clusters)
+    # print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`")
+    # for val in clusters.values():
+    #     print(val)
+    #     print()
+    # print(cluster_distances)
+    # for center in centers:
+    #     container = clusters[center]
+        # print(center, type(container),len(container))
+    return clusters
+
+def get_median(cluster, rules_db):
+    '''
+    This function takes in a list of dp (aka a single cluster)
+    and returns the median dp'''
+    median = None
+    total_dist = float('inf')
+    for i in range(len(cluster)):
+        dist = 0
+        for j in range(len(cluster)):
+            if i != j: #not the same index
+                dist += distance(cluster[i], cluster[j], rules_db)
+        if dist < total_dist:
+            total_dist = dist
+            median = cluster[i]
+    print("MEDIAN IS", median, "")
+    return median
+
+
+def main():
+    '''
+    This function runs the k-medoids clustering algorithm
+    Returns a dictionary of the clusters
+    '''
+
+    #set global values
+    MAX_ATTEMPTS = 10000
+    threshold = 0.02
+    rules_db = {}
+    #set k
+    k = 3
+
+
+    #get all the rules in a giant ruledb list of tuple values
+    names = ["Bird", "Freeplay", "Sokoban"]
+    n = 8
+    for i in range(5,n):
+        for name in names:
+            filepath = "./json/"+name+str(i)+"/data.json"
+            rules = process_json(filepath, name+str(i)+"_")
+            # checks for overwritten keys
+            for key in rules.keys():
+                if key in rules_db.keys():
+                    print("key overwritten:", key)
+            rules_db.update(rules) #add the new processed dictionary from json file into database
+
+    # process_json("./json/Bird5/data.json", "Bird5_")
+    print("there are ",len(rules_db)," rules in the database")
+
+    #try:
+
+    #create dictionary to hold the clusters, key is a tuple dp and value is a list of tuple dp's
+    clusters = {}
+
+    #intiialize k random centers
+    centers = [] #keep track of all current centers
+    while len(centers) < k:
+        random_center = random.choice(list(rules_db.keys()))
+        # random_center = rules_db[random.randint(len(rules_db))] #randomly pick a number and grab that one from the rule db
+        print(random_center)
+        
+        #check that its not already been picked
+        if random_center not in centers:
+            #add to centers list and cluster dictionary
+            centers.append(random_center)
+            clusters[random_center] = [] #{clustercenter:[]}
+
+    print("INTIIAL CLUSTERS", clusters)
+    #create first clusters
+    clusters = calculate_clusters(centers, rules_db, clusters)
+
+
+    #oldcenters = []
+    oldcenters = []
+    
+    attempts = 0
+    #cluster and recluster until no difference in clusters
+    while not centers == oldcenters and attempts < MAX_ATTEMPTS:
+        attempts += 1
+        print("             RECLUSTERING ATTEMPT #"+str(attempts))
+        oldcenters = centers
+        #get new centers
+        new_centers = []
+        #for each cluster
+        for key_center in clusters:
+            cluster_dp = clusters[key_center] #gets the cluster list from dict
+            new_center = get_median(cluster_dp, rules_db) #find the median of this group
+            new_centers.append(new_center)
+        #reset the centers
+        centers = new_centers
+        #recluster
+        clusters = calculate_clusters(centers, rules_db, clusters)
+    return clusters
+    # except Exception as e:
+    #     print(e)
+
 
 
 def distance(dp, center, rules_db):
@@ -242,135 +419,8 @@ def distance(dp, center, rules_db):
     Treating prevFacts differently
     (spacePrev != upPrev)
     '''
-    print(dp, "was",dist, " away from", center)
+    # print(dp, "was",dist, " away from", center)
     return dist
-
-def calculate_clusters(centers, rules_db, clusters):
-    '''
-    This function calculates the clusters by mapping each dp in rules_db
-    to the closest center in centers.
-    Returns: a dictionary of the clusters where the key is the centers and
-    its value is a list of dp that are in that "cluster"
-    '''
-    cluster_distances = {}
-    for i in range(k):
-        cluster_distances[centers[i]] = []
-        # cluster_distances.append([centers[i]])
-    print(cluster_distances)
-    print("calculate clusters: centers", centers)
-    for dp in rules_db:
-        min_distance = float('inf') #postive infinity
-        #find closest center by calculating distance to center
-        # print(dp)
-        print("---    ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---")
-        print("DATAPOINT NAME: ", dp)
-        for center in centers:
-            # print("Checking the distance between CENTER", center, "AND DATAPOINT", dp)
-            dist = distance(dp, center, rules_db)
-            if dist < min_distance:
-                #reached threshold for this center
-                closest_center = center
-                min_distance = dist #this is now the distance to beat
-        print(dp, "got added to", closest_center)
-        cluster_distances[closest_center].append(min_distance)
-        clusters[closest_center].append(dp)
-    # print(len(clusters),clusters)
-    # print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`")
-    # for val in clusters.values():
-    #     print(val)
-    #     print()
-    print(cluster_distances)
-    return clusters
-
-def get_median(clusters):
-    '''
-    This function takes in a list of dp (aka a single cluster)
-    and returns the median dp'''
-    pass
-    # return None
-
-
-def main():
-    '''
-    This function runs the k-medoids clustering algorithm
-    Returns a dictionary of the clusters
-    '''
-
-    #set global values
-    MAX_ATTEMPTS = 10000
-    threshold = 0.02
-    rules_db = {}
-    #set k
-    k = 3
-
-
-    #get all the rules in a giant ruledb list of tuple values
-    names = ["Bird", "Freeplay", "Sokoban"]
-    n = 8
-    for i in range(5,n):
-        for name in names:
-            filepath = "./json/"+name+str(i)+"/data.json"
-            rules = process_json(filepath, name+str(i)+"_")
-            # checks for overwritten keys
-            for key in rules.keys():
-                if key in rules_db.keys():
-                    print("key overwritten:", key)
-            rules_db.update(rules) #add the new processed dictionary from json file into database
-
-    # process_json("./json/Bird5/data.json", "Bird5_")
-    print("there are ",len(rules_db)," rules in the database")
-
-    #try:
-
-    #create dictionary to hold the clusters, key is a tuple dp and value is a list of tuple dp's
-    clusters = {}
-
-    #intiialize k random centers
-    centers = [] #keep track of all current centers
-    while len(centers) < k:
-        random_center = random.choice(list(rules_db.keys()))
-        # random_center = rules_db[random.randint(len(rules_db))] #randomly pick a number and grab that one from the rule db
-        print(random_center)
-        
-        #check that its not already been picked
-        if random_center not in centers:
-            #add to centers list and cluster dictionary
-            centers.append(random_center)
-            clusters[random_center] = [] #{clustercenter:[]}
-
-    print("INTIIAL CLUSTERS", clusters)
-    #create first clusters
-    clusters = calculate_clusters(centers, rules_db, clusters)
-
-
-    #oldcenters = []
-    oldcenters = []
-    
-    attempts = 0
-    print("             RECLUSTERING")
-    #cluster and recluster until no difference in clusters
-    while not centers == oldcenters and attempts < MAX_ATTEMPTS:
-        attempts += 1
-        oldcenters = centers
-        #get new centers
-        new_centers = []
-        #for each cluster
-        for key_center in clusters:
-            cluster_dp = clusters[key_center] #gets the cluster list from dict
-            new_center = get_median(cluster_dp) #find the median of this group
-            new_centers.append(new_center)
-        #reset the centers
-        centers = new_centers
-        #recluster
-        clusters = calculate_clusters(centers, rules_db, clusters)
-    return clusters
-    # except Exception as e:
-    #     print(e)
-
-
-main()
-
-
 
 
     # for condition in dp_conditions:
@@ -394,3 +444,4 @@ main()
     #         center_dict[factname] = [factval]
     #     else:
     #         center_dict[factname].append(factval)
+main()
