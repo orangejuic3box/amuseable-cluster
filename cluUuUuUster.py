@@ -20,6 +20,8 @@ import ast
 from collections import Counter
 
 k = 3
+width = 22
+height = 10
 
 def process_json(filepath, name):
     print(".....PROCESSING       " +filepath)
@@ -90,25 +92,6 @@ def process_json(filepath, name):
     print("------------------------------------------------")
     return rules
 
-def vel_pos_dist(val1, val2):
-    '''
-    For Velocity and Position types:
-    if values match exactly:
-        dist = 0 #they are the same, no distance
-        continue
-    else:
-        - abs distance value and then cosine normalize
-        find their cosine simiiliarity difference and normalize
-    '''
-    # print("values: ",val1, val2)
-    if val1 == val2:
-        diff = 0
-        return diff
-    else:
-        print("deal with normalization, current differnce is just 0.5")
-        diff = 0.5
-        return diff
-
 def reformat_key_inputs(inputs):
     '''
     This function takes in a list of the keyboard and reformats them for calculating distance
@@ -140,43 +123,51 @@ def reformat_conditions(conditions, dict):
         else:
             dict[factname].append(factval)
     return dict
+    
+def normalize_distance(val1, val2, max):
+    return abs(val1-val2) / max
+
+def vel_pos_dist(val1, val2, max):
+    '''
+    For Velocity and Position types:
+    if values match exactly:
+        dist = 0 #they are the same, no distance
+        continue
+    else:
+        - abs distance value and then cosine normalize
+        find their cosine simiiliarity difference and normalize
+    '''
+    diff = normalize_distance(val1, val2, max)
+    # print("calculate cosine similliarity")
+    return diff / 2
+    
+def animation_dist(inputs1, inputs2):
+    a_width = inputs1[2]
+    a_height = inputs1[3]
+    b_width = inputs2[2]
+    b_height = inputs2[3]
+
+    diff = normalize_distance(a_width, b_width, width)
+    # print("normalized width", diff)
+    diff += normalize_distance(a_height, b_height, height)
+    # print("normalized width plus height", diff)
+    # print("-----------------------------------------------")
+    return diff / 2 #normalized for fact distance
 
 def var_input_dist(inputs1,inputs2):
     '''
-    This function takes in two dictionaries of keyboard inputs and calculates
-    the difference between the keyboard inputs, differences are binary,
-    either 0 or 1, if the set of key transitions are equivalent.
+    This function takes in two lists where the first item is the key binding name
+    and the second item is it's value (T or F). If both the keyboard binding and value
+    matches, distance of 0, else distance of 0.5 (1 normalized).
     '''
-    keynames = ["space", "up", "down", "left", "right", "spacePrev", "upPrev", "downPrev", "leftPrev", "rightPrev"]
-    input_list1 = [[] for _ in range(5)]
-    input_list2 = [[] for _ in range(5)]
-    # this for loop creates a list if the transition pairs for key input per user
-    for i in range(len(keynames)):
-        # print(keynames[i], i, i%5)
-        if keynames[i] in inputs1:
-            input_list1[i%5].append(inputs1[keynames[i]]) #modulo for indexing, value = inputs[keyname[i]]
-        else:
-            input_list1[i%5].append(None)
-        if keynames[i] in inputs2:
-            input_list2[i%5].append(inputs2[keynames[i]]) #modulo for indexing, value = inputs[keyname[i]]
-        else:
-            input_list2[i%5].append(None)
-
-    # count1 = Counter(tuple(pair) for pair in input_list1)
-    # count2 = Counter(tuple(pair) for pair in input_list2)
-
-    # print("COUNT1: ", count1)
-    # print("COUNT2: ", count2)
-
-    if Counter(tuple(pair) for pair in input_list1) == Counter(tuple(pair) for pair in input_list2):
-        # print("EXACT MATCH")
+    if inputs1 == inputs2:
         return 0
     else:
-        return 1
-    
-def animation_dist(inputs1, inputs2):
+        return 0.5
+
+def relationship_distance(inputs1, inputs2, max):
     pass
-    
+
 def fact_distance(a_fact, b_fact):
     '''
     Parameters:
@@ -201,17 +192,21 @@ def fact_distance(a_fact, b_fact):
         # print("MISMATCHED types: [", a_type,",", b_type, "] will have max distance of 1")
         return 1
     else:
-        print("MATCHING types: ", a_type, b_type, " will have normalized distance")
+        # print("MATCHING types: ", a_type, b_type, " will have normalized distance")
         if a_type in vel_pos:
-            return vel_pos_dist(a_value[1], b_value[1])
+            if "X" in a_type:
+                return vel_pos_dist(a_value[1], b_value[1], width)
+            else:
+                return vel_pos_dist(a_value[1], b_value[1], height)
         elif a_type == "AnimationFact":
-            print("ANIANIANI",a_value, b_value)
+            return animation_dist(a_value, b_value)
         elif a_type == "VariableFact":
-            print("VARI", a_value, b_value)
+            return var_input_dist(a_value, b_value)
         elif a_type in relationship:
-            print("RELA")
-            print(a_value, b_value)
-            print()
+            # print("RELA")
+            # print(a_value, b_value)
+            # print()
+            pass
         elif a_type == "EmptyFact":
             print("EMPTY")
         else:
@@ -244,7 +239,6 @@ def rule_distance(a_rule, b_rule, rules_db):
     print("predist: ", pre_dist, "postdist: ", post_dist)
 
     print()
-    print(len(a_conditions), len(b_conditions))
 
     #couple matching
     if len(a_conditions) > len(b_conditions): #b is smaller than a
@@ -254,14 +248,48 @@ def rule_distance(a_rule, b_rule, rules_db):
         min_rule = a_conditions 
         max_rule = b_conditions
     
+    # print("MIN")
+    # print(min_rule)
+    # print("MAX")
+    # print(max_rule)
 
+    xcount = 0
+    ycount = 0
+    for cond in a_conditions:
+        if "Relationship" in cond[0]:
+            if "X" in cond[0]:
+                print(cond)
+                xcount += 1
+            else:
+                ycount += 1
+    if xcount % 2 == 1 or ycount % 2 == 1:
+        raise Exception("ODD COUNTS", xcount, ycount, a_rule)
+    print(a_rule, xcount, ycount)
+    xcount = 0
+    ycount
+    for cond in b_conditions:
+        if "Relationship" in cond[0]:
+            if "X" in cond[0]:
+                print(cond)
+                xcount += 1
+            else:
+                ycount += 1
+    if xcount % 2 == 1 or ycount % 2 == 1:
+        raise Exception("ODD COUNTS", xcount, ycount, b_rule)
+    # print(b_rule, xcount, ycount)
+
+    total = 0
     for min_cond in min_rule: #rule with least number  of conditions
         best_dist = 0
         dist = 0
         for max_cond in max_rule: #rule with most number of conditions
+            # print(min_cond)
+            # print(max_cond)
             diff = fact_distance(min_cond, max_cond)
-    
-    pass
+            # print(diff)
+            total += diff
+    print("TOTAL: ", total)
+    return total
 
 
 def calculate_clusters(centers, rules_db, clusters):
@@ -319,7 +347,7 @@ def get_median(cluster, rules_db):
         dist = 0
         for j in range(len(cluster)):
             if i != j: #not the same index
-                dist += distance(cluster[i], cluster[j], rules_db)
+                dist += rule_distance(cluster[i], cluster[j], rules_db)
         if dist < total_dist:
             total_dist = dist
             median = cluster[i]
@@ -407,99 +435,99 @@ def main():
 
 
 
-def distance(dp, center, rules_db):
-    '''
-    Parmeters:
-        dp (str) - this is the name of the rule it is defined by GamenameUsernumber_Rulenumber (Sokoban7_5 or 
-    This function calculates the distance between two datapoints
-    '''
-    # print("~~~~~~~~~~~~~~~      DISTANCE FUNC LINE BREAK         ~~~~~~~~~~~~~~~")
-    # print("dp:", dp)
-    # print("center:", center)
-    # from the database grab the (datapoint and center)'s list of conditions
-    dp_rule_fact = rules_db[dp][0]
-    dp_conditions = rules_db[dp][1]
+# def distance(dp, center, rules_db):
+#     '''
+#     Parmeters:
+#         dp (str) - this is the name of the rule it is defined by GamenameUsernumber_Rulenumber (Sokoban7_5 or 
+#     This function calculates the distance between two datapoints
+#     '''
+#     # print("~~~~~~~~~~~~~~~      DISTANCE FUNC LINE BREAK         ~~~~~~~~~~~~~~~")
+#     # print("dp:", dp)
+#     # print("center:", center)
+#     # from the database grab the (datapoint and center)'s list of conditions
+#     dp_rule_fact = rules_db[dp][0]
+#     dp_conditions = rules_db[dp][1]
 
-    # fact, value = dp_rule_fact.split(": ") # use me for later when trying to compare distance between rule fact types
+#     # fact, value = dp_rule_fact.split(": ") # use me for later when trying to compare distance between rule fact types
 
-    center_rule_fact = rules_db[center][0]
-    center_conditions = rules_db[center][1]
-    # print("COMPARINGGGGG  " + dp + "   VERSUS   " + center)
-    # print(dp_rule_fact)
-    # print(center_rule_fact)
-    # print()
-    '''
-    We will cluster purely on conditions regardless of 
-    what the actual rule fact type was.
-    '''
-    # conditions are formatted in a list of lists
-    # where the inner list is comprised of the fact name [0] and the value [1]
-    # these for loops format the conditions into a dictionary based on their fact type
+#     center_rule_fact = rules_db[center][0]
+#     center_conditions = rules_db[center][1]
+#     # print("COMPARINGGGGG  " + dp + "   VERSUS   " + center)
+#     # print(dp_rule_fact)
+#     # print(center_rule_fact)
+#     # print()
+#     '''
+#     We will cluster purely on conditions regardless of 
+#     what the actual rule fact type was.
+#     '''
+#     # conditions are formatted in a list of lists
+#     # where the inner list is comprised of the fact name [0] and the value [1]
+#     # these for loops format the conditions into a dictionary based on their fact type
     
-    # print(dp, "datapoint conditions")
-    dp_dict = reformat_conditions(dp_conditions,{})
-    center_dict = reformat_conditions(center_conditions,{})
+#     # print(dp, "datapoint conditions")
+#     dp_dict = reformat_conditions(dp_conditions,{})
+#     center_dict = reformat_conditions(center_conditions,{})
 
     
-    dist = 0
-    # iterates through the fact types
-    # print(len(center_dict), "types of facts for the center rule with ", len(center_conditions), "number of conditions")
-    for key in center_dict.keys():
-        # print("The current center is", center)
-        if key in dp_dict:
-            if "Velocity" in key or "Position" in key:
-                # print("Matching condition fact type", key)
-                # gathers all the facts for the given velocity or position type
-                center_values = center_dict[key] # print("list of center values", center_values)
-                dp_values = dp_dict[key] # print("list of dp values", dp_values)
-                # goes through and calculates the distance between the center velocity fact and the datapoint velocity fact
-                for value in center_values:
-                    for val in dp_values:
-                        # print(key, value, val)
-                        #value[0] = componentID
-                        #value[1] = value
-                        diff = vel_pos_dist(value[1],val[1])
-                        # print(diff)
-                        dist += diff
-            elif "Variable" in key:
-                # print("Matching condition fact type", key)
-                center_values = center_dict[key]
-                # print("reformatting center")
-                center_inputs = reformat_key_inputs(center_values) #this is a dictionary
-                dp_values = dp_dict[key]
-                # print("reformatting datapoints")
-                dp_inputs = reformat_key_inputs(dp_values) #this is a dictionary
-                # print("input1 = center, input2 = datapoints")
-                diff = var_input_dist(center_inputs,dp_inputs)
-                dist += diff
-                # print("center keyboard inputs",len(center_values), center_values)
-                # print("datapoint keyboard inputs", len(dp_values), dp_values)
-            else:
-                # print("         No difference implentation for fact type", key)
-                pass
-        else:
-            # print(key, " fact type was in center but not in the datapoint")
-            dist += len(center_dict[key])
+#     dist = 0
+#     # iterates through the fact types
+#     # print(len(center_dict), "types of facts for the center rule with ", len(center_conditions), "number of conditions")
+#     for key in center_dict.keys():
+#         # print("The current center is", center)
+#         if key in dp_dict:
+#             if "Velocity" in key or "Position" in key:
+#                 # print("Matching condition fact type", key)
+#                 # gathers all the facts for the given velocity or position type
+#                 center_values = center_dict[key] # print("list of center values", center_values)
+#                 dp_values = dp_dict[key] # print("list of dp values", dp_values)
+#                 # goes through and calculates the distance between the center velocity fact and the datapoint velocity fact
+#                 for value in center_values:
+#                     for val in dp_values:
+#                         # print(key, value, val)
+#                         #value[0] = componentID
+#                         #value[1] = value
+#                         diff = vel_pos_dist(value[1],val[1])
+#                         # print(diff)
+#                         dist += diff
+#             elif "Variable" in key:
+#                 # print("Matching condition fact type", key)
+#                 center_values = center_dict[key]
+#                 # print("reformatting center")
+#                 center_inputs = reformat_key_inputs(center_values) #this is a dictionary
+#                 dp_values = dp_dict[key]
+#                 # print("reformatting datapoints")
+#                 dp_inputs = reformat_key_inputs(dp_values) #this is a dictionary
+#                 # print("input1 = center, input2 = datapoints")
+#                 diff = var_input_dist(center_inputs,dp_inputs)
+#                 dist += diff
+#                 # print("center keyboard inputs",len(center_values), center_values)
+#                 # print("datapoint keyboard inputs", len(dp_values), dp_values)
+#             else:
+#                 # print("         No difference implentation for fact type", key)
+#                 pass
+#         else:
+#             # print(key, " fact type was in center but not in the datapoint")
+#             dist += len(center_dict[key])
 
 
-    '''
-    Treating X and Y Facts the same 
-    (VelocityX == VelocityY) or (PositionX == PositionY)
-    '''
-    '''
-    Treating X and Y Facts differently
-    (VelocityX != VelocityY) or (PositionX != PositionY)
-    '''
-    '''
-    Treating prevFacts the same
-    (spacePrev == upPrev)
-    '''
-    '''
-    Treating prevFacts differently
-    (spacePrev != upPrev)
-    '''
-    # print(dp, "was",dist, " away from", center)
-    return dist
+#     '''
+#     Treating X and Y Facts the same 
+#     (VelocityX == VelocityY) or (PositionX == PositionY)
+#     '''
+#     '''
+#     Treating X and Y Facts differently
+#     (VelocityX != VelocityY) or (PositionX != PositionY)
+#     '''
+#     '''
+#     Treating prevFacts the same
+#     (spacePrev == upPrev)
+#     '''
+#     '''
+#     Treating prevFacts differently
+#     (spacePrev != upPrev)
+#     '''
+#     # print(dp, "was",dist, " away from", center)
+#     return dist
 
 
     # for condition in dp_conditions:
@@ -523,4 +551,6 @@ def distance(dp, center, rules_db):
     #         center_dict[factname] = [factval]
     #     else:
     #         center_dict[factname].append(factval)
+
+
 main()
