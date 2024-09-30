@@ -57,21 +57,33 @@ def process_json(filepath, name):
                     # rule.append(fact["fact"])
                 except Exception as e:
                     if "EmptyFact" in fact["fact"]:
-                        factname = fact["fact"][:9]
+                        emptyname = fact["fact"][:9] #"EmptyFact"
                         facts = fact["fact"][11:] #can be empty
                         facts = facts.split("|")
                         facts.pop()
-                        pair = [factname, facts]
+                        empty = []
+                        for f in facts:
+                            factname , value = f.split(": ")
+
+                            value = ast.literal_eval(value)
+                            p = [factname, value]
+                            empty.append(p)
+                        pair = [emptyname, empty]
+                        print(pair)
                         rule.append(pair)
                     else:
                         print("i am in process json")
             if fact["type"] == '0':
-                #this is a condition of the rule
-                fact, value = fact["fact"].split(": ")
+                try:
+                    #this is a condition of the rule
+                    fact, value = fact["fact"].split(": ")
 
-                value = ast.literal_eval(value)
-                pair = [fact, value]
-                conditions.append(pair)
+                    value = ast.literal_eval(value)
+                    pair = [fact, value]
+                    conditions.append(pair)
+                except Exception as e:
+                    print("type0")
+                    print(e)
         #add last rule and its conditions
         rules[name+str(on_rule)] = [rule,conditions]
         # print(len(rules), "rules were processed")
@@ -85,24 +97,17 @@ def vel_pos_dist(val1, val2):
         dist = 0 #they are the same, no distance
         continue
     else:
-        #automatic 0.5 penalty for having diff values
-        dist += 0.5
-        #0.25 reduction in penalty if in the same direction (both pos or both neg)
-        dist -= 0.25
-        #0.25 automatic penality if directions are opposite (one pos, one neg)
-        dist += 0.25
-        #no penalty if only one going in a direction (one 0, one pos or neg)
+        - abs distance value and then cosine normalize
+        find their cosine simiiliarity difference and normalize
     '''
     # print("values: ",val1, val2)
     if val1 == val2:
         diff = 0
         return diff
-    diff = 0.5
-    if (val1 > 0 and val2 > 0) or (val1 < 0 and val2 < 0):
-        diff -= 0.25
-    elif (val1 > 0 and val2 < 0) or (val1 < 0 and val2 > 0):
-        diff += 0.25
-    return diff
+    else:
+        print("deal with normalization, current differnce is just 0.5")
+        diff = 0.5
+        return diff
 
 def reformat_key_inputs(inputs):
     '''
@@ -169,6 +174,9 @@ def var_input_dist(inputs1,inputs2):
     else:
         return 1
     
+def animation_dist(inputs1, inputs2):
+    pass
+    
 def fact_distance(a_fact, b_fact):
     '''
     Parameters:
@@ -181,12 +189,33 @@ def fact_distance(a_fact, b_fact):
     Automatic max distance of 1 if the types are different. If the fact types match,
     they are sent to their specific distance function.
     '''
-    print("A:"+str(a_fact))
-    print("B:"+str(b_fact))
+    types = ["VelocityXFact, VelocityYFact, PositionXFact, PositionYFact, AnimationFact, VariableFact, RelationshipFactX, RelationshipFactY, EmptyFact"]
+    vel_pos = ["VelocityXFact", "VelocityYFact", "PositionXFact", "PositionYFact"]
+    relationship =  ["RelationshipFactX", "RelationshipFactY"]
+    # print("FACT A:"+str(a_fact))
+    # print("FACT B:"+str(b_fact))
 
-    facttype, value = a_fact
-    print(type(value))
-    pass
+    a_type, a_value = a_fact
+    b_type, b_value = b_fact
+    if a_type != b_type:
+        # print("MISMATCHED types: [", a_type,",", b_type, "] will have max distance of 1")
+        return 1
+    else:
+        print("MATCHING types: ", a_type, b_type, " will have normalized distance")
+        if a_type in vel_pos:
+            return vel_pos_dist(a_value[1], b_value[1])
+        elif a_type == "AnimationFact":
+            print("ANIANIANI",a_value, b_value)
+        elif a_type == "VariableFact":
+            print("VARI", a_value, b_value)
+        elif a_type in relationship:
+            print("RELA")
+            print(a_value, b_value)
+            print()
+        elif a_type == "EmptyFact":
+            print("EMPTY")
+        else:
+            raise Exception("matching types not matched?")
 
 def rule_distance(a_rule, b_rule, rules_db):
     '''
@@ -206,14 +235,32 @@ def rule_distance(a_rule, b_rule, rules_db):
     b_effects = rules_db[b_rule][0]
 
     a_conditions = rules_db[a_rule][1]
-    b_condtiions = rules_db[b_rule][1]
+    b_conditions = rules_db[b_rule][1]
     print("calculaitng pre....")
     pre_dist = fact_distance(a_effects[0], b_effects[0])
     print("calculating post....")
     post_dist = fact_distance(a_effects[1], b_effects[1])
     
-    print("pre: ", pre_dist, "post: ", post_dist)
-    # apre = rules_db[arule][0]
+    print("predist: ", pre_dist, "postdist: ", post_dist)
+
+    print()
+    print(len(a_conditions), len(b_conditions))
+
+    #couple matching
+    if len(a_conditions) > len(b_conditions): #b is smaller than a
+        min_rule = b_conditions 
+        max_rule = a_conditions 
+    else: #a is smaller or has equal number of conditionas as b
+        min_rule = a_conditions 
+        max_rule = b_conditions
+    
+
+    for min_cond in min_rule: #rule with least number  of conditions
+        best_dist = 0
+        dist = 0
+        for max_cond in max_rule: #rule with most number of conditions
+            diff = fact_distance(min_cond, max_cond)
+    
     pass
 
 
