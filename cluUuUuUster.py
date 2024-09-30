@@ -30,6 +30,7 @@ def process_json(filepath, name):
         conditions = []
         on_rule = 0
         rule = []
+        # print(name)
         for fact in data:
             '''
             fact[0] = type, '1'=pre, '2'=post, '0'=condition
@@ -39,12 +40,31 @@ def process_json(filepath, name):
             curr_rule = fact["id"]
             if curr_rule != on_rule: #means onto new rule number
                 #add prev rule list to the rules dictionary
+                if len(rule) != 2:
+                    raise Exception("conditions don't match")
                 rules[name+str(on_rule)] = [rule,conditions]
                 conditions = []
                 rule = []
                 on_rule = curr_rule
             if fact["type"] == '1' or fact["type"] == '2':
-                rule.append(fact["fact"])
+                # print("processing pre or posteffect")
+                try:
+                    factname, value = fact["fact"].split(": ")
+
+                    value = ast.literal_eval(value)
+                    pair = [factname, value]
+                    rule.append(pair)
+                    # rule.append(fact["fact"])
+                except Exception as e:
+                    if "EmptyFact" in fact["fact"]:
+                        factname = fact["fact"][:9]
+                        facts = fact["fact"][11:] #can be empty
+                        facts = facts.split("|")
+                        facts.pop()
+                        pair = [factname, facts]
+                        rule.append(pair)
+                    else:
+                        print("i am in process json")
             if fact["type"] == '0':
                 #this is a condition of the rule
                 fact, value = fact["fact"].split(": ")
@@ -54,8 +74,8 @@ def process_json(filepath, name):
                 conditions.append(pair)
         #add last rule and its conditions
         rules[name+str(on_rule)] = [rule,conditions]
-        print(len(rules), "rules were processed")
-    print()
+        # print(len(rules), "rules were processed")
+    print("------------------------------------------------")
     return rules
 
 def vel_pos_dist(val1, val2):
@@ -152,16 +172,20 @@ def var_input_dist(inputs1,inputs2):
 def fact_distance(a_fact, b_fact):
     '''
     Parameters:
-        a_fact ()
-        b_fact ()
+        a_fact (list) - A list of len 2 where the first item is a str of the type of fact and the second item is the value of the fact
+            a_fact = [type(str), value(any)]
+        b_fact (list) - A list of len 2 where the first item is a str of the type of fact and the second item is the value of the fact
     Return:
     
     This function takes in 2 facts and calculates the distance between them.
     Automatic max distance of 1 if the types are different. If the fact types match,
     they are sent to their specific distance function.
     '''
+    print("A:"+str(a_fact))
+    print("B:"+str(b_fact))
 
-
+    facttype, value = a_fact
+    print(type(value))
     pass
 
 def rule_distance(a_rule, b_rule, rules_db):
@@ -181,7 +205,11 @@ def rule_distance(a_rule, b_rule, rules_db):
     a_effects = rules_db[a_rule][0]
     b_effects = rules_db[b_rule][0]
 
+    a_conditions = rules_db[a_rule][1]
+    b_condtiions = rules_db[b_rule][1]
+    print("calculaitng pre....")
     pre_dist = fact_distance(a_effects[0], b_effects[0])
+    print("calculating post....")
     post_dist = fact_distance(a_effects[1], b_effects[1])
     
     print("pre: ", pre_dist, "post: ", post_dist)
@@ -196,12 +224,15 @@ def calculate_clusters(centers, rules_db, clusters):
     Returns: a dictionary of the clusters where the key is the centers and
     its value is a list of dp that are in that "cluster"
     '''
-    cluster_distances = {}
+    cluster_distances = {} 
+    #a dictionary where the keys are the center names 
+    #and its value is a list of ints which are the 
+    #distances between the center and the dp's in its cluster
     for i in range(k):
         cluster_distances[centers[i]] = []
         # cluster_distances.append([centers[i]])
-    print(cluster_distances)
-    print("calculate clusters: centers", centers)
+    # print(cluster_distances)
+    # print("calculate clusters: centers", centers)
     for dp in rules_db:
         min_distance = float('inf') #postive infinity
         #find closest center by calculating distance to center
@@ -289,7 +320,7 @@ def main():
     while len(centers) < k:
         random_center = random.choice(list(rules_db.keys()))
         # random_center = rules_db[random.randint(len(rules_db))] #randomly pick a number and grab that one from the rule db
-        print(random_center)
+        # print(random_center)
         
         #check that its not already been picked
         if random_center not in centers:
@@ -298,6 +329,7 @@ def main():
             clusters[random_center] = [] #{clustercenter:[]}
 
     print("INTIIAL CLUSTERS", clusters)
+    print()
     #create first clusters
     clusters = calculate_clusters(centers, rules_db, clusters)
 
