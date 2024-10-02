@@ -19,7 +19,7 @@ import json
 import ast
 from collections import Counter
 
-k = 3
+k = 5
 width = 22
 height = 10
 
@@ -127,6 +127,21 @@ def reformat_conditions(conditions, dict):
 def normalize_distance(val1, val2, max):
     return abs(val1-val2) / max
 
+def cosine(val1, val2):
+    # @TODO
+    # +1 vectors max similiarity
+    #  0 vectors are not similiar
+    # -1 vectors max dissimilarity
+    if val1 == 0 or val2 == 0:
+        if val1 == 0 and val2 == 0:
+            # print("COS BOTH ZEROES")
+            return 1 #they are the same
+        # print("COS ONE ZERO")
+        return 0 #not similiar
+    cos = (val1 * val2) / (abs(val1) * abs(val2))
+    # print("COS", val1, val2, cos)
+    return cos
+
 def vel_pos_dist(val1, val2, max):
     '''
     For Velocity and Position types:
@@ -137,8 +152,15 @@ def vel_pos_dist(val1, val2, max):
         - abs distance value and then cosine normalize
         find their cosine simiiliarity difference and normalize
     '''
-    diff = normalize_distance(val1, val2, max)
-    # print("calculate cosine similliarity")
+    diff = normalize_distance(val1, val2, max) * (-cosine(val1, val2)) + 0.01
+    print("---------------------")
+    print(val1, val2)
+    norm = normalize_distance(val1, val2, max)
+    print("norm", norm)
+    print("no brackets", diff)
+    diff = normalize_distance(val1, val2, max) * (-cosine(val1, val2) + 0.01 )
+    print("brackets", diff)
+    print("---------------------")
     return diff / 2
     
 def animation_dist(inputs1, inputs2):
@@ -166,9 +188,11 @@ def var_input_dist(inputs1,inputs2):
         return 0.5
 
 def relationship_distance(inputs1, inputs2, max):
+    # @TODO
     return 0.5 #change this
 
 def empty_distance(inputs1, inputs2):
+    # @TODO 
     return 0.5 #change this
 
 def fact_distance(a_fact, b_fact):
@@ -283,7 +307,7 @@ def rule_distance(a_rule, b_rule, rules_db):
     # print(b_rule, xcount, ycount)
     '''
     #couple_matching
-    total = 0
+    total = pre_dist + post_dist
     for min_cond in min_rule: #rule with least number  of conditions
         best_dist = 0
         dist = 0
@@ -294,6 +318,7 @@ def rule_distance(a_rule, b_rule, rules_db):
             # print(diff)
             total += diff
     # print("TOTAL: ", total)
+
     return total
 
 
@@ -311,7 +336,6 @@ def calculate_clusters(centers, rules_db, clusters):
     for i in range(k):
         cluster_distances[centers[i]] = []
         # cluster_distances.append([centers[i]])
-    print("calculate clusters: centers", centers)
     for dp in rules_db:
         min_distance = float('inf') #postive infinity
         #find closest center by calculating distance to center
@@ -339,14 +363,16 @@ def calculate_clusters(centers, rules_db, clusters):
     # print(cluster_distances)
     for center in centers:
         container = clusters[center]
-        print(center, type(container),len(container))
+        # print(center, type(container),len(container))
     return clusters
 
 def get_median(cluster, rules_db):
     '''
     This function takes in a list of dp (aka a single cluster)
     and returns the median dp'''
-    median = None
+    # print(len(cluster))
+    # print(cluster)
+    median = "NOOOOOO"
     total_dist = float('inf')
     for i in range(len(cluster)):
         dist = 0
@@ -356,7 +382,7 @@ def get_median(cluster, rules_db):
         if dist < total_dist:
             total_dist = dist
             median = cluster[i]
-    print("MEDIAN IS", median, "")
+    # print("MEDIAN IS", median, "")
     return median
 
 def make_cluster_dictionary(centers):
@@ -382,14 +408,11 @@ def main():
     This function runs the k-medoids clustering algorithm
     Returns a dictionary of the clusters
     '''
-
     #set global values
     MAX_ATTEMPTS = 10000
     threshold = 0.02
     rules_db = {}
     #set k
-    k = 3
-
 
     #get all the rules in a giant ruledb list of tuple values
     names = ["Bird", "Freeplay", "Sokoban"]
@@ -416,12 +439,11 @@ def main():
     # making sure that clusters are not empty
     count = 1
     while any(len(sublist)==0 for sublist in clusters.values()):
-        print(centers)
         centers = make_random_centers(rules_db)
         clusters = make_cluster_dictionary(centers)
         clusters = calculate_clusters(centers, rules_db, clusters)
-        print(count)
         count += 1   
+    print("randomized", count, "times")
 
     #oldcenters = []
     oldcenters = []
@@ -430,18 +452,19 @@ def main():
     #cluster and recluster until no difference in clusters
     while not centers == oldcenters and attempts < MAX_ATTEMPTS:
         attempts += 1
-        print("             RECLUSTERING ATTEMPT #"+str(attempts))
+        print("-------------------RECLUSTERING ATTEMPT #"+str(attempts))
         oldcenters = centers
+        print("OLD CENTERS:", oldcenters)
         #get new centers
         new_centers = []
         #for each cluster
         for key_center in clusters:
-            print("FORMER CENTER", key_center)
             cluster_dp = clusters[key_center] #gets the cluster list from dict
             new_center = get_median(cluster_dp, rules_db) #find the median of this group
             new_centers.append(new_center)
         #reset the centers
         centers = new_centers
+        print("NEW CENTERS:", centers)
         #recluster
         clusters = make_cluster_dictionary(centers) #empty dictionary with new centers as keys
         clusters = calculate_clusters(centers, rules_db, clusters)
