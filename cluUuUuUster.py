@@ -166,7 +166,10 @@ def var_input_dist(inputs1,inputs2):
         return 0.5
 
 def relationship_distance(inputs1, inputs2, max):
-    pass
+    return 0.5 #change this
+
+def empty_distance(inputs1, inputs2):
+    return 0.5 #change this
 
 def fact_distance(a_fact, b_fact):
     '''
@@ -203,12 +206,13 @@ def fact_distance(a_fact, b_fact):
         elif a_type == "VariableFact":
             return var_input_dist(a_value, b_value)
         elif a_type in relationship:
-            # print("RELA")
-            # print(a_value, b_value)
-            # print()
-            pass
+            if "X" in a_type:
+                return relationship_distance(a_value, b_value, width)
+            else:
+                return relationship_distance(a_value, b_value, height)
         elif a_type == "EmptyFact":
-            print("EMPTY")
+            # print("EMPTY")
+            return empty_distance(a_value, b_value)
         else:
             raise Exception("matching types not matched?")
 
@@ -224,21 +228,21 @@ def rule_distance(a_rule, b_rule, rules_db):
     between them. Distance is calculated  by finding the distance between their pre-effects,
     post-effects, and conditions.
     '''
-    print("RULE DISTANCE", a_rule, b_rule)
+    # print("RULE DISTANCE", a_rule, b_rule)
     #rules_db[rule_name] = [ [preeffect, posteffect], [condition, condition, condition] ]
     a_effects = rules_db[a_rule][0]
     b_effects = rules_db[b_rule][0]
 
     a_conditions = rules_db[a_rule][1]
     b_conditions = rules_db[b_rule][1]
-    print("calculaitng pre....")
+    # print("calculaitng pre....")
     pre_dist = fact_distance(a_effects[0], b_effects[0])
-    print("calculating post....")
+    # print("calculating post....")
     post_dist = fact_distance(a_effects[1], b_effects[1])
     
-    print("predist: ", pre_dist, "postdist: ", post_dist)
+    # print("predist: ", pre_dist, "postdist: ", post_dist)
 
-    print()
+    # print()
 
     #couple matching
     if len(a_conditions) > len(b_conditions): #b is smaller than a
@@ -252,32 +256,33 @@ def rule_distance(a_rule, b_rule, rules_db):
     # print(min_rule)
     # print("MAX")
     # print(max_rule)
-
-    xcount = 0
-    ycount = 0
-    for cond in a_conditions:
-        if "Relationship" in cond[0]:
-            if "X" in cond[0]:
-                print(cond)
-                xcount += 1
-            else:
-                ycount += 1
-    if xcount % 2 == 1 or ycount % 2 == 1:
-        raise Exception("ODD COUNTS", xcount, ycount, a_rule)
-    print(a_rule, xcount, ycount)
-    xcount = 0
-    ycount
-    for cond in b_conditions:
-        if "Relationship" in cond[0]:
-            if "X" in cond[0]:
-                print(cond)
-                xcount += 1
-            else:
-                ycount += 1
-    if xcount % 2 == 1 or ycount % 2 == 1:
-        raise Exception("ODD COUNTS", xcount, ycount, b_rule)
+    '''         this was finding if relationship facts come in pairs
+    # xcount = 0
+    # ycount = 0
+    # for cond in a_conditions:
+    #     if "Relationship" in cond[0]:
+    #         if "X" in cond[0]:
+    #             print(cond)
+    #             xcount += 1
+    #         else:
+    #             ycount += 1
+    # if xcount % 2 == 1 or ycount % 2 == 1:
+    #     raise Exception("ODD COUNTS", xcount, ycount, a_rule)
+    # print(a_rule, xcount, ycount)
+    # xcount = 0
+    # ycount
+    # for cond in b_conditions:
+    #     if "Relationship" in cond[0]:
+    #         if "X" in cond[0]:
+    #             print(cond)
+    #             xcount += 1
+    #         else:
+    #             ycount += 1
+    # if xcount % 2 == 1 or ycount % 2 == 1:
+    #     raise Exception("ODD COUNTS", xcount, ycount, b_rule)
     # print(b_rule, xcount, ycount)
-
+    '''
+    #couple_matching
     total = 0
     for min_cond in min_rule: #rule with least number  of conditions
         best_dist = 0
@@ -288,7 +293,7 @@ def rule_distance(a_rule, b_rule, rules_db):
             diff = fact_distance(min_cond, max_cond)
             # print(diff)
             total += diff
-    print("TOTAL: ", total)
+    # print("TOTAL: ", total)
     return total
 
 
@@ -306,24 +311,24 @@ def calculate_clusters(centers, rules_db, clusters):
     for i in range(k):
         cluster_distances[centers[i]] = []
         # cluster_distances.append([centers[i]])
-    # print(cluster_distances)
-    # print("calculate clusters: centers", centers)
+    print("calculate clusters: centers", centers)
     for dp in rules_db:
         min_distance = float('inf') #postive infinity
         #find closest center by calculating distance to center
         # print(dp)
-        print("---    ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---")
-        print("DATAPOINT NAME: ", dp)
-        closest_center = "None"
+        # print("---    ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---")
+        # print("DATAPOINT NAME: ", dp)
+        closest_center = "No Closest Center"
         for center in centers:
             # print("Checking the distance between CENTER", center, "AND DATAPOINT", dp)
             # dist = distance(dp, center, rules_db)
             dist = rule_distance(dp, center, rules_db)
+
             if dist < min_distance:
                 #reached threshold for this center
                 closest_center = center
                 min_distance = dist #this is now the distance to beat
-        print(dp, "got added to", closest_center)
+        # print(dp, "got added to", closest_center)
         cluster_distances[closest_center].append(min_distance)
         clusters[closest_center].append(dp)
     # print(len(clusters),clusters)
@@ -332,9 +337,9 @@ def calculate_clusters(centers, rules_db, clusters):
     #     print(val)
     #     print()
     # print(cluster_distances)
-    # for center in centers:
-    #     container = clusters[center]
-        # print(center, type(container),len(container))
+    for center in centers:
+        container = clusters[center]
+        print(center, type(container),len(container))
     return clusters
 
 def get_median(cluster, rules_db):
@@ -354,6 +359,23 @@ def get_median(cluster, rules_db):
     print("MEDIAN IS", median, "")
     return median
 
+def make_cluster_dictionary(centers):
+    #create dictionary to hold the clusters, key is a tuple dp and value is a list of tuple dp's
+    clusters = {}
+    for center in centers:
+        clusters[center] = []
+    return clusters
+
+def make_random_centers(rules_db):
+    #intiialize k random centers
+    centers = [] #keep track of all current centers
+    while len(centers) < k:
+        random_center = random.choice(list(rules_db.keys()))        
+        #check that its not already been picked
+        if random_center not in centers:
+            #add to centers list and cluster dictionary
+            centers.append(random_center)
+    return centers
 
 def main():
     '''
@@ -384,30 +406,22 @@ def main():
 
     # process_json("./json/Bird5/data.json", "Bird5_")
     print("there are ",len(rules_db)," rules in the database")
-
-    #try:
-
-    #create dictionary to hold the clusters, key is a tuple dp and value is a list of tuple dp's
-    clusters = {}
-
-    #intiialize k random centers
-    centers = [] #keep track of all current centers
-    while len(centers) < k:
-        random_center = random.choice(list(rules_db.keys()))
-        # random_center = rules_db[random.randint(len(rules_db))] #randomly pick a number and grab that one from the rule db
-        # print(random_center)
-        
-        #check that its not already been picked
-        if random_center not in centers:
-            #add to centers list and cluster dictionary
-            centers.append(random_center)
-            clusters[random_center] = [] #{clustercenter:[]}
+    centers = make_random_centers(rules_db)
+    clusters = make_cluster_dictionary(centers)
 
     print("INTIIAL CLUSTERS", clusters)
     print()
     #create first clusters
     clusters = calculate_clusters(centers, rules_db, clusters)
-
+    # making sure that clusters are not empty
+    count = 1
+    while any(len(sublist)==0 for sublist in clusters.values()):
+        print(centers)
+        centers = make_random_centers(rules_db)
+        clusters = make_cluster_dictionary(centers)
+        clusters = calculate_clusters(centers, rules_db, clusters)
+        print(count)
+        count += 1   
 
     #oldcenters = []
     oldcenters = []
@@ -422,17 +436,16 @@ def main():
         new_centers = []
         #for each cluster
         for key_center in clusters:
+            print("FORMER CENTER", key_center)
             cluster_dp = clusters[key_center] #gets the cluster list from dict
             new_center = get_median(cluster_dp, rules_db) #find the median of this group
             new_centers.append(new_center)
         #reset the centers
         centers = new_centers
         #recluster
+        clusters = make_cluster_dictionary(centers) #empty dictionary with new centers as keys
         clusters = calculate_clusters(centers, rules_db, clusters)
     return clusters
-    # except Exception as e:
-    #     print(e)
-
 
 
 # def distance(dp, center, rules_db):
