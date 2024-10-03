@@ -17,14 +17,18 @@ return centroids
 import random
 import json
 import ast
-from collections import Counter
 
-k = 5
+#set global values
+MAX_ATTEMPTS = 10000
+threshold = 0.02
+
+k = 3
+
 width = 22
 height = 10
 
 def process_json(filepath, name):
-    print(".....PROCESSING       " +filepath)
+    # print(".....PROCESSING       " +filepath)
     rules = {}
     with open(filepath, "r") as file:
         json_str = file.read()
@@ -52,7 +56,6 @@ def process_json(filepath, name):
                 # print("processing pre or posteffect")
                 try:
                     factname, value = fact["fact"].split(": ")
-
                     value = ast.literal_eval(value)
                     pair = [factname, value]
                     rule.append(pair)
@@ -66,12 +69,11 @@ def process_json(filepath, name):
                         empty = []
                         for f in facts:
                             factname , value = f.split(": ")
-
                             value = ast.literal_eval(value)
                             p = [factname, value]
                             empty.append(p)
                         pair = [emptyname, empty]
-                        print(pair)
+                        # print(pair)
                         rule.append(pair)
                     else:
                         print("i am in process json")
@@ -79,7 +81,6 @@ def process_json(filepath, name):
                 try:
                     #this is a condition of the rule
                     fact, value = fact["fact"].split(": ")
-
                     value = ast.literal_eval(value)
                     pair = [fact, value]
                     conditions.append(pair)
@@ -89,7 +90,7 @@ def process_json(filepath, name):
         #add last rule and its conditions
         rules[name+str(on_rule)] = [rule,conditions]
         # print(len(rules), "rules were processed")
-    print("------------------------------------------------")
+    print("-------------------------------------------------")
     return rules
 
 def reformat_key_inputs(inputs):
@@ -134,15 +135,13 @@ def cosine(val1, val2):
     # -1 vectors max dissimilarity
     if val1 == 0 or val2 == 0:
         if val1 == 0 and val2 == 0:
-            # print("COS BOTH ZEROES")
-            return 1 #they are the same
-        # print("COS ONE ZERO")
-        return 0 #not similiar
+            return 1
+        return 0
     cos = (val1 * val2) / (abs(val1) * abs(val2))
     # print("COS", val1, val2, cos)
     return cos
 
-def vel_pos_dist(val1, val2, max):
+def vel_dist(val1, val2, max):
     '''
     For Velocity and Position types:
     if values match exactly:
@@ -152,15 +151,18 @@ def vel_pos_dist(val1, val2, max):
         - abs distance value and then cosine normalize
         find their cosine simiiliarity difference and normalize
     '''
-    diff = normalize_distance(val1, val2, max) * (-cosine(val1, val2)) + 0.01
-    print("---------------------")
-    print(val1, val2)
-    norm = normalize_distance(val1, val2, max)
-    print("norm", norm)
-    print("no brackets", diff)
+    epsilon = 0.01
+    # diff = normalize_distance(val1, val2, max) * (-cosine(val1, val2)) + 0.01
+    # print("---------------------")
+    # print(val1, val2)
+    # norm = normalize_distance(val1, val2, max)
+    # print("norm", norm)
+    # print("no brackets", diff)
     diff = normalize_distance(val1, val2, max) * (-cosine(val1, val2) + 0.01 )
-    print("brackets", diff)
-    print("---------------------")
+    # print("brackets", diff)
+    diff = normalize_distance(val1, val2, max) * ( (1-cosine(val1, val2)) /2 ) * (1 - epsilon) + epsilon
+    # print("chat diff", diff)
+    # print("---------------------")
     return diff / 2
     
 def animation_dist(inputs1, inputs2):
@@ -188,12 +190,37 @@ def var_input_dist(inputs1,inputs2):
         return 0.5
 
 def relationship_distance(inputs1, inputs2, max):
-    # @TODO
+    inputs1 = inputs1[-3:] #[direction, direction, value]
+    inputs2 = inputs2[-3:]
+    if inputs1 == inputs2:
+        return 0
+    dir1, val1 = inputs1[:2], inputs1[2:]
+    # dir1, val1 = inputs1
+    dir2, val2 = inputs2[:2], inputs2[2:]
+    if dir1 == dir2:
+        #find difference in distance
+        return (normalize_distance(val1[0], val2[0], max))/ 2
     return 0.5 #change this
 
 def empty_distance(inputs1, inputs2):
-    # @TODO 
-    return 0.5 #change this
+    if inputs1 == inputs2:
+        return 0
+    if inputs1 == [] or inputs2 == []:
+        return 0.5
+    if len(inputs1) > len(inputs2):
+        min_empty = inputs2
+        max_empty = inputs1
+    else:
+        min_empty = inputs1
+        max_empty = inputs2
+
+    max_dist = len(min_empty) * len(max_empty)
+    sum = 0
+    for min_cond in min_empty:
+        for max_cond in max_empty:
+            sum += fact_distance(min_cond, max_cond)
+    sum /= max_dist
+    return sum/2 #change this
 
 def fact_distance(a_fact, b_fact):
     '''
@@ -208,7 +235,8 @@ def fact_distance(a_fact, b_fact):
     they are sent to their specific distance function.
     '''
     types = ["VelocityXFact, VelocityYFact, PositionXFact, PositionYFact, AnimationFact, VariableFact, RelationshipFactX, RelationshipFactY, EmptyFact"]
-    vel_pos = ["VelocityXFact", "VelocityYFact", "PositionXFact", "PositionYFact"]
+    vel = ["VelocityXFact", "VelocityYFact"]
+    pos = ["PositionXFact", "PositionYFact"]
     relationship =  ["RelationshipFactX", "RelationshipFactY"]
     # print("FACT A:"+str(a_fact))
     # print("FACT B:"+str(b_fact))
@@ -220,11 +248,16 @@ def fact_distance(a_fact, b_fact):
         return 1
     else:
         # print("MATCHING types: ", a_type, b_type, " will have normalized distance")
-        if a_type in vel_pos:
+        if a_type in vel:
             if "X" in a_type:
-                return vel_pos_dist(a_value[1], b_value[1], width)
+                return vel_dist(a_value[1], b_value[1], width)
             else:
-                return vel_pos_dist(a_value[1], b_value[1], height)
+                return vel_dist(a_value[1], b_value[1], height)
+        elif a_type in pos:
+            if "X" in a_type:
+                return normalize_distance(a_value[1], b_value[1], width)
+            else:
+                return normalize_distance(a_value[1], b_value[1], height)
         elif a_type == "AnimationFact":
             return animation_dist(a_value, b_value)
         elif a_type == "VariableFact":
@@ -236,9 +269,35 @@ def fact_distance(a_fact, b_fact):
                 return relationship_distance(a_value, b_value, height)
         elif a_type == "EmptyFact":
             # print("EMPTY")
-            return empty_distance(a_value, b_value)
+            return empty_distance(a_value, b_value) #this is not implemented
         else:
             raise Exception("matching types not matched?")
+
+def stable_matching(a_conditions, b_conditions):
+    #stable matching
+    if len(a_conditions) > len(b_conditions): #b is smaller than a
+        min_rule = b_conditions 
+        max_rule = a_conditions 
+    else: #a is smaller or has equal number of conditionas as b
+        min_rule = a_conditions 
+        max_rule = b_conditions
+    
+    #stable_matching
+    total = 0
+    for min_cond in min_rule: #rule with least number  of conditions
+        type = min_cond[0]
+        sum = 0
+        best_type = float("inf")
+        for max_cond in max_rule: #rule with most number of conditions
+            diff = fact_distance(min_cond, max_cond)
+            if max_cond[0] == type:
+                if diff < best_type:
+                    best_type = diff
+            else:
+                sum += diff
+            total += diff
+    # print("TOTAL: ", total)
+    return total
 
 def rule_distance(a_rule, b_rule, rules_db):
     '''
@@ -259,14 +318,12 @@ def rule_distance(a_rule, b_rule, rules_db):
 
     a_conditions = rules_db[a_rule][1]
     b_conditions = rules_db[b_rule][1]
-    # print("calculaitng pre....")
+
     pre_dist = fact_distance(a_effects[0], b_effects[0])
-    # print("calculating post....")
     post_dist = fact_distance(a_effects[1], b_effects[1])
     
-    # print("predist: ", pre_dist, "postdist: ", post_dist)
-
-    # print()
+    pre_dist *= 100
+    post_dist *=100
 
     #couple matching
     if len(a_conditions) > len(b_conditions): #b is smaller than a
@@ -276,51 +333,27 @@ def rule_distance(a_rule, b_rule, rules_db):
         min_rule = a_conditions 
         max_rule = b_conditions
     
-    # print("MIN")
-    # print(min_rule)
-    # print("MAX")
-    # print(max_rule)
-    '''         this was finding if relationship facts come in pairs
-    # xcount = 0
-    # ycount = 0
-    # for cond in a_conditions:
-    #     if "Relationship" in cond[0]:
-    #         if "X" in cond[0]:
-    #             print(cond)
-    #             xcount += 1
-    #         else:
-    #             ycount += 1
-    # if xcount % 2 == 1 or ycount % 2 == 1:
-    #     raise Exception("ODD COUNTS", xcount, ycount, a_rule)
-    # print(a_rule, xcount, ycount)
-    # xcount = 0
-    # ycount
-    # for cond in b_conditions:
-    #     if "Relationship" in cond[0]:
-    #         if "X" in cond[0]:
-    #             print(cond)
-    #             xcount += 1
-    #         else:
-    #             ycount += 1
-    # if xcount % 2 == 1 or ycount % 2 == 1:
-    #     raise Exception("ODD COUNTS", xcount, ycount, b_rule)
-    # print(b_rule, xcount, ycount)
-    '''
     #couple_matching
-    total = pre_dist + post_dist
+    sum = 0
+    max_dist = len(min_cond) * len(max_cond)
     for min_cond in min_rule: #rule with least number  of conditions
-        best_dist = 0
-        dist = 0
+        condition_total = 0
         for max_cond in max_rule: #rule with most number of conditions
-            # print(min_cond)
-            # print(max_cond)
             diff = fact_distance(min_cond, max_cond)
-            # print(diff)
-            total += diff
-    # print("TOTAL: ", total)
-
+            condition_total += diff
+        # condition_total /= len(min_rule)
+        sum += condition_total
+    # sum /= 3
+    # print("sum of cond:", sum, "max:",max_dist ,"percentage", sum/max_dist)
+    sum /= max_dist
+    sum *= 100
+    ppw = 0.4
+    dw = 0.2
+    total = ppw*pre_dist + ppw*post_dist + dw*sum
+    # print(pre_dist, post_dist, sum, total)
+    # print()
+    # print("MAX DISTANCE for", a_rule,"|" ,len(a_conditions),"|",b_rule, "|",len(b_conditions),"is", max_dist, "DIST was", total)
     return total
-
 
 def calculate_clusters(centers, rules_db, clusters):
     '''
@@ -329,41 +362,30 @@ def calculate_clusters(centers, rules_db, clusters):
     Returns: a dictionary of the clusters where the key is the centers and
     its value is a list of dp that are in that "cluster"
     '''
-    cluster_distances = {} 
+    distortion = {} 
     #a dictionary where the keys are the center names 
     #and its value is a list of ints which are the 
     #distances between the center and the dp's in its cluster
     for i in range(k):
-        cluster_distances[centers[i]] = []
-        # cluster_distances.append([centers[i]])
+        distortion[centers[i]] = 0
     for dp in rules_db:
         min_distance = float('inf') #postive infinity
         #find closest center by calculating distance to center
-        # print(dp)
-        # print("---    ---   ---   ---   ---   ---   ---   ---   ---   ---   ---   ---")
-        # print("DATAPOINT NAME: ", dp)
         closest_center = "No Closest Center"
+        center_distances = []
         for center in centers:
-            # print("Checking the distance between CENTER", center, "AND DATAPOINT", dp)
-            # dist = distance(dp, center, rules_db)
             dist = rule_distance(dp, center, rules_db)
-
+            center_distances.append([center, dist])
             if dist < min_distance:
                 #reached threshold for this center
                 closest_center = center
                 min_distance = dist #this is now the distance to beat
-        # print(dp, "got added to", closest_center)
-        cluster_distances[closest_center].append(min_distance)
+        distortion[closest_center] += min_distance
         clusters[closest_center].append(dp)
-    # print(len(clusters),clusters)
-    # print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`")
-    # for val in clusters.values():
-    #     print(val)
-    #     print()
-    # print(cluster_distances)
     for center in centers:
         container = clusters[center]
-        # print(center, type(container),len(container))
+        distortion[center] /= len(container)
+        print(center,":",len(container))
     return clusters
 
 def get_median(cluster, rules_db):
@@ -408,16 +430,14 @@ def main():
     This function runs the k-medoids clustering algorithm
     Returns a dictionary of the clusters
     '''
-    #set global values
-    MAX_ATTEMPTS = 10000
-    threshold = 0.02
     rules_db = {}
-    #set k
 
     #get all the rules in a giant ruledb list of tuple values
     names = ["Bird", "Freeplay", "Sokoban"]
-    n = 8
-    for i in range(5,n):
+    n = 13
+    for i in range(1,n):
+        # print(names, ":", i)
+        print()
         for name in names:
             filepath = "./json/"+name+str(i)+"/data.json"
             rules = process_json(filepath, name+str(i)+"_")
@@ -426,9 +446,9 @@ def main():
                 if key in rules_db.keys():
                     print("key overwritten:", key)
             rules_db.update(rules) #add the new processed dictionary from json file into database
-
-    # process_json("./json/Bird5/data.json", "Bird5_")
+    print(".... PROCESSED")
     print("there are ",len(rules_db)," rules in the database")
+    
     centers = make_random_centers(rules_db)
     clusters = make_cluster_dictionary(centers)
 
@@ -436,14 +456,6 @@ def main():
     print()
     #create first clusters
     clusters = calculate_clusters(centers, rules_db, clusters)
-    # making sure that clusters are not empty
-    count = 1
-    while any(len(sublist)==0 for sublist in clusters.values()):
-        centers = make_random_centers(rules_db)
-        clusters = make_cluster_dictionary(centers)
-        clusters = calculate_clusters(centers, rules_db, clusters)
-        count += 1   
-    print("randomized", count, "times")
 
     #oldcenters = []
     oldcenters = []
@@ -468,7 +480,9 @@ def main():
         #recluster
         clusters = make_cluster_dictionary(centers) #empty dictionary with new centers as keys
         clusters = calculate_clusters(centers, rules_db, clusters)
+    print("jover?")
     return clusters
+clusters = main()
 
 
 # def distance(dp, center, rules_db):
@@ -588,5 +602,32 @@ def main():
     #     else:
     #         center_dict[factname].append(factval)
 
+    
+    # this was finding if relationship facts come in pairs
+    # xcount = 0
+    # ycount = 0
+    # for cond in a_conditions:
+    #     if "Relationship" in cond[0]:
+    #         if "X" in cond[0]:
+    #             print(cond)
+    #             xcount += 1
+    #         else:
+    #             ycount += 1
+    # if xcount % 2 == 1 or ycount % 2 == 1:
+    #     raise Exception("ODD COUNTS", xcount, ycount, a_rule)
+    # print(a_rule, xcount, ycount)
+    # xcount = 0
+    # ycount
+    # for cond in b_conditions:
+    #     if "Relationship" in cond[0]:
+    #         if "X" in cond[0]:
+    #             print(cond)
+    #             xcount += 1
+    #         else:
+    #             ycount += 1
+    # if xcount % 2 == 1 or ycount % 2 == 1:
+    #     raise Exception("ODD COUNTS", xcount, ycount, b_rule)
+    # print(b_rule, xcount, ycount)
 
-main()
+
+

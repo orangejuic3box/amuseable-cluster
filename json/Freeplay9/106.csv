@@ -1,0 +1,13 @@
+True,False,False,False,False
+False,False,False,False,False
+22,10
+dog,11,4,1,1,0,-1
+greenblock,8,0,2,2,0,0
+greenblock,10,0,2,2,0,0
+greenblock,12,0,2,2,0,0
+longblock,8,2,1,4,0,0
+longblock,13,2,1,4,0,0
+longblock,8,6,1,4,0,0
+longblock,13,6,1,4,0,0
+grassBlock,11,3,1,1,0,0
+grassBlock,10,5,1,1,0,0
