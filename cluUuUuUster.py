@@ -90,7 +90,7 @@ def process_json(filepath, name):
         #add last rule and its conditions
         rules[name+str(on_rule)] = [rule,conditions]
         # print(len(rules), "rules were processed")
-    print("-------------------------------------------------")
+    # print("-------------------------------------------------")
     return rules
 
 def reformat_key_inputs(inputs):
@@ -335,7 +335,7 @@ def rule_distance(a_rule, b_rule, rules_db):
     
     #couple_matching
     sum = 0
-    max_dist = len(min_cond) * len(max_cond)
+    max_dist = len(min_rule) * len(max_rule)
     for min_cond in min_rule: #rule with least number  of conditions
         condition_total = 0
         for max_cond in max_rule: #rule with most number of conditions
@@ -385,15 +385,13 @@ def calculate_clusters(centers, rules_db, clusters):
     for center in centers:
         container = clusters[center]
         distortion[center] /= len(container)
-        print(center,":",len(container))
+        print(center,":",len(container),"dist=", distortion[center])
     return clusters
 
 def get_median(cluster, rules_db):
     '''
     This function takes in a list of dp (aka a single cluster)
     and returns the median dp'''
-    # print(len(cluster))
-    # print(cluster)
     median = "NOOOOOO"
     total_dist = float('inf')
     for i in range(len(cluster)):
@@ -483,151 +481,3 @@ def main():
     print("jover?")
     return clusters
 clusters = main()
-
-
-# def distance(dp, center, rules_db):
-#     '''
-#     Parmeters:
-#         dp (str) - this is the name of the rule it is defined by GamenameUsernumber_Rulenumber (Sokoban7_5 or 
-#     This function calculates the distance between two datapoints
-#     '''
-#     # print("~~~~~~~~~~~~~~~      DISTANCE FUNC LINE BREAK         ~~~~~~~~~~~~~~~")
-#     # print("dp:", dp)
-#     # print("center:", center)
-#     # from the database grab the (datapoint and center)'s list of conditions
-#     dp_rule_fact = rules_db[dp][0]
-#     dp_conditions = rules_db[dp][1]
-
-#     # fact, value = dp_rule_fact.split(": ") # use me for later when trying to compare distance between rule fact types
-
-#     center_rule_fact = rules_db[center][0]
-#     center_conditions = rules_db[center][1]
-#     # print("COMPARINGGGGG  " + dp + "   VERSUS   " + center)
-#     # print(dp_rule_fact)
-#     # print(center_rule_fact)
-#     # print()
-#     '''
-#     We will cluster purely on conditions regardless of 
-#     what the actual rule fact type was.
-#     '''
-#     # conditions are formatted in a list of lists
-#     # where the inner list is comprised of the fact name [0] and the value [1]
-#     # these for loops format the conditions into a dictionary based on their fact type
-    
-#     # print(dp, "datapoint conditions")
-#     dp_dict = reformat_conditions(dp_conditions,{})
-#     center_dict = reformat_conditions(center_conditions,{})
-
-    
-#     dist = 0
-#     # iterates through the fact types
-#     # print(len(center_dict), "types of facts for the center rule with ", len(center_conditions), "number of conditions")
-#     for key in center_dict.keys():
-#         # print("The current center is", center)
-#         if key in dp_dict:
-#             if "Velocity" in key or "Position" in key:
-#                 # print("Matching condition fact type", key)
-#                 # gathers all the facts for the given velocity or position type
-#                 center_values = center_dict[key] # print("list of center values", center_values)
-#                 dp_values = dp_dict[key] # print("list of dp values", dp_values)
-#                 # goes through and calculates the distance between the center velocity fact and the datapoint velocity fact
-#                 for value in center_values:
-#                     for val in dp_values:
-#                         # print(key, value, val)
-#                         #value[0] = componentID
-#                         #value[1] = value
-#                         diff = vel_pos_dist(value[1],val[1])
-#                         # print(diff)
-#                         dist += diff
-#             elif "Variable" in key:
-#                 # print("Matching condition fact type", key)
-#                 center_values = center_dict[key]
-#                 # print("reformatting center")
-#                 center_inputs = reformat_key_inputs(center_values) #this is a dictionary
-#                 dp_values = dp_dict[key]
-#                 # print("reformatting datapoints")
-#                 dp_inputs = reformat_key_inputs(dp_values) #this is a dictionary
-#                 # print("input1 = center, input2 = datapoints")
-#                 diff = var_input_dist(center_inputs,dp_inputs)
-#                 dist += diff
-#                 # print("center keyboard inputs",len(center_values), center_values)
-#                 # print("datapoint keyboard inputs", len(dp_values), dp_values)
-#             else:
-#                 # print("         No difference implentation for fact type", key)
-#                 pass
-#         else:
-#             # print(key, " fact type was in center but not in the datapoint")
-#             dist += len(center_dict[key])
-
-
-#     '''
-#     Treating X and Y Facts the same 
-#     (VelocityX == VelocityY) or (PositionX == PositionY)
-#     '''
-#     '''
-#     Treating X and Y Facts differently
-#     (VelocityX != VelocityY) or (PositionX != PositionY)
-#     '''
-#     '''
-#     Treating prevFacts the same
-#     (spacePrev == upPrev)
-#     '''
-#     '''
-#     Treating prevFacts differently
-#     (spacePrev != upPrev)
-#     '''
-#     # print(dp, "was",dist, " away from", center)
-#     return dist
-
-
-    # for condition in dp_conditions:
-    #     # print(len(dp_conditions), condition)
-    #     factname = condition[0]
-    #     factval = condition[1]
-    #     if factname not in dp_dict:
-    #         dp_dict[factname] = [factval]
-    #     else:
-    #         dp_dict[factname].append(factval)
-
-    # print(center, "center conditions")
-
-    # center_dict = {}
-    # for condition in center_conditions:
-    #     # print(len(center_conditions), condition)
-    #     factname = condition[0]
-    #     factval = condition[1]
-    #     # print(condition)
-    #     if factname not in center_dict:
-    #         center_dict[factname] = [factval]
-    #     else:
-    #         center_dict[factname].append(factval)
-
-    
-    # this was finding if relationship facts come in pairs
-    # xcount = 0
-    # ycount = 0
-    # for cond in a_conditions:
-    #     if "Relationship" in cond[0]:
-    #         if "X" in cond[0]:
-    #             print(cond)
-    #             xcount += 1
-    #         else:
-    #             ycount += 1
-    # if xcount % 2 == 1 or ycount % 2 == 1:
-    #     raise Exception("ODD COUNTS", xcount, ycount, a_rule)
-    # print(a_rule, xcount, ycount)
-    # xcount = 0
-    # ycount
-    # for cond in b_conditions:
-    #     if "Relationship" in cond[0]:
-    #         if "X" in cond[0]:
-    #             print(cond)
-    #             xcount += 1
-    #         else:
-    #             ycount += 1
-    # if xcount % 2 == 1 or ycount % 2 == 1:
-    #     raise Exception("ODD COUNTS", xcount, ycount, b_rule)
-    # print(b_rule, xcount, ycount)
-
-
-
