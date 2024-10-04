@@ -166,6 +166,12 @@ def vel_dist(val1, val2, max):
     return diff / 2
     
 def animation_dist(inputs1, inputs2):
+    print("ANIMATION")
+    print(inputs1)
+    print(inputs2)
+    id1, name1, width1, height1 = inputs1
+    id2, name2, width2, height2 = inputs2
+    
     a_width = inputs1[2]
     a_height = inputs1[3]
     b_width = inputs2[2]
@@ -362,12 +368,10 @@ def calculate_clusters(centers, rules_db, clusters):
     Returns: a dictionary of the clusters where the key is the centers and
     its value is a list of dp that are in that "cluster"
     '''
-    distortion = {} 
+    distortion = 0
     #a dictionary where the keys are the center names 
     #and its value is a list of ints which are the 
     #distances between the center and the dp's in its cluster
-    for i in range(k):
-        distortion[centers[i]] = 0
     for dp in rules_db:
         min_distance = float('inf') #postive infinity
         #find closest center by calculating distance to center
@@ -380,12 +384,13 @@ def calculate_clusters(centers, rules_db, clusters):
                 #reached threshold for this center
                 closest_center = center
                 min_distance = dist #this is now the distance to beat
-        distortion[closest_center] += min_distance
+        distortion += min_distance
         clusters[closest_center].append(dp)
+    distortion /= k
     for center in centers:
         container = clusters[center]
-        distortion[center] /= len(container)
-        print(center,":",len(container),"dist=", distortion[center])
+        print(f"{center:13} : {len(container):<4}")
+    print("DISTORTION = ", distortion)
     return clusters
 
 def get_median(cluster, rules_db):
@@ -435,7 +440,7 @@ def main():
     n = 13
     for i in range(1,n):
         # print(names, ":", i)
-        print()
+        # print()
         for name in names:
             filepath = "./json/"+name+str(i)+"/data.json"
             rules = process_json(filepath, name+str(i)+"_")
