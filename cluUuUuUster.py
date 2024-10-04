@@ -166,22 +166,23 @@ def vel_dist(val1, val2, max):
     return diff / 2
     
 def animation_dist(inputs1, inputs2):
-    print("ANIMATION")
-    print(inputs1)
-    print(inputs2)
+    '''
+    breakdown:
+    50% id name
+    25% width
+    25% height
+    '''
     id1, name1, width1, height1 = inputs1
     id2, name2, width2, height2 = inputs2
-    
-    a_width = inputs1[2]
-    a_height = inputs1[3]
-    b_width = inputs2[2]
-    b_height = inputs2[3]
 
-    diff = normalize_distance(a_width, b_width, width)
-    # print("normalized width", diff)
-    diff += normalize_distance(a_height, b_height, height)
-    # print("normalized width plus height", diff)
-    # print("-----------------------------------------------")
+    if name1 == name2 and width1 == width2 and height == height2:
+        return 0
+    
+    diff = (normalize_distance(width1, width2, width) / 4)
+    diff += (normalize_distance(height1, height2, height) / 4)
+    if name1 != name2:
+        diff += 0.5
+
     return diff / 2 #normalized for fact distance
 
 def var_input_dist(inputs1,inputs2):
