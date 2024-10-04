@@ -19,9 +19,7 @@ import json
 import ast
 
 #set global values
-MAX_ATTEMPTS = 10000
-threshold = 0.02
-
+MAX_ATTEMPTS = 200
 k = 3
 
 width = 22
@@ -92,38 +90,6 @@ def process_json(filepath, name):
         # print(len(rules), "rules were processed")
     # print("-------------------------------------------------")
     return rules
-
-def reformat_key_inputs(inputs):
-    '''
-    This function takes in a list of the keyboard and reformats them for calculating distance
-    '''
-    # print("These are the inputs")
-    # print(len(inputs))
-    key_inputs = {}
-    for i in inputs:
-        # print(i)
-        key_inputs[i[0]] = i[1]
-    # print(key_inputs)
-    # for key, value in key_inputs.items():
-    #     print(key,value)
-    return key_inputs
-
-def reformat_conditions(conditions, dict):
-    '''
-    This function takes in a rule's list of conditions from the database
-    and makes a dictionary of those rules conditions organized by fact type.
-    The key is the fact type of the condition and the value is a list of the
-    string facts of that type.
-    Returns the dictionary'''
-    for condition in conditions:
-        # print(len(dp_conditions), condition)
-        factname = condition[0]
-        factval = condition[1]
-        if factname not in dict:
-            dict[factname] = [factval]
-        else:
-            dict[factname].append(factval)
-    return dict
     
 def normalize_distance(val1, val2, max):
     return abs(val1-val2) / max
@@ -280,32 +246,6 @@ def fact_distance(a_fact, b_fact):
         else:
             raise Exception("matching types not matched?")
 
-def stable_matching(a_conditions, b_conditions):
-    #stable matching
-    if len(a_conditions) > len(b_conditions): #b is smaller than a
-        min_rule = b_conditions 
-        max_rule = a_conditions 
-    else: #a is smaller or has equal number of conditionas as b
-        min_rule = a_conditions 
-        max_rule = b_conditions
-    
-    #stable_matching
-    total = 0
-    for min_cond in min_rule: #rule with least number  of conditions
-        type = min_cond[0]
-        sum = 0
-        best_type = float("inf")
-        for max_cond in max_rule: #rule with most number of conditions
-            diff = fact_distance(min_cond, max_cond)
-            if max_cond[0] == type:
-                if diff < best_type:
-                    best_type = diff
-            else:
-                sum += diff
-            total += diff
-    # print("TOTAL: ", total)
-    return total
-
 def rule_distance(a_rule, b_rule, rules_db):
     '''
     Parameters:
@@ -348,18 +288,14 @@ def rule_distance(a_rule, b_rule, rules_db):
         for max_cond in max_rule: #rule with most number of conditions
             diff = fact_distance(min_cond, max_cond)
             condition_total += diff
-        # condition_total /= len(min_rule)
         sum += condition_total
     # sum /= 3
-    # print("sum of cond:", sum, "max:",max_dist ,"percentage", sum/max_dist)
     sum /= max_dist
     sum *= 100
     ppw = 0.4
     dw = 0.2
     total = ppw*pre_dist + ppw*post_dist + dw*sum
     # print(pre_dist, post_dist, sum, total)
-    # print()
-    # print("MAX DISTANCE for", a_rule,"|" ,len(a_conditions),"|",b_rule, "|",len(b_conditions),"is", max_dist, "DIST was", total)
     return total
 
 def calculate_clusters(centers, rules_db, clusters):
@@ -468,7 +404,7 @@ def main():
     #cluster and recluster until no difference in clusters
     while not centers == oldcenters and attempts < MAX_ATTEMPTS:
         attempts += 1
-        print("-------------------RECLUSTERING ATTEMPT #"+str(attempts))
+        # print("-------------------RECLUSTERING ATTEMPT #"+str(attempts))
         oldcenters = centers
         print("OLD CENTERS:", oldcenters)
         #get new centers
@@ -484,6 +420,6 @@ def main():
         #recluster
         clusters = make_cluster_dictionary(centers) #empty dictionary with new centers as keys
         clusters = calculate_clusters(centers, rules_db, clusters)
-    print("jover?")
+    print("CONVERGED ON", attempts + 1)
     return clusters
 clusters = main()
