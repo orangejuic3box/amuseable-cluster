@@ -393,9 +393,9 @@ def main():
     clusters = make_cluster_dictionary(centers)
 
     print("INTIIAL CLUSTERS", clusters)
-    print()
     #create first clusters
     clusters = calculate_clusters(centers, rules_db, clusters)
+    print()
 
     #oldcenters = []
     oldcenters = []
@@ -420,6 +420,7 @@ def main():
         #recluster
         clusters = make_cluster_dictionary(centers) #empty dictionary with new centers as keys
         clusters = calculate_clusters(centers, rules_db, clusters)
+        print()
     print("CONVERGED ON", attempts + 1)
     return clusters
 clusters = main()
