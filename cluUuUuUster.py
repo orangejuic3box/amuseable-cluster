@@ -17,10 +17,13 @@ return centroids
 import random
 import json
 import ast
+import cProfile
+import time
+import sys
 
 #set global values
 MAX_ATTEMPTS = 200
-k = 3
+# k = 11
 
 width = 22
 height = 10
@@ -294,6 +297,7 @@ def rule_distance(a_rule, b_rule, rules_db):
     sum *= 100
     ppw = 0.4
     dw = 0.2
+    assert (ppw * 2 + dw) == 1
     total = ppw*pre_dist + ppw*post_dist + dw*sum
     # print(pre_dist, post_dist, sum, total)
     return total
@@ -324,27 +328,31 @@ def calculate_clusters(centers, rules_db, clusters):
         distortion += min_distance
         clusters[closest_center].append(dp)
     distortion /= k
-    for center in centers:
-        container = clusters[center]
-        print(f"{center:13} : {len(container):<4}")
-    print("DISTORTION = ", distortion)
-    return clusters
+    # for center in centers:
+    #     container = clusters[center]
+    #     print(f"{center:13} : {len(container):<4}")
+    # print("DISTORTION = ", distortion)
+    return clusters, distortion
 
 def get_median(cluster, rules_db):
     '''
     This function takes in a list of dp (aka a single cluster)
     and returns the median dp'''
-    median = "NOOOOOO"
+    median = None
     total_dist = float('inf')
     for i in range(len(cluster)):
         dist = 0
         for j in range(len(cluster)):
             if i != j: #not the same index
                 dist += rule_distance(cluster[i], cluster[j], rules_db)
+                if dist > total_dist:
+                    break
         if dist < total_dist:
             total_dist = dist
             median = cluster[i]
     # print("MEDIAN IS", median, "")
+    if median == None:
+        raise Exception
     return median
 
 def make_cluster_dictionary(centers):
@@ -354,7 +362,7 @@ def make_cluster_dictionary(centers):
         clusters[center] = []
     return clusters
 
-def make_random_centers(rules_db):
+def make_random_centers(rules_db, k):
     #intiialize k random centers
     centers = [] #keep track of all current centers
     while len(centers) < k:
@@ -365,13 +373,7 @@ def make_random_centers(rules_db):
             centers.append(random_center)
     return centers
 
-def main():
-    '''
-    This function runs the k-medoids clustering algorithm
-    Returns a dictionary of the clusters
-    '''
-    rules_db = {}
-
+def make_db(rules_db):
     #get all the rules in a giant ruledb list of tuple values
     names = ["Bird", "Freeplay", "Sokoban"]
     n = 13
@@ -388,13 +390,22 @@ def main():
             rules_db.update(rules) #add the new processed dictionary from json file into database
     print(".... PROCESSED")
     print("there are ",len(rules_db)," rules in the database")
+    return rules_db
+
+def cluster(k, rules_db):
+    '''
+    This function runs the k-medoids clustering algorithm
+    Returns a dictionary of the clusters
+    '''
+    print(k)
+    start = time.time()
     
-    centers = make_random_centers(rules_db)
+    centers = make_random_centers(rules_db, k)
     clusters = make_cluster_dictionary(centers)
 
-    print("INTIIAL CLUSTERS", clusters)
+    # print("INTIIAL CLUSTERS", clusters)
     #create first clusters
-    clusters = calculate_clusters(centers, rules_db, clusters)
+    clusters, distortion = calculate_clusters(centers, rules_db, clusters)
     print()
 
     #oldcenters = []
@@ -406,21 +417,195 @@ def main():
         attempts += 1
         # print("-------------------RECLUSTERING ATTEMPT #"+str(attempts))
         oldcenters = centers
-        print("OLD CENTERS:", oldcenters)
+        # print("OLD CENTERS:", oldcenters)
         #get new centers
         new_centers = []
         #for each cluster
         for key_center in clusters:
             cluster_dp = clusters[key_center] #gets the cluster list from dict
+            # try:
             new_center = get_median(cluster_dp, rules_db) #find the median of this group
+            # except:
+                # sys.exit()
             new_centers.append(new_center)
         #reset the centers
         centers = new_centers
-        print("NEW CENTERS:", centers)
+        # print("NEW CENTERS:", centers)
         #recluster
         clusters = make_cluster_dictionary(centers) #empty dictionary with new centers as keys
-        clusters = calculate_clusters(centers, rules_db, clusters)
+        clusters, distortion = calculate_clusters(centers, rules_db, clusters)
+        # print()
+    for center in clusters:
+        print(center, ":", len(clusters[center]))
+    print("CONVERGED ON", attempts + 1, "in", time.time()-start, "seconds      k is", k,distortion)
+    return clusters, distortion
+# cProfile.run("main()")
+# for i in range(3):
+#     clusters = main()
+
+
+max_ks = 12
+
+def elbow(kminus, k, kplus):
+    top = abs(kminus - k)
+    bottom = abs(k - kplus)
+    e = top/bottom
+    print(kminus, k,"               " ,top)
+    print(k, kplus, "               ",bottom)
+    return e
+
+def find_elbow(dist):
+    # dist =        { 2:12370.11,
+                    # 3:8113.25,
+                    # 4:5971.71,
+                    # 5:4759.55,
+                    # 6:3729.12,
+                    # 7:3180.50,
+                    # 8:2912.19,
+                    # 9:2211.27,
+                    # 10:1968.92,
+                    # 11:2100.14,
+                    # 12:1933}
+    elbows = {}
+    for k in range(3,max_ks):
+        kminus = k-1
+        kplus = k+1
+        e = elbow(dist[kminus], dist[k], dist[kplus])
+        elbows[k] = e
+        print(k,"=", e)
         print()
-    print("CONVERGED ON", attempts + 1)
-    return clusters
-clusters = main()
+    elb = max(elbows, key=elbows.get)
+    print("the optimal value for k is", elb)
+
+rules_db = make_db(rules_db={})
+# dist = {    2 : 12370,
+                # 3 : 8005,
+                # 4 : 5950,
+                # 5 : 4507,
+                # 6 : 3925,
+                # 7 : 3342,
+                # 8 : 2630,
+                # 9 : 2328,
+                # 10 : 1871,
+                # 11 : 1893,
+                # 12 : 1759 }
+# dist = {    2  : 20037,
+        #     3  : 12982,
+        #     4  :  9493,
+        #     5  :  7893,
+        #     6  :  6421,
+        #     7  :  5621,
+        #     8  :  4705,
+        #     9  :  4156,
+        #     10 :  3650,
+        #     11 :  3307, #3597, 3581
+        #      12 :  3047}
+
+centers = { "Freeplay11_7"  : 12, 
+			"Bird6_44"      : 8,
+			"Bird9_14"	  : 8, 
+			"Freeplay5_1"   : 11, 
+			"Freeplay11_14" : 13, 
+			"Freeplay11_30" : 13, 
+			"Freeplay12_9"  : 12, 
+			"Freeplay9_3"   : 11, 
+			"Freeplay9_24"  : 12,  }
+k = 9
+# clusters, distortion = main(k, rules_db)
+
+def process_clusters():
+    with open('centers.txt', 'w') as file:
+        print("writing")
+        file.write("K is 9\nCenters = { ")
+        for center in clusters:
+            file.write(center +" : "+str(len(center))+", ")
+        file.write(" }\n")
+        for center in clusters:
+            file.write("CENTER:" + center + "\n")
+            effects = rules_db[center][0]
+            file.write("Pre Effect:  ")
+            for pre in effects[0]:
+                file.write(str(pre)+" ")
+            file.write("\nPost Effect: ")
+            for post in effects[1]:
+                file.write(str(post) + " ")
+            conditions = rules_db[center][1]
+            file.write("\nConditions"+ "\n")
+            for cond in conditions:
+                file.write("\t"+str(cond) + "\n")
+            file.write("\n")
+        print("done writing")
+        
+    centers = centers.keys()
+    clusters = make_cluster_dictionary(centers)
+    clusters, distortion = calculate_clusters(centers, rules_db, clusters)
+    print("writing starts now")
+    for center in clusters:
+        # new text file
+        with open(center+'.txt', 'w') as file:
+            file.write(center + " : " + str(len(clusters[center]))+"\n\n")
+
+            file.write("CENTER: " + center + "\n")
+            effects = rules_db[center][0]
+            file.write("Pre Effect:  ")
+            for pre in effects[0]:
+                file.write(str(pre)+" ")
+            file.write("\nPost Effect: ")
+            for post in effects[1]:
+                file.write(str(post) + " ")
+            conditions = rules_db[center][1]
+            file.write("\nConditions: "+ str(len(conditions))+"\n")
+            for cond in conditions:
+                file.write("\t"+str(cond) + "\n")
+            
+            for dp in clusters[center]:
+                file.write("DATAPOINT: " + dp + "\n")
+                effects = rules_db[center][0]
+                file.write("Pre Effect:  ")
+                for pre in effects[0]:
+                    file.write(str(pre)+" ")
+                file.write("\nPost Effect: ")
+                for post in effects[1]:
+                    file.write(str(post) + " ")
+                conditions = rules_db[dp][1]
+                file.write("\nConditions: "+str(len(conditions))+ "\n")
+                for cond in conditions:
+                    file.write("\t"+str(cond) + "\n")
+                file.write("\n")
+            print("processed", center)
+    print("done")
+
+
+center_names = list(centers.keys())
+# print(center_names)
+
+c = make_cluster_dictionary(centers)
+clusters, dist = calculate_clusters(center_names, rules_db, c)
+print(type(clusters))
+
+def pattern_making(clusters):
+    for center in clusters:
+        print("processing", center, " ...")
+        # list of all the datapoints in the cluster
+        cluster = clusters[center] 
+        # set of features and their probability
+        set_conditions = {} #key = condition, value = count
+        for dp in cluster:
+            dp_conditions = rules_db[dp][1]
+            # print(dp_conditions)
+
+
+
+
+
+
+
+
+
+    #     filepath = center + ".txt"
+    #     with open(filepath, "r") as file:
+    #         pass
+    # pass
+
+
+pattern_making(clusters)
