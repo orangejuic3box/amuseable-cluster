@@ -15,9 +15,8 @@ Conditions: 11
 	['VariableFact', ['downPrev', False]]
 	['VariableFact', ['leftPrev', False]]
 	['VariableFact', ['rightPrev', False]]
-	
 DATAPOINT: Bird1_1
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -40,7 +39,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird2_0
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [0, 0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 37
 	['VelocityXFact', [0, 0]]
@@ -124,7 +123,7 @@ Conditions: 37
 	['RelationshipFactY', [2, 1, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay2_4
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 37
 	['VelocityXFact', [0, 0]]
@@ -166,7 +165,7 @@ Conditions: 37
 	['RelationshipFactY', [2, 1, 'North', 'South', 0.0]]
 
 DATAPOINT: Freeplay2_13
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 28
 	['VariableFact', ['space', False]]
@@ -199,7 +198,7 @@ Conditions: 28
 	['PositionXFact', [2, 1.0]]
 
 DATAPOINT: Freeplay2_15
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 29
 	['VariableFact', ['space', False]]
@@ -233,7 +232,7 @@ Conditions: 29
 	['PositionXFact', [2, 3.0]]
 
 DATAPOINT: Freeplay2_18
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 29
 	['VariableFact', ['space', False]]
@@ -267,7 +266,7 @@ Conditions: 29
 	['PositionXFact', [2, 3.0]]
 
 DATAPOINT: Freeplay2_20
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 28
 	['VariableFact', ['space', False]]
@@ -300,7 +299,7 @@ Conditions: 28
 	['PositionXFact', [2, 1.0]]
 
 DATAPOINT: Freeplay2_25
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 29
 	['VariableFact', ['space', False]]
@@ -334,7 +333,7 @@ Conditions: 29
 	['PositionXFact', [2, 3.0]]
 
 DATAPOINT: Freeplay2_30
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 26
 	['VariableFact', ['space', False]]
@@ -365,7 +364,7 @@ Conditions: 26
 	['PositionYFact', [2, 6.0]]
 
 DATAPOINT: Freeplay2_31
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 27
 	['VariableFact', ['space', False]]
@@ -397,7 +396,7 @@ Conditions: 27
 	['PositionYFact', [2, 5.0]]
 
 DATAPOINT: Freeplay2_36
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 25
 	['VariableFact', ['space', False]]
@@ -427,7 +426,7 @@ Conditions: 25
 	['AnimationFact', [2, 'truck', 2.0, 1.0]]
 
 DATAPOINT: Freeplay2_44
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 28
 	['VariableFact', ['space', False]]
@@ -460,7 +459,7 @@ Conditions: 28
 	['PositionYFact', [2, 4.0]]
 
 DATAPOINT: Freeplay2_46
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [2, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 27
 	['VariableFact', ['space', False]]
@@ -492,7 +491,7 @@ Conditions: 27
 	['PositionYFact', [2, 2.0]]
 
 DATAPOINT: Bird3_0
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
@@ -543,8 +542,8 @@ Conditions: 17
 	['PositionYFact', [0, 3.0]]
 
 DATAPOINT: Bird4_1
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, 0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -566,7 +565,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Freeplay4_0
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [0, 0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 15
 	['VelocityXFact', [0, 0]]
@@ -586,8 +585,8 @@ Conditions: 15
 	['VariableFact', ['rightPrev', False]]
 
 DATAPOINT: Bird5_1
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, 0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -615,8 +614,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 2.0]]
 
 DATAPOINT: Bird6_2
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, 0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -673,8 +672,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Bird7_1
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, 0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -702,7 +701,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Bird7_5
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 1.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -725,7 +724,7 @@ Conditions: 17
 
 DATAPOINT: Freeplay7_10
 Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -748,8 +747,8 @@ Conditions: 19
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Bird8_0
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [0, 0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -778,7 +777,7 @@ Conditions: 24
 
 DATAPOINT: Freeplay8_10
 Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -828,7 +827,7 @@ Conditions: 22
 	['AnimationFact', [0, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Bird9_1
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -857,8 +856,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 3.0]]
 
 DATAPOINT: Bird9_2
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -880,8 +879,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_17
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -903,8 +902,8 @@ Conditions: 18
 	['PositionXFact', [0, 5.0]]
 
 DATAPOINT: Bird9_23
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [0, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -926,8 +925,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_29
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [0, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -949,8 +948,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_35
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [0, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -972,8 +971,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_41
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [0, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -995,8 +994,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_43
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1018,8 +1017,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_48
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1041,8 +1040,8 @@ Conditions: 18
 	['PositionXFact', [0, 5.0]]
 
 DATAPOINT: Bird9_50
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1064,8 +1063,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_55
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1087,8 +1086,8 @@ Conditions: 18
 	['PositionXFact', [0, 5.0]]
 
 DATAPOINT: Bird9_57
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1110,8 +1109,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_62
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1133,8 +1132,8 @@ Conditions: 18
 	['PositionXFact', [0, 5.0]]
 
 DATAPOINT: Bird9_64
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1156,8 +1155,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_69
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1179,8 +1178,8 @@ Conditions: 18
 	['PositionXFact', [0, 5.0]]
 
 DATAPOINT: Bird9_72
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [1, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1202,8 +1201,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird9_77
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1225,8 +1224,8 @@ Conditions: 18
 	['PositionXFact', [0, 5.0]]
 
 DATAPOINT: Freeplay9_17
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [9, 0.0] 
+Post Effect: VelocityYFact [9, -1.0] 
 Conditions: 57
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -1287,7 +1286,7 @@ Conditions: 57
 	['PositionYFact', [9, 4.0]]
 
 DATAPOINT: Freeplay9_23
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [9, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 58
 	['VariableFact', ['space', False]]
@@ -1350,8 +1349,8 @@ Conditions: 58
 	['PositionYFact', [9, 6.0]]
 
 DATAPOINT: Bird10_0
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [0, 0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1373,7 +1372,7 @@ Conditions: 17
 
 DATAPOINT: Freeplay10_10
 Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1423,7 +1422,7 @@ Conditions: 22
 	['AnimationFact', [0, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Freeplay10_40
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [0, 0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1446,8 +1445,8 @@ Conditions: 18
 	['AnimationFact', [0, 'truck', 2.0, 1.0]]
 
 DATAPOINT: Bird11_0
-Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Pre Effect:  VelocityYFact [0, 0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -1527,7 +1526,7 @@ Conditions: 13
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Bird12_7
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
@@ -1551,7 +1550,7 @@ Conditions: 19
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_10
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -1580,7 +1579,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Bird12_13
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
@@ -1604,7 +1603,7 @@ Conditions: 19
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_15
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -1633,7 +1632,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 4.0]]
 
 DATAPOINT: Bird12_18
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1656,7 +1655,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_22
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1679,7 +1678,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_26
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1702,7 +1701,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_30
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1725,7 +1724,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_34
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1748,7 +1747,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_38
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1771,7 +1770,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_44
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1794,7 +1793,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_51
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1817,7 +1816,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_59
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1840,7 +1839,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_66
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1863,7 +1862,7 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird12_73
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [1, 0.0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
@@ -1887,7 +1886,7 @@ Conditions: 18
 
 DATAPOINT: Freeplay12_10
 Pre Effect:  VelocityYFact [0, 0.0] 
-Post Effect: VelocityYFact [0, -1.0] 
+Post Effect: VelocityYFact [1, -1.0] 
 Conditions: 10
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1928,7 +1927,7 @@ Conditions: 22
 	['AnimationFact', [0, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Freeplay12_38
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [0, 0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 12
 	['VelocityXFact', [1, 0]]
@@ -1945,7 +1944,7 @@ Conditions: 12
 	['VariableFact', ['rightPrev', False]]
 
 DATAPOINT: Freeplay12_44
-Pre Effect:  VelocityYFact [0, 0.0] 
+Pre Effect:  VelocityYFact [0, 0] 
 Post Effect: VelocityYFact [0, -1.0] 
 Conditions: 13
 	['VariableFact', ['space', False]]

@@ -1,15 +1,5 @@
 K is 9
-
-Centers = { Freeplay11_7  : 169, 
-			Bird6_44      : 47,
-			Bird9_14	  : 68, 
-			Freeplay5_1   : 46, 
-			Freeplay11_14 : 73, 
-			Freeplay11_30 : 195, 
-			Freeplay12_9  : 465, 
-			Freeplay9_3   : 31, 
-			Freeplay9_24  : 21,  }
-
+Centers = { Freeplay11_7 : 12, Bird6_44 : 8, Bird9_14 : 8, Freeplay5_1 : 11, Freeplay11_14 : 13, Freeplay11_30 : 13, Freeplay12_9 : 12, Freeplay9_3 : 11, Freeplay9_24 : 12,  }
 CENTER:Freeplay11_7
 Pre Effect:  VelocityXFact [0, -1.0] 
 Post Effect: VelocityXFact [0, 1.0] 

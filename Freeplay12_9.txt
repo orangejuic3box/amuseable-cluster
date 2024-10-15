@@ -12,10 +12,9 @@ Conditions: 8
 	['VariableFact', ['leftPrev', False]]
 	['VariableFact', ['rightPrev', False]]
 	['VelocityXFact', [1, 1.0]]
-	
 DATAPOINT: Bird1_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -43,8 +42,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 3.0]]
 
 DATAPOINT: Bird1_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 21.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 17
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -65,8 +64,8 @@ Conditions: 17
 	['PositionXFact', [1, 4.0]]
 
 DATAPOINT: Freeplay1_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 26
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -96,8 +95,8 @@ Conditions: 26
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay1_19
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [2, 2.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 54
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, -1.0]]
@@ -155,8 +154,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay1_20
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [3, 2.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 54
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, -1.0]]
@@ -214,8 +213,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'South', 2.0]]
 
 DATAPOINT: Sokoban1_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -236,8 +235,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban1_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 16
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -257,8 +256,8 @@ Conditions: 16
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban1_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -306,8 +305,8 @@ Conditions: 15
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban1_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -328,8 +327,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban1_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -357,8 +356,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban1_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -386,8 +385,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban1_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -410,8 +409,8 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban1_9
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -439,8 +438,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban1_10
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -468,8 +467,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban1_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -497,8 +496,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Bird2_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 20
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -522,8 +521,8 @@ Conditions: 20
 	['PositionYFact', [2, 6.0]]
 
 DATAPOINT: Bird2_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [2, 0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 20
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -547,8 +546,8 @@ Conditions: 20
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Bird2_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 20.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -570,8 +569,8 @@ Conditions: 18
 	['PositionXFact', [0, 4.0]]
 
 DATAPOINT: Bird2_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [2, 20.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -593,8 +592,8 @@ Conditions: 18
 	['PositionXFact', [0, 4.0]]
 
 DATAPOINT: Bird2_17
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -616,8 +615,8 @@ Conditions: 18
 	['PositionYFact', [1, 6.0]]
 
 DATAPOINT: Bird2_18
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -639,8 +638,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird2_22
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -662,8 +661,8 @@ Conditions: 18
 	['PositionYFact', [1, 6.0]]
 
 DATAPOINT: Bird2_23
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -685,8 +684,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird2_28
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -708,8 +707,8 @@ Conditions: 18
 	['PositionYFact', [1, 6.0]]
 
 DATAPOINT: Bird2_29
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -731,8 +730,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird2_34
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -754,8 +753,8 @@ Conditions: 18
 	['PositionYFact', [1, 6.0]]
 
 DATAPOINT: Bird2_35
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -777,8 +776,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird2_40
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -800,8 +799,8 @@ Conditions: 18
 	['PositionYFact', [1, 6.0]]
 
 DATAPOINT: Bird2_41
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 20.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -823,8 +822,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird2_46
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 21.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 37
 	['VelocityXFact', [0, 0.0]]
 	['VelocityYFact', [0, -1.0]]
@@ -865,8 +864,8 @@ Conditions: 37
 	['RelationshipFactY', [2, 1, 'North', 'South', 2.0]]
 
 DATAPOINT: Bird2_47
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [2, 21.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 37
 	['VelocityXFact', [0, 0.0]]
 	['VelocityYFact', [0, -1.0]]
@@ -907,8 +906,8 @@ Conditions: 37
 	['RelationshipFactY', [2, 1, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay2_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [2, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 21
 	['VelocityXFact', [2, 0]]
 	['AnimationFact', [2, 'truck', 2.0, 1.0]]
@@ -933,8 +932,8 @@ Conditions: 21
 	['PositionYFact', [0, 2.0]]
 
 DATAPOINT: Freeplay2_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [2, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 19
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -957,8 +956,8 @@ Conditions: 19
 	['AnimationFact', [2, 'truck', 2.0, 1.0]]
 
 DATAPOINT: Freeplay2_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [2, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 23
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -985,8 +984,8 @@ Conditions: 23
 	['AnimationFact', [2, 'truck', 2.0, 1.0]]
 
 DATAPOINT: Freeplay2_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [2, 1.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 22
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1012,8 +1011,8 @@ Conditions: 22
 	['AnimationFact', [2, 'truck', 2.0, 1.0]]
 
 DATAPOINT: Freeplay2_55
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [2, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 29
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1046,8 +1045,8 @@ Conditions: 29
 	['PositionXFact', [2, 7.0]]
 
 DATAPOINT: Sokoban2_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1079,8 +1078,8 @@ Conditions: 11
 	['VelocityYFact', [0, 0]]
 
 DATAPOINT: Sokoban2_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1101,8 +1100,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban2_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -1130,8 +1129,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban2_5
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1150,8 +1149,8 @@ Conditions: 15
 	['VelocityXFact', [0, 1.0]]
 
 DATAPOINT: Sokoban2_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1174,8 +1173,8 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban2_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -1203,8 +1202,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban2_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -1232,8 +1231,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban2_9
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -1261,8 +1260,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban2_10
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1283,8 +1282,8 @@ Conditions: 17
 	['PositionYFact', [0, 6.0]]
 
 DATAPOINT: Sokoban2_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1307,8 +1306,8 @@ Conditions: 19
 	['PositionYFact', [0, 6.0]]
 
 DATAPOINT: Sokoban2_12
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1329,8 +1328,8 @@ Conditions: 17
 	['PositionYFact', [0, 6.0]]
 
 DATAPOINT: Sokoban2_13
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1353,8 +1352,8 @@ Conditions: 19
 	['PositionYFact', [0, 6.0]]
 
 DATAPOINT: Sokoban2_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1377,8 +1376,8 @@ Conditions: 19
 	['PositionYFact', [0, 6.0]]
 
 DATAPOINT: Sokoban2_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1401,8 +1400,8 @@ Conditions: 19
 	['PositionYFact', [0, 6.0]]
 
 DATAPOINT: Sokoban2_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -1430,8 +1429,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Bird3_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -1459,8 +1458,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Bird3_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 20.0] 
+Post Effect: VelocityXFact [0, -3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 20.0]]
@@ -1488,8 +1487,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'East', 0.0]]
 
 DATAPOINT: Bird3_12
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 18.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 18.0]]
@@ -1517,8 +1516,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 4.0]]
 
 DATAPOINT: Bird3_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 18.0] 
+Post Effect: VelocityXFact [0, -3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 18.0]]
@@ -1546,8 +1545,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 2.0]]
 
 DATAPOINT: Bird3_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [1, -4.0] 
 Conditions: 18
 	['VariableFact', ['space', True]]
 	['VariableFact', ['up', False]]
@@ -1569,8 +1568,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Bird3_21
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 19.0] 
+Post Effect: VelocityXFact [0, -4.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 19.0]]
@@ -1598,8 +1597,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Bird3_24
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -3.0] 
 Conditions: 17
 	['VariableFact', ['space', True]]
 	['VariableFact', ['up', False]]
@@ -1620,8 +1619,8 @@ Conditions: 17
 	['PositionXFact', [0, 5.0]]
 
 DATAPOINT: Bird3_27
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 19.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 19.0]]
@@ -1649,8 +1648,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 3.0]]
 
 DATAPOINT: Freeplay3_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 12
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -1666,8 +1665,8 @@ Conditions: 12
 	['AnimationFact', [0, 'adventure lady', 2.0, 1.0]]
 
 DATAPOINT: Freeplay3_23
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 14
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1685,8 +1684,8 @@ Conditions: 14
 	['PositionYFact', [0, 3.0]]
 
 DATAPOINT: Freeplay3_25
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1737,7 +1736,7 @@ Conditions: 24
 
 DATAPOINT: Freeplay3_32
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 13
 	['VariableFact', ['space', False]]
 	['VariableFact', ['left', False]]
@@ -1754,8 +1753,8 @@ Conditions: 13
 	['AnimationFact', [1, 'adventure lady', 2.0, 1.0]]
 
 DATAPOINT: Sokoban3_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1776,8 +1775,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban3_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1798,8 +1797,8 @@ Conditions: 17
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban3_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -1828,7 +1827,7 @@ Conditions: 24
 
 DATAPOINT: Sokoban3_3
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -1856,8 +1855,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban3_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -1880,8 +1879,8 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban3_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -1909,8 +1908,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Bird4_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -1938,8 +1937,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 2.0]]
 
 DATAPOINT: Bird4_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 21.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 16
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -1959,8 +1958,8 @@ Conditions: 16
 	['PositionXFact', [1, 5.0]]
 
 DATAPOINT: Bird4_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -1988,8 +1987,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'South', 0.0]]
 
 DATAPOINT: Freeplay4_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2008,8 +2007,8 @@ Conditions: 15
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Sokoban4_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2030,8 +2029,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban4_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2052,8 +2051,8 @@ Conditions: 17
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban4_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2076,7 +2075,7 @@ Conditions: 18
 
 DATAPOINT: Sokoban4_3
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2095,8 +2094,8 @@ Conditions: 15
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban4_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VelocityYFact', [1, 0]]
 	['VelocityXFact', [1, 0.0]]
@@ -2117,8 +2116,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban4_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2139,8 +2138,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban4_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -2168,8 +2167,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban4_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -2197,8 +2196,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban4_9
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -2226,7 +2225,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban4_10
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -2255,8 +2254,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban4_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -2337,7 +2336,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban4_14
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -2387,8 +2386,8 @@ Conditions: 16
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban4_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -2416,8 +2415,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban4_17
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -2445,8 +2444,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban4_18
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -2474,8 +2473,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban4_19
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -2503,8 +2502,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Bird5_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -2532,8 +2531,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 2.0]]
 
 DATAPOINT: Bird5_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 21.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2555,8 +2554,8 @@ Conditions: 18
 	['PositionXFact', [1, 5.0]]
 
 DATAPOINT: Sokoban5_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 16
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2577,7 +2576,7 @@ Conditions: 16
 
 DATAPOINT: Sokoban5_1
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2598,8 +2597,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban5_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -2627,8 +2626,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban5_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2647,8 +2646,8 @@ Conditions: 15
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban5_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2671,8 +2670,8 @@ Conditions: 19
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban5_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -2701,7 +2700,7 @@ Conditions: 24
 
 DATAPOINT: Sokoban5_7
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2723,8 +2722,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban5_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, -1.0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -2752,8 +2751,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban5_9
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -2775,8 +2774,8 @@ Conditions: 18
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban5_12
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, -1.0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -2804,8 +2803,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban5_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -2833,8 +2832,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban5_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -2862,8 +2861,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban5_21
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -2891,8 +2890,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban5_23
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -2920,8 +2919,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Bird6_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -2949,8 +2948,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 2.0]]
 
 DATAPOINT: Bird6_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -2978,8 +2977,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 2.0]]
 
 DATAPOINT: Bird6_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 21.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -3030,8 +3029,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 2.0]]
 
 DATAPOINT: Bird6_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 21.0]]
@@ -3059,7 +3058,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Bird6_15
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -3088,8 +3087,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Bird6_17
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 3.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -3117,7 +3116,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'South', 0.0]]
 
 DATAPOINT: Bird6_18
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [1, 3.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -3146,8 +3145,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Bird6_20
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 4.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -3175,7 +3174,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'East', 0.0]]
 
 DATAPOINT: Bird6_21
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [1, 4.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -3204,8 +3203,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'South', 0.0]]
 
 DATAPOINT: Bird6_23
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 5.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 14
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -3224,7 +3223,7 @@ Conditions: 14
 
 DATAPOINT: Bird6_24
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 5.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -3273,8 +3272,8 @@ Conditions: 16
 	['PositionXFact', [1, 4.0]]
 
 DATAPOINT: Bird6_27
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 6.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -3302,8 +3301,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'East', 0.0]]
 
 DATAPOINT: Bird6_30
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 7.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -3331,7 +3330,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'South', 0.0]]
 
 DATAPOINT: Bird6_33
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [1, 7.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -3360,8 +3359,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Bird6_36
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 8.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -3389,7 +3388,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Bird6_37
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [1, 8.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
@@ -3418,8 +3417,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Bird6_38
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 9.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityXFact', [0, -1.0]]
 	['VelocityYFact', [0, 0.0]]
@@ -3447,8 +3446,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Bird6_41
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 9.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityXFact', [0, -1.0]]
 	['VelocityYFact', [0, 0.0]]
@@ -3476,8 +3475,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Bird6_43
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 10.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityXFact', [0, -1.0]]
 	['VelocityYFact', [0, 0.0]]
@@ -3505,8 +3504,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay6_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 1.0]]
@@ -3534,8 +3533,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay6_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 21.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -3556,8 +3555,8 @@ Conditions: 17
 	['PositionXFact', [1, 21.0]]
 
 DATAPOINT: Sokoban6_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -3614,8 +3613,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban6_5
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -3643,8 +3642,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban6_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -3672,8 +3671,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban6_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -3701,8 +3700,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban6_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -3730,8 +3729,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban6_9
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -3759,8 +3758,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban6_10
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -3788,8 +3787,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Bird7_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -3817,8 +3816,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Bird7_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 21.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -3840,8 +3839,8 @@ Conditions: 18
 	['PositionXFact', [1, 5.0]]
 
 DATAPOINT: Bird7_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [1, -2.0] 
 Conditions: 18
 	['VariableFact', ['space', True]]
 	['VariableFact', ['up', False]]
@@ -3863,8 +3862,8 @@ Conditions: 18
 	['PositionYFact', [1, 2.0]]
 
 DATAPOINT: Bird7_13
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 21.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 21.0]]
@@ -3892,8 +3891,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Freeplay7_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 13
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -3932,8 +3931,8 @@ Conditions: 17
 	['AnimationFact', [0, 'Black Guy', 2.0, 2.0]]
 
 DATAPOINT: Freeplay7_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 1.0]]
 	['VelocityYFact', [0, -1.0]]
@@ -3961,8 +3960,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', 0.0]]
 
 DATAPOINT: Freeplay7_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -3984,8 +3983,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Freeplay7_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4004,8 +4003,8 @@ Conditions: 15
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay7_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 15
 	['VelocityXFact', [1, 0]]
 	['VelocityYFact', [1, 0]]
@@ -4054,7 +4053,7 @@ Conditions: 24
 
 DATAPOINT: Freeplay7_20
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 1.0]]
@@ -4083,7 +4082,7 @@ Conditions: 24
 
 DATAPOINT: Freeplay7_21
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 14
 	['VelocityXFact', [1, 1.0]]
 	['AnimationFact', [1, 'Black Guy', 2.0, 2.0]]
@@ -4101,8 +4100,8 @@ Conditions: 14
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Freeplay7_22
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4125,8 +4124,8 @@ Conditions: 19
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay7_23
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4149,8 +4148,8 @@ Conditions: 19
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay7_25
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -4178,8 +4177,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay7_26
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 1.0]]
@@ -4236,8 +4235,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay7_28
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -4265,8 +4264,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban7_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4288,8 +4287,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban7_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4310,8 +4309,8 @@ Conditions: 17
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban7_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -4359,8 +4358,8 @@ Conditions: 15
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban7_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4382,8 +4381,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban7_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -4411,8 +4410,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban7_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -4440,8 +4439,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Bird8_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -4469,8 +4468,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -2.0]]
 
 DATAPOINT: Bird8_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 21.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 17
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -4491,8 +4490,8 @@ Conditions: 17
 	['PositionXFact', [0, 5.0]]
 
 DATAPOINT: Freeplay8_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 13
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -4524,8 +4523,8 @@ Conditions: 10
 	['VariableFact', ['rightPrev', False]]
 
 DATAPOINT: Freeplay8_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 1.0]]
 	['VelocityYFact', [0, -1.0]]
@@ -4553,8 +4552,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', 0.0]]
 
 DATAPOINT: Freeplay8_12
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, -1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 9
 	['VelocityYFact', [0, 0.0]]
 	['VariableFact', ['space', False]]
@@ -4567,8 +4566,8 @@ Conditions: 9
 	['VelocityXFact', [1, -1.0]]
 
 DATAPOINT: Freeplay8_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4590,8 +4589,8 @@ Conditions: 18
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Freeplay8_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4610,8 +4609,8 @@ Conditions: 15
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay8_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 15
 	['VelocityXFact', [1, 0]]
 	['VelocityYFact', [1, 0]]
@@ -4649,7 +4648,7 @@ Conditions: 13
 
 DATAPOINT: Freeplay8_20
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 12
 	['VelocityYFact', [0, 0.0]]
 	['PositionXFact', [0, 9.0]]
@@ -4666,7 +4665,7 @@ Conditions: 12
 
 DATAPOINT: Freeplay8_21
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 14
 	['VelocityXFact', [1, 1.0]]
 	['AnimationFact', [1, 'Black Guy', 2.0, 2.0]]
@@ -4684,8 +4683,8 @@ Conditions: 14
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Freeplay8_22
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4708,8 +4707,8 @@ Conditions: 19
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay8_23
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4732,8 +4731,8 @@ Conditions: 19
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay8_25
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -4761,8 +4760,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay8_26
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 1.0]]
@@ -4808,8 +4807,8 @@ Conditions: 13
 	['VelocityYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay8_28
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -4837,8 +4836,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay8_29
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 21
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4863,8 +4862,8 @@ Conditions: 21
 	['AnimationFact', [0, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Freeplay8_38
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 23
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4891,8 +4890,8 @@ Conditions: 23
 	['PositionYFact', [0, 3.0]]
 
 DATAPOINT: Sokoban8_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -4935,8 +4934,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban8_5
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -4964,8 +4963,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban8_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -4993,8 +4992,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban8_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -5022,8 +5021,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban8_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -5051,8 +5050,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban8_9
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -5080,8 +5079,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban8_10
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -5109,8 +5108,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban8_13
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -5159,8 +5158,8 @@ Conditions: 16
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban8_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -5181,8 +5180,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban8_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -5210,8 +5209,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban8_17
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -5239,8 +5238,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban8_18
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -5268,8 +5267,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban8_20
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -5297,8 +5296,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Bird9_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [1, -2.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -5326,8 +5325,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 3.0]]
 
 DATAPOINT: Bird9_9
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 20.0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 16
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -5347,8 +5346,8 @@ Conditions: 16
 	['PositionXFact', [1, 5.0]]
 
 DATAPOINT: Freeplay9_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [9, 1.0] 
+Post Effect: VelocityXFact [9, 0.0] 
 Conditions: 56
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -5408,8 +5407,8 @@ Conditions: 56
 	['AnimationFact', [9, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Freeplay9_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [9, 1.0] 
+Post Effect: VelocityXFact [9, 0.0] 
 Conditions: 58
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -5471,8 +5470,8 @@ Conditions: 58
 	['PositionXFact', [9, 12.0]]
 
 DATAPOINT: Freeplay9_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [9, 1.0] 
+Post Effect: VelocityXFact [9, 0.0] 
 Conditions: 56
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -5532,8 +5531,8 @@ Conditions: 56
 	['AnimationFact', [9, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Freeplay9_25
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [9, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 54
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -5591,8 +5590,8 @@ Conditions: 54
 	['AnimationFact', [9, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Freeplay9_29
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [9, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 58
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -5654,8 +5653,8 @@ Conditions: 58
 	['AnimationFact', [9, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Freeplay9_32
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [9, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 54
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -5713,8 +5712,8 @@ Conditions: 54
 	['AnimationFact', [9, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Sokoban9_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -5742,8 +5741,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -5771,8 +5770,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_5
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -5800,8 +5799,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -5829,8 +5828,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -5858,8 +5857,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -5887,8 +5886,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -5932,8 +5931,8 @@ Conditions: 16
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban9_13
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -5954,8 +5953,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban9_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -5978,8 +5977,8 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban9_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -6000,8 +5999,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban9_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -6029,8 +6028,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_18
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [1, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -6058,8 +6057,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_19
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 3.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -6087,8 +6086,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_20
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -6110,8 +6109,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban9_22
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -6139,8 +6138,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_24
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 15
 	['VelocityXFact', [1, 0]]
 	['VelocityYFact', [1, 0]]
@@ -6159,8 +6158,8 @@ Conditions: 15
 	['VariableFact', ['rightPrev', False]]
 
 DATAPOINT: Sokoban9_25
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -6181,8 +6180,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban9_26
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -6206,7 +6205,7 @@ Conditions: 19
 
 DATAPOINT: Sokoban9_27
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -6229,8 +6228,8 @@ Conditions: 19
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban9_28
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -6270,8 +6269,8 @@ Conditions: 14
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban9_30
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -6323,8 +6322,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_32
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -6352,8 +6351,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_33
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -6376,8 +6375,8 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban9_35
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -6405,8 +6404,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_36
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -6434,8 +6433,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_37
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [1, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -6463,8 +6462,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_39
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [1, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -6492,8 +6491,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_41
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -6521,8 +6520,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_42
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -6550,8 +6549,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban9_43
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -6574,8 +6573,8 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Bird10_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -6596,8 +6595,8 @@ Conditions: 17
 	['PositionYFact', [0, 6.0]]
 
 DATAPOINT: Bird10_5
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 21.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -6618,8 +6617,8 @@ Conditions: 17
 	['PositionXFact', [0, 6.0]]
 
 DATAPOINT: Bird10_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6647,8 +6646,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_10
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6676,8 +6675,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_12
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6705,8 +6704,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6734,8 +6733,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6763,8 +6762,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_18
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6792,8 +6791,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_20
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6821,8 +6820,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_22
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6850,8 +6849,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_24
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6879,8 +6878,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_26
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6908,8 +6907,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_28
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6937,8 +6936,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_30
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6966,8 +6965,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_32
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -6995,8 +6994,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_34
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7024,8 +7023,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_36
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7053,8 +7052,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_38
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7082,8 +7081,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_40
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7111,8 +7110,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_42
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7140,8 +7139,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_45
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7169,8 +7168,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_47
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7198,8 +7197,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_49
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7227,8 +7226,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_51
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7256,8 +7255,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_53
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7285,8 +7284,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_55
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7314,8 +7313,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Bird10_57
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -7343,8 +7342,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -3.0]]
 
 DATAPOINT: Freeplay10_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 13
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -7376,8 +7375,8 @@ Conditions: 10
 	['VariableFact', ['rightPrev', False]]
 
 DATAPOINT: Freeplay10_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7393,8 +7392,8 @@ Conditions: 12
 	['PositionXFact', [1, 9.0]]
 
 DATAPOINT: Freeplay10_12
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, -1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 9
 	['VelocityYFact', [0, 0.0]]
 	['VariableFact', ['space', False]]
@@ -7407,8 +7406,8 @@ Conditions: 9
 	['VelocityXFact', [1, -1.0]]
 
 DATAPOINT: Freeplay10_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 15
 	['VelocityYFact', [1, 0]]
 	['VelocityXFact', [1, 0.0]]
@@ -7427,8 +7426,8 @@ Conditions: 15
 	['VariableFact', ['rightPrev', False]]
 
 DATAPOINT: Freeplay10_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7447,8 +7446,8 @@ Conditions: 15
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay10_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 15
 	['VelocityXFact', [1, 0]]
 	['VelocityYFact', [1, 0]]
@@ -7486,7 +7485,7 @@ Conditions: 13
 
 DATAPOINT: Freeplay10_20
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 11
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7502,7 +7501,7 @@ Conditions: 11
 
 DATAPOINT: Freeplay10_21
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 14
 	['VelocityXFact', [1, 1.0]]
 	['AnimationFact', [1, 'Black Guy', 2.0, 2.0]]
@@ -7520,8 +7519,8 @@ Conditions: 14
 	['PositionYFact', [0, 0.0]]
 
 DATAPOINT: Freeplay10_22
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7544,8 +7543,8 @@ Conditions: 19
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay10_23
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7568,8 +7567,8 @@ Conditions: 19
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay10_25
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 13
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7586,8 +7585,8 @@ Conditions: 13
 	['VelocityYFact', [1, 0]]
 
 DATAPOINT: Freeplay10_26
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 1.0]]
@@ -7633,8 +7632,8 @@ Conditions: 13
 	['VelocityYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay10_28
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -7662,8 +7661,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay10_29
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 21
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7688,8 +7687,8 @@ Conditions: 21
 	['AnimationFact', [0, 'dog', 1.0, 1.0]]
 
 DATAPOINT: Freeplay10_38
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 13
 	['VelocityXFact', [2, 0]]
 	['VelocityYFact', [2, 0]]
@@ -7706,8 +7705,8 @@ Conditions: 13
 	['PositionXFact', [0, 10.0]]
 
 DATAPOINT: Freeplay10_39
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7729,8 +7728,8 @@ Conditions: 18
 	['AnimationFact', [0, 'truck', 2.0, 1.0]]
 
 DATAPOINT: Freeplay10_41
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7753,8 +7752,8 @@ Conditions: 19
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay10_43
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -7776,8 +7775,8 @@ Conditions: 18
 	['PositionXFact', [0, 10.0]]
 
 DATAPOINT: Freeplay10_45
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -7805,8 +7804,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Freeplay10_46
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -7834,8 +7833,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Sokoban10_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -7863,8 +7862,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -7892,8 +7891,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_5
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -7921,8 +7920,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -7950,8 +7949,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -7979,8 +7978,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -8008,8 +8007,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8053,8 +8052,8 @@ Conditions: 16
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_13
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8075,8 +8074,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8099,8 +8098,8 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8121,8 +8120,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8144,8 +8143,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_18
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [1, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -8173,8 +8172,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_19
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 3.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -8202,8 +8201,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_20
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8225,8 +8224,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_22
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -8254,8 +8253,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_24
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 15
 	['VelocityXFact', [1, 0]]
 	['VelocityYFact', [1, 0]]
@@ -8274,8 +8273,8 @@ Conditions: 15
 	['VariableFact', ['rightPrev', False]]
 
 DATAPOINT: Sokoban10_25
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8296,8 +8295,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_26
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8321,7 +8320,7 @@ Conditions: 19
 
 DATAPOINT: Sokoban10_27
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8342,8 +8341,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_28
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8383,8 +8382,8 @@ Conditions: 14
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_30
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8436,8 +8435,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_32
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -8465,8 +8464,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_34
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [1, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -8494,8 +8493,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_36
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [1, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -8523,7 +8522,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_38
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
@@ -8553,7 +8552,7 @@ Conditions: 24
 
 DATAPOINT: Sokoban10_40
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8574,7 +8573,7 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_41
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
@@ -8603,8 +8602,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_42
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 14
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -8623,7 +8622,7 @@ Conditions: 14
 
 DATAPOINT: Sokoban10_43
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -8651,8 +8650,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_44
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8675,7 +8674,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_45
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -8697,8 +8696,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_46
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8719,7 +8718,7 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_47
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -8741,8 +8740,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_48
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 16
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8763,7 +8762,7 @@ Conditions: 16
 
 DATAPOINT: Sokoban10_49
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8784,7 +8783,7 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_50
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
@@ -8804,8 +8803,8 @@ Conditions: 15
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban10_51
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 14
 	['VelocityYFact', [1, 0]]
 	['VelocityXFact', [1, 0.0]]
@@ -8823,7 +8822,7 @@ Conditions: 14
 	['VariableFact', ['leftPrev', False]]
 
 DATAPOINT: Sokoban10_52
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 16
 	['VariableFact', ['space', False]]
@@ -8844,8 +8843,8 @@ Conditions: 16
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_53
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8867,8 +8866,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_54
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8891,7 +8890,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_55
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -8913,8 +8912,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_56
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 1.0]]
@@ -8942,8 +8941,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_57
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -8966,7 +8965,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_58
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -8988,8 +8987,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_59
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9011,8 +9010,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_60
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9035,7 +9034,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_61
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -9057,8 +9056,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_62
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9080,8 +9079,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_63
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9104,7 +9103,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_64
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
@@ -9133,8 +9132,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban10_65
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9155,8 +9154,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_66
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9178,8 +9177,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban10_67
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9201,8 +9200,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Bird11_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 16
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -9222,8 +9221,8 @@ Conditions: 16
 	['PositionYFact', [0, 6.0]]
 
 DATAPOINT: Bird11_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 21.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -9251,8 +9250,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'South', 0.0]]
 
 DATAPOINT: Bird11_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 21.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 19
 	['VariableFact', ['space', True]]
 	['VariableFact', ['up', False]]
@@ -9275,8 +9274,8 @@ Conditions: 19
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Bird11_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, -1.0] 
+Post Effect: VelocityXFact [1, -2.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, -1.0]]
@@ -9304,8 +9303,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'South', 'North', -4.0]]
 
 DATAPOINT: Freeplay11_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 11
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9320,8 +9319,8 @@ Conditions: 11
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay11_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 14
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9339,8 +9338,8 @@ Conditions: 14
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay11_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 14
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9358,8 +9357,8 @@ Conditions: 14
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay11_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9375,8 +9374,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_5
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9392,8 +9391,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9409,8 +9408,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_9
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9426,8 +9425,8 @@ Conditions: 12
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay11_13
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9443,8 +9442,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9460,8 +9459,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_18
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9477,8 +9476,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_19
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9494,8 +9493,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_20
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9511,8 +9510,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_22
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9528,8 +9527,8 @@ Conditions: 12
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay11_24
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 14
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9547,8 +9546,8 @@ Conditions: 14
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay11_28
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 13
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9565,8 +9564,8 @@ Conditions: 13
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay11_29
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9582,8 +9581,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_31
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9599,8 +9598,8 @@ Conditions: 12
 	['AnimationFact', [0, 'chick', 1.0, 1.0]]
 
 DATAPOINT: Freeplay11_35
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 13
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9617,8 +9616,8 @@ Conditions: 13
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Freeplay11_38
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 14
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9636,8 +9635,8 @@ Conditions: 14
 	['PositionYFact', [0, 5.0]]
 
 DATAPOINT: Sokoban11_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9659,8 +9658,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban11_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9681,8 +9680,8 @@ Conditions: 17
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban11_2
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -9711,7 +9710,7 @@ Conditions: 24
 
 DATAPOINT: Sokoban11_3
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 16
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9731,8 +9730,8 @@ Conditions: 16
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban11_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9754,8 +9753,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban11_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -9783,8 +9782,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban11_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -9812,8 +9811,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban11_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -9841,8 +9840,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban11_10
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -9870,8 +9869,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Bird12_0
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -9899,8 +9898,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Bird12_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 21.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -9921,8 +9920,8 @@ Conditions: 17
 	['PositionXFact', [1, 5.0]]
 
 DATAPOINT: Freeplay12_1
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 9
 	['VariableFact', ['up', False]]
 	['VariableFact', ['down', False]]
@@ -9935,8 +9934,8 @@ Conditions: 9
 	['VelocityYFact', [1, 0]]
 
 DATAPOINT: Freeplay12_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [8, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 11
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9964,8 +9963,8 @@ Conditions: 8
 	['VelocityXFact', [1, 1.0]]
 
 DATAPOINT: Freeplay12_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 9
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -9978,8 +9977,8 @@ Conditions: 9
 	['VelocityXFact', [1, 0.0]]
 
 DATAPOINT: Freeplay12_12
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, -1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 7
 	['VariableFact', ['space', False]]
 	['VariableFact', ['left', False]]
@@ -9990,8 +9989,8 @@ Conditions: 7
 	['VelocityXFact', [1, -1.0]]
 
 DATAPOINT: Freeplay12_13
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 15
 	['VelocityYFact', [1, 0]]
 	['VelocityXFact', [1, 0.0]]
@@ -10010,8 +10009,8 @@ Conditions: 15
 	['VariableFact', ['rightPrev', False]]
 
 DATAPOINT: Freeplay12_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10049,7 +10048,7 @@ Conditions: 13
 
 DATAPOINT: Freeplay12_18
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 11
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10065,7 +10064,7 @@ Conditions: 11
 
 DATAPOINT: Freeplay12_19
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 9
 	['VariableFact', ['up', False]]
 	['VariableFact', ['left', False]]
@@ -10078,8 +10077,8 @@ Conditions: 9
 	['VelocityYFact', [0, 0.0]]
 
 DATAPOINT: Freeplay12_20
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10102,8 +10101,8 @@ Conditions: 19
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay12_21
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10126,8 +10125,8 @@ Conditions: 19
 	['PositionYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay12_23
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 13
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10144,8 +10143,8 @@ Conditions: 13
 	['VelocityYFact', [1, 0]]
 
 DATAPOINT: Freeplay12_24
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10179,8 +10178,8 @@ Conditions: 13
 	['VelocityYFact', [1, 0.0]]
 
 DATAPOINT: Freeplay12_26
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -10208,8 +10207,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay12_27
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 11
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10224,8 +10223,8 @@ Conditions: 11
 	['VelocityXFact', [0, 0]]
 
 DATAPOINT: Freeplay12_36
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 13
 	['VelocityXFact', [2, 0]]
 	['VelocityYFact', [2, 0]]
@@ -10242,8 +10241,8 @@ Conditions: 13
 	['PositionXFact', [0, 10.0]]
 
 DATAPOINT: Freeplay12_37
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10265,8 +10264,8 @@ Conditions: 18
 	['AnimationFact', [0, 'truck', 2.0, 1.0]]
 
 DATAPOINT: Freeplay12_40
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 9
 	['VariableFact', ['space', False]]
 	['VariableFact', ['down', False]]
@@ -10279,8 +10278,8 @@ Conditions: 9
 	['VelocityXFact', [0, 1.0]]
 
 DATAPOINT: Freeplay12_42
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -10308,8 +10307,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 0.0]]
 
 DATAPOINT: Freeplay12_43
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -10337,8 +10336,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'South', 1.0]]
 
 DATAPOINT: Freeplay12_46
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 12
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10354,8 +10353,8 @@ Conditions: 12
 	['AnimationFact', [0, 'Black Guy', 2.0, 2.0]]
 
 DATAPOINT: Sokoban12_3
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -10383,8 +10382,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_4
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -10412,8 +10411,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_5
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -10441,8 +10440,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_6
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 3.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -10470,8 +10469,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_7
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 2.0]]
@@ -10499,8 +10498,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_8
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 2.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -10528,8 +10527,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_11
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10573,8 +10572,8 @@ Conditions: 16
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_13
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10595,8 +10594,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_14
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10619,8 +10618,8 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_15
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10641,8 +10640,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_16
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [1, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10664,8 +10663,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_18
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [1, 3.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -10693,8 +10692,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_19
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 3.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 3.0]]
@@ -10722,8 +10721,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_20
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, -1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10745,8 +10744,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_22
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -10774,8 +10773,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_24
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 15
 	['VelocityXFact', [1, 0]]
 	['VelocityYFact', [1, 0]]
@@ -10794,8 +10793,8 @@ Conditions: 15
 	['VariableFact', ['rightPrev', False]]
 
 DATAPOINT: Sokoban12_25
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10816,8 +10815,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_26
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10841,7 +10840,7 @@ Conditions: 19
 
 DATAPOINT: Sokoban12_27
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10862,8 +10861,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_28
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10903,8 +10902,8 @@ Conditions: 14
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_30
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -10956,8 +10955,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_32
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -10985,8 +10984,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_34
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [1, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -11014,8 +11013,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_36
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [1, -2.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -11043,7 +11042,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_38
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
@@ -11073,7 +11072,7 @@ Conditions: 24
 
 DATAPOINT: Sokoban12_40
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11094,7 +11093,7 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_41
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
@@ -11123,8 +11122,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_42
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 14
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -11143,7 +11142,7 @@ Conditions: 14
 
 DATAPOINT: Sokoban12_43
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -11171,8 +11170,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_44
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11195,7 +11194,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_45
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -11217,8 +11216,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_46
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [1, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11239,7 +11238,7 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_47
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -11261,8 +11260,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_48
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 16
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11283,7 +11282,7 @@ Conditions: 16
 
 DATAPOINT: Sokoban12_49
 Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11304,7 +11303,7 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_50
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 15
 	['VariableFact', ['space', False]]
@@ -11324,8 +11323,8 @@ Conditions: 15
 	['PositionYFact', [1, 4.0]]
 
 DATAPOINT: Sokoban12_51
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 14
 	['VelocityYFact', [1, 0]]
 	['VelocityXFact', [1, 0.0]]
@@ -11343,7 +11342,7 @@ Conditions: 14
 	['VariableFact', ['leftPrev', False]]
 
 DATAPOINT: Sokoban12_52
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 16
 	['VariableFact', ['space', False]]
@@ -11364,8 +11363,8 @@ Conditions: 16
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_53
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11387,8 +11386,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_54
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11411,7 +11410,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_55
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -11433,8 +11432,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_56
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, 1.0]]
@@ -11462,8 +11461,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_57
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11486,7 +11485,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_58
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -11508,8 +11507,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_59
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11531,8 +11530,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_60
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11555,7 +11554,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_61
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
@@ -11577,8 +11576,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_62
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11600,8 +11599,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_63
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 19
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11624,7 +11623,7 @@ Conditions: 19
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_64
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0.0]]
@@ -11653,8 +11652,8 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_65
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 17
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11675,8 +11674,8 @@ Conditions: 17
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_66
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11698,8 +11697,8 @@ Conditions: 18
 	['PositionYFact', [0, 4.0]]
 
 DATAPOINT: Sokoban12_67
-Pre Effect:  VelocityXFact [1, 1.0] 
-Post Effect: VelocityXFact [1, 0.0] 
+Pre Effect:  VelocityXFact [1, 0.0] 
+Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 18
 	['VariableFact', ['space', False]]
 	['VariableFact', ['up', False]]
@@ -11750,7 +11749,7 @@ Conditions: 24
 	['RelationshipFactY', [1, 0, 'North', 'North', 0.0]]
 
 DATAPOINT: Sokoban12_69
-Pre Effect:  VelocityXFact [1, 1.0] 
+Pre Effect:  VelocityXFact [0, 1.0] 
 Post Effect: VelocityXFact [1, 0.0] 
 Conditions: 24
 	['VelocityYFact', [0, 0]]

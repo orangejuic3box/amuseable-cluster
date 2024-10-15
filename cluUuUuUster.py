@@ -442,8 +442,6 @@ def cluster(k, rules_db):
 # cProfile.run("main()")
 # for i in range(3):
 #     clusters = main()
-
-
 max_ks = 12
 
 def elbow(kminus, k, kplus):
@@ -490,16 +488,16 @@ rules_db = make_db(rules_db={})
                 # 11 : 1893,
                 # 12 : 1759 }
 # dist = {    2  : 20037,
-        #     3  : 12982,
-        #     4  :  9493,
-        #     5  :  7893,
-        #     6  :  6421,
-        #     7  :  5621,
-        #     8  :  4705,
-        #     9  :  4156,
-        #     10 :  3650,
-        #     11 :  3307, #3597, 3581
-        #      12 :  3047}
+                # 3  : 12982,
+                # 4  :  9493,
+                # 5  :  7893,
+                # 6  :  6421,
+                # 7  :  5621,
+                # 8  :  4705,
+                # 9  :  4156,
+                # 10 :  3650,
+                # 11 :  3307, #3597, 3581
+                # 12 :  3047}
 
 centers = { "Freeplay11_7"  : 12, 
 			"Bird6_44"      : 8,
@@ -513,7 +511,11 @@ centers = { "Freeplay11_7"  : 12,
 k = 9
 # clusters, distortion = main(k, rules_db)
 
-def process_clusters():
+center_names = list(centers.keys())
+c = make_cluster_dictionary(centers)
+clusters, dist = calculate_clusters(center_names, rules_db, c)
+
+def process_clusters(clusters):
     with open('centers.txt', 'w') as file:
         print("writing")
         file.write("K is 9\nCenters = { ")
@@ -536,9 +538,10 @@ def process_clusters():
             file.write("\n")
         print("done writing")
         
-    centers = centers.keys()
-    clusters = make_cluster_dictionary(centers)
-    clusters, distortion = calculate_clusters(centers, rules_db, clusters)
+    # centers = centers.keys()
+    # clusters = make_cluster_dictionary(centers)
+    # clusters, distortion = calculate_clusters(centers, rules_db, clusters)
+    
     print("writing starts now")
     for center in clusters:
         # new text file
@@ -560,7 +563,7 @@ def process_clusters():
             
             for dp in clusters[center]:
                 file.write("DATAPOINT: " + dp + "\n")
-                effects = rules_db[center][0]
+                effects = rules_db[dp][0]
                 file.write("Pre Effect:  ")
                 for pre in effects[0]:
                     file.write(str(pre)+" ")
@@ -574,14 +577,22 @@ def process_clusters():
                 file.write("\n")
             print("processed", center)
     print("done")
-
-
-center_names = list(centers.keys())
+process_clusters(clusters)
 # print(center_names)
 
-c = make_cluster_dictionary(centers)
-clusters, dist = calculate_clusters(center_names, rules_db, c)
-print(type(clusters))
+def boolean_conditions():
+
+    pass
+
+def get_id(type, fact):
+    # types: velocity, position, animation, variable, relationship, empty fact
+    if "Velocity" in type or "Position" in type or "Animation" in type:
+        return fact[0], True
+    if "Relationship" in type:
+        return fact[0], fact[1]
+    if "Empty" in type:
+        return None, None
+
 
 def pattern_making(clusters):
     for center in clusters:
@@ -591,21 +602,21 @@ def pattern_making(clusters):
         # set of features and their probability
         set_conditions = {} #key = condition, value = count
         for dp in cluster:
-            dp_conditions = rules_db[dp][1]
-            # print(dp_conditions)
+            dp_prepost, dp_conditions = rules_db[dp]
+            pre, post = dp_prepost
+            pre_type, pre_fact = pre
+            post_type, post_fact = post
+            print(dp)
+            print(pre_type, pre_fact)
+            print(post_type, post_fact)
+            print()
+            preid, preflag = get_id(pre_type, pre_fact)
+            postid, postflag = get_id(post_type, post_fact)
+            for cond in dp_conditions:
+                print(cond)
+                cond_type, cond_fact = cond
+            print()
 
-
-
-
-
-
-
-
-
-    #     filepath = center + ".txt"
-    #     with open(filepath, "r") as file:
-    #         pass
-    # pass
 
 
 pattern_making(clusters)

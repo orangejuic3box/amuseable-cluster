@@ -244,7 +244,6 @@ Conditions: 240
 	['RelationshipFactY', [9, 7, 'North', 'North', 0.0]]
 	['RelationshipFactX', [9, 8, 'West', 'East', 2.0]]
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
-	
 DATAPOINT: Freeplay1_1
 Pre Effect:  VelocityXFact [1, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
@@ -326,7 +325,7 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'South', 'North', -2.0]]
 
 DATAPOINT: Freeplay1_2
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [2, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 75
 	['VelocityYFact', [0, 0]]
@@ -406,7 +405,7 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'South', 'North', -2.0]]
 
 DATAPOINT: Freeplay1_4
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [4, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 75
 	['VelocityYFact', [0, 0]]
@@ -486,8 +485,8 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'South', 'North', -2.0]]
 
 DATAPOINT: Freeplay1_9
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
+Post Effect: VelocityXFact [4, 0.0] 
 Conditions: 75
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, -1.0]]
@@ -566,8 +565,8 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'South', 'North', -2.0]]
 
 DATAPOINT: Freeplay1_10
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  EmptyFact [['VelocityYFact', [3, 0]], ['VelocityXFact', [3, 1.0]], ['AnimationFact', [3, 'Black Guy', 2.0, 2.0]], ['PositionXFact', [3, 4.0]], ['PositionYFact', [3, 5.0]]] 
+Post Effect: EmptyFact [] 
 Conditions: 75
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 0.0]]
@@ -646,8 +645,8 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'South', 'North', -2.0]]
 
 DATAPOINT: Freeplay1_16
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  VelocityXFact [2, 1.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 54
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, -1.0]]
@@ -705,8 +704,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay1_18
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  VelocityXFact [3, 1.0] 
+Post Effect: VelocityXFact [0, 2.0] 
 Conditions: 54
 	['VelocityYFact', [0, 0.0]]
 	['VelocityXFact', [0, -1.0]]
@@ -764,7 +763,7 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay1_21
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 54
 	['VelocityYFact', [0, 0.0]]
@@ -823,8 +822,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay2_27
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  VelocityXFact [2, 1.0] 
+Post Effect: VelocityXFact [3, 2.0] 
 Conditions: 54
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -882,8 +881,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'South', 'North', -2.0]]
 
 DATAPOINT: Freeplay2_34
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  VelocityXFact [2, -1.0] 
+Post Effect: VelocityXFact [0, 0.0] 
 Conditions: 54
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -941,8 +940,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'South', 'North', -2.0]]
 
 DATAPOINT: Freeplay2_57
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  VelocityXFact [0, 0.0] 
+Post Effect: VelocityXFact [3, 1.0] 
 Conditions: 54
 	['VelocityYFact', [0, -1.0]]
 	['VelocityXFact', [0, 0.0]]
@@ -1000,8 +999,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'South', 'North', 0.0]]
 
 DATAPOINT: Freeplay3_0
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  AnimationFact [4, 'explosion2', 1.0, 1.0] 
+Post Effect: AnimationFact [0, 'explosion', 2.0, 2.0] 
 Conditions: 75
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -1080,8 +1079,8 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay3_2
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  VelocityXFact [4, 0] 
+Post Effect: VelocityXFact [0, 4.0] 
 Conditions: 75
 	['VelocityXFact', [0, 1.0]]
 	['VelocityYFact', [0, 0.0]]
@@ -1160,8 +1159,8 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay3_3
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  AnimationFact [4, 'explosion2', 1.0, 1.0] 
+Post Effect: AnimationFact [0, 'explosion', 2.0, 2.0] 
 Conditions: 75
 	['VelocityXFact', [0, 1.0]]
 	['VelocityYFact', [0, 0.0]]
@@ -1240,8 +1239,8 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay3_28
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  AnimationFact [1, 'Zombie', 2.0, 2.0] 
+Post Effect: AnimationFact [1, 'explosion', 2.0, 2.0] 
 Conditions: 54
 	['VelocityXFact', [0, 0.0]]
 	['VelocityYFact', [0, 0.0]]
@@ -1299,8 +1298,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay4_8
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  EmptyFact [] 
+Post Effect: EmptyFact [['RelationshipFactX', [3, 0, 'West', 'East', 1.0]], ['RelationshipFactY', [3, 0, 'North', 'North', 0.0]], ['AnimationFact', [0, 'truck', 2.0, 1.0]], ['VelocityXFact', [0, 0]], ['VelocityYFact', [0, 0]]] 
 Conditions: 54
 	['VelocityYFact', [0, 0]]
 	['VelocityXFact', [0, 1.0]]
@@ -1358,8 +1357,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay5_0
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  EmptyFact [['VelocityXFact', [1, 0]], ['VelocityYFact', [1, 0]], ['AnimationFact', [1, 'adventure lady', 2.0, 1.0]], ['PositionXFact', [1, 0.0]], ['PositionYFact', [1, 2.0]]] 
+Post Effect: EmptyFact [] 
 Conditions: 285
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -1893,7 +1892,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay5_2
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [3, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -2138,7 +2137,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay5_3
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [6, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -2383,7 +2382,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay5_4
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [8, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -2628,8 +2627,8 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay7_0
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  EmptyFact [['VelocityXFact', [1, 0]], ['VelocityYFact', [1, 0]], ['AnimationFact', [1, 'adventure lady', 2.0, 1.0]], ['PositionXFact', [1, 0.0]], ['PositionYFact', [1, 2.0]]] 
+Post Effect: EmptyFact [] 
 Conditions: 285
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -2918,7 +2917,7 @@ Conditions: 285
 	['RelationshipFactY', [10, 9, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay7_2
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [3, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -3163,7 +3162,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay7_3
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [6, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -3408,7 +3407,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay7_4
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [8, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -3653,8 +3652,8 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay8_0
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  EmptyFact [['VelocityXFact', [1, 0]], ['VelocityYFact', [1, 0]], ['AnimationFact', [1, 'adventure lady', 2.0, 1.0]], ['PositionXFact', [1, 0.0]], ['PositionYFact', [1, 2.0]]] 
+Post Effect: EmptyFact [] 
 Conditions: 285
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -3943,7 +3942,7 @@ Conditions: 285
 	['RelationshipFactY', [10, 9, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay8_2
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [3, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -4188,7 +4187,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay8_3
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [6, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -4433,7 +4432,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay8_4
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [8, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -4678,7 +4677,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay8_31
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 54
 	['VelocityYFact', [0, 0]]
@@ -4737,8 +4736,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay9_5
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  VelocityXFact [9, -1.0] 
+Post Effect: VelocityXFact [9, 0.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -4982,7 +4981,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'South', 'North', -2.0]]
 
 DATAPOINT: Freeplay9_16
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [9, 0.0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -5227,8 +5226,8 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'South', 'North', 0.0]]
 
 DATAPOINT: Freeplay9_18
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  VelocityXFact [9, -1.0] 
+Post Effect: VelocityXFact [9, 0.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -5472,8 +5471,8 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'South', 'North', 0.0]]
 
 DATAPOINT: Freeplay10_0
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  EmptyFact [['VelocityXFact', [1, 0]], ['VelocityYFact', [1, 0]], ['AnimationFact', [1, 'adventure lady', 2.0, 1.0]], ['PositionXFact', [1, 0.0]], ['PositionYFact', [1, 2.0]]] 
+Post Effect: EmptyFact [] 
 Conditions: 285
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -5762,7 +5761,7 @@ Conditions: 285
 	['RelationshipFactY', [10, 9, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay10_2
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [3, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -6007,7 +6006,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay10_3
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [6, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -6252,7 +6251,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay10_4
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [8, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -6497,7 +6496,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay10_31
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 54
 	['VelocityYFact', [0, 0]]
@@ -6556,8 +6555,8 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay12_0
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  EmptyFact [['VelocityXFact', [1, 0]], ['VelocityYFact', [1, 0]], ['AnimationFact', [1, 'adventure lady', 2.0, 1.0]], ['PositionXFact', [1, 0.0]], ['PositionYFact', [1, 2.0]]] 
+Post Effect: EmptyFact [] 
 Conditions: 285
 	['VelocityXFact', [0, 0]]
 	['VelocityYFact', [0, 0]]
@@ -6846,7 +6845,7 @@ Conditions: 285
 	['RelationshipFactY', [10, 9, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay12_2
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [3, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -7091,7 +7090,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay12_3
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [6, 0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 240
 	['VelocityXFact', [0, 0]]
@@ -7336,7 +7335,7 @@ Conditions: 240
 	['RelationshipFactY', [9, 8, 'North', 'North', 0.0]]
 
 DATAPOINT: Freeplay12_29
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [0, -1.0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 54
 	['VelocityYFact', [0, 0]]
@@ -7395,7 +7394,7 @@ Conditions: 54
 	['RelationshipFactY', [3, 2, 'North', 'South', 2.0]]
 
 DATAPOINT: Freeplay12_50
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [1, -1.0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 75
 	['VelocityXFact', [0, 0.0]]
@@ -7475,7 +7474,7 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'North', 'South', 4.0]]
 
 DATAPOINT: Freeplay12_53
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [1, -1.0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 75
 	['VelocityYFact', [0, 0.0]]
@@ -7555,7 +7554,7 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'North', 'South', 4.0]]
 
 DATAPOINT: Freeplay12_54
-Pre Effect:  VelocityXFact [1, 0] 
+Pre Effect:  VelocityXFact [2, -1.0] 
 Post Effect: VelocityXFact [0, 1.0] 
 Conditions: 75
 	['VelocityYFact', [0, 0.0]]
@@ -7635,8 +7634,8 @@ Conditions: 75
 	['RelationshipFactY', [4, 3, 'North', 'South', 4.0]]
 
 DATAPOINT: Freeplay12_55
-Pre Effect:  VelocityXFact [1, 0] 
-Post Effect: VelocityXFact [0, 1.0] 
+Pre Effect:  EmptyFact [['VelocityYFact', [3, 1.0]], ['VelocityXFact', [3, 0.0]], ['AnimationFact', [3, 'Zombie', 2.0, 2.0]], ['PositionXFact', [3, 14.0]], ['PositionYFact', [3, 3.0]]] 
+Post Effect: EmptyFact [] 
 Conditions: 75
 	['VelocityXFact', [0, 1.0]]
 	['VelocityYFact', [0, 1.0]]
