@@ -581,42 +581,58 @@ process_clusters(clusters)
 # print(center_names)
 
 def boolean_conditions():
-
     pass
 
-def get_id(type, fact):
+def change_id(type, fact, preid):
     # types: velocity, position, animation, variable, relationship, empty fact
     if "Velocity" in type or "Position" in type or "Animation" in type:
-        return fact[0], True
+        return fact[0], None
     if "Relationship" in type:
         return fact[0], fact[1]
     if "Empty" in type:
         return None, None
 
+def make_boolean_cond(preid, cond):
+    #202 if matched
+    #201 if it doesnt
+    cond_type, cond_fact = cond
+    # types: velocity, position, animation, variable, relationship, empty fact
+    if "Velocity" in cond_type or "Position" in cond_type or "Animation" in cond_type:
+        if cond_fact[0] == preid:
+            cond_fact[0] = 202
+        else:
+            cond_fact[0] = 201
+    if "Relationship" in cond_type:
+        if cond_fact[0] == preid:
+            cond_fact[0] = 202
+        else:
+            cond_fact[0] = 201
+        if cond_fact[1] == preid:
+            cond_fact[1] = 202
+        else:
+            cond_fact[1] = 201
+    if "Empty" in cond_type:
+        pass # None
+    print("BOOLEAN", cond)
+    
 
 def pattern_making(clusters):
     for center in clusters:
         print("processing", center, " ...")
-        # list of all the datapoints in the cluster
-        cluster = clusters[center] 
+        cluster = clusters[center] # list of all the datapoints in the cluster
         # set of features and their probability
         set_conditions = {} #key = condition, value = count
         for dp in cluster:
+            # print("DATAPOINT",dp, "IN CLUSTER:", center)
             dp_prepost, dp_conditions = rules_db[dp]
-            pre, post = dp_prepost
-            pre_type, pre_fact = pre
-            post_type, post_fact = post
-            print(dp)
-            print(pre_type, pre_fact)
-            print(post_type, post_fact)
-            print()
-            preid, preflag = get_id(pre_type, pre_fact)
-            postid, postflag = get_id(post_type, post_fact)
+            pretype = dp_prepost[0][0]
+            if pretype == "EmptyFact":
+                preid = None
+            else:
+                preid = dp_prepost[0][1][0]
             for cond in dp_conditions:
-                print(cond)
-                cond_type, cond_fact = cond
+                boolean_cond  = make_boolean_cond(preid,cond)
+
             print()
-
-
 
 pattern_making(clusters)
