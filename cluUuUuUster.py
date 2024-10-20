@@ -580,18 +580,6 @@ def process_clusters(clusters):
 process_clusters(clusters)
 # print(center_names)
 
-def boolean_conditions():
-    pass
-
-def change_id(type, fact, preid):
-    # types: velocity, position, animation, variable, relationship, empty fact
-    if "Velocity" in type or "Position" in type or "Animation" in type:
-        return fact[0], None
-    if "Relationship" in type:
-        return fact[0], fact[1]
-    if "Empty" in type:
-        return None, None
-
 def make_boolean_cond(preid, cond):
     #202 if matched
     #201 if it doesnt
@@ -612,11 +600,12 @@ def make_boolean_cond(preid, cond):
         else:
             cond_fact[1] = 201
     if "Empty" in cond_type:
-        pass # None
-    print("BOOLEAN", cond)
+        raise Exception("EMPTY")
+    return cond
     
 
 def pattern_making(clusters):
+    center_sets = {}
     for center in clusters:
         print("processing", center, " ...")
         cluster = clusters[center] # list of all the datapoints in the cluster
@@ -631,8 +620,21 @@ def pattern_making(clusters):
             else:
                 preid = dp_prepost[0][1][0]
             for cond in dp_conditions:
-                boolean_cond  = make_boolean_cond(preid,cond)
+                boolean_cond  = str(make_boolean_cond(preid,cond))
+                # print(boolean_cond)
+                if boolean_cond in set_conditions:
+                    set_conditions[boolean_cond] += 1
+                else:
+                    set_conditions[boolean_cond] = 1
+        print("Center", center, "has",len(set_conditions), "conditions")
+        n = len(set_conditions)
+        for key, item in set_conditions.items():
+            prev = item
+            set_conditions[key] /= n
+            # print(key, ":", prev,"->" ,set_conditions[key])
+            print(f"{key:<{58}} : {prev} -> {set_conditions[key]}")  # Formatted output
+        center_sets[center] = set_conditions
+    print("done?")
 
-            print()
 
 pattern_making(clusters)
