@@ -1,0 +1,1633 @@
+########################
+202 = MATCH
+201 = NOT MATCHED
+########################
+CENTER: Freeplay11_7	LEN OF CONDITIONS: 187
+	['VariableFact', ['up', False]]                           : 0.04262295081967213
+	['VariableFact', ['upPrev', False]]                       : 0.04262295081967213
+	['VariableFact', ['down', False]]                         : 0.04237074401008827
+	['VariableFact', ['downPrev', False]]                     : 0.04237074401008827
+	['VelocityYFact', [201, 0]]                               : 0.040100882723833546
+	['VariableFact', ['rightPrev', False]]                    : 0.03984867591424968
+	['VariableFact', ['leftPrev', False]]                     : 0.03858764186633039
+	['VariableFact', ['left', False]]                         : 0.038083228247162676
+	['VariableFact', ['spacePrev', False]]                    : 0.03682219419924338
+	['VelocityXFact', [201, 0]]                               : 0.03480453972257251
+	['VariableFact', ['right', False]]                        : 0.03430012610340479
+	['VariableFact', ['space', False]]                        : 0.032030264817150066
+	['VelocityXFact', [202, -1.0]]                            : 0.026986128625472887
+	['VelocityYFact', [202, 0]]                               : 0.02471626733921816
+	['AnimationFact', [201, 'chick', 1.0, 1.0]]               : 0.01790668348045397
+	['PositionYFact', [202, 0.0]]                             : 0.016897856242118536
+	['AnimationFact', [202, 'longblock', 1.0, 4.0]]           : 0.01664564943253468
+	['PositionYFact', [201, 4.0]]                             : 0.015384615384615385
+	['PositionYFact', [202, 4.0]]                             : 0.014627994955863808
+	['VelocityXFact', [201, 0.0]]                             : 0.012610340479192938
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 0.01210592686002522
+	['VelocityYFact', [202, 0.0]]                             : 0.011601513240857503
+	['PositionYFact', [201, 0.0]]                             : 0.011601513240857503
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 0.011349306431273645
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 0.011349306431273645
+	['PositionXFact', [201, 6.0]]                             : 0.009836065573770493
+	['AnimationFact', [201, 'crate', 2.0, 2.0]]               : 0.008827238335435058
+	['PositionYFact', [201, 7.0]]                             : 0.008575031525851198
+	['PositionXFact', [202, 9.0]]                             : 0.008575031525851198
+	['PositionXFact', [201, 4.0]]                             : 0.00832282471626734
+	['VelocityYFact', [201, -1.0]]                            : 0.00807061790668348
+	['VariableFact', ['right', True]]                         : 0.00807061790668348
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 0.007818411097099623
+	['AnimationFact', [202, 'white girl', 2.0, 2.0]]          : 0.007313997477931904
+	['PositionXFact', [202, 0.0]]                             : 0.007061790668348045
+	['RelationshipFactX', [202, 201, 'West', 'East', 2.0]]    : 0.007061790668348045
+	['RelationshipFactX', [201, 202, 'East', 'West', -2.0]]   : 0.007061790668348045
+	['VelocityYFact', [201, 0.0]]                             : 0.006809583858764187
+	['PositionXFact', [201, 5.0]]                             : 0.006809583858764187
+	['AnimationFact', [201, 'Black Guy', 2.0, 2.0]]           : 0.006557377049180328
+	['PositionYFact', [201, 6.0]]                             : 0.006557377049180328
+	['PositionYFact', [201, 2.0]]                             : 0.006557377049180328
+	['RelationshipFactY', [201, 202, 'North', 'South', 3.0]]  : 0.006557377049180328
+	['RelationshipFactY', [202, 201, 'South', 'North', -3.0]] : 0.006557377049180328
+	['PositionXFact', [201, 8.0]]                             : 0.00605296343001261
+	['PositionYFact', [201, 3.0]]                             : 0.005296343001261034
+	['VelocityXFact', [202, 0.0]]                             : 0.005296343001261034
+	['AnimationFact', [202, 'crate', 2.0, 2.0]]               : 0.0047919293820933165
+	['VelocityXFact', [201, -1.0]]                            : 0.004539722572509458
+	['AnimationFact', [201, 'white girl', 2.0, 2.0]]          : 0.004539722572509458
+	['PositionXFact', [201, 11.0]]                            : 0.004287515762925599
+	['PositionXFact', [201, 10.0]]                            : 0.004287515762925599
+	['PositionXFact', [202, 4.0]]                             : 0.00403530895334174
+	['VelocityXFact', [202, -2.0]]                            : 0.00403530895334174
+	['VariableFact', ['space', True]]                         : 0.0037831021437578815
+	['VariableFact', ['left', True]]                          : 0.0037831021437578815
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 0.0035308953341740227
+	['RelationshipFactX', [202, 201, 'West', 'East', 0.0]]    : 0.003278688524590164
+	['RelationshipFactX', [201, 202, 'East', 'West', 0.0]]    : 0.003278688524590164
+	['AnimationFact', [201, 'grassBlock', 1.0, 1.0]]          : 0.003026481715006305
+	['PositionXFact', [201, 13.0]]                            : 0.003026481715006305
+	['PositionYFact', [201, 5.0]]                             : 0.0025220680958385876
+	['VelocityXFact', [201, 1.0]]                             : 0.0025220680958385876
+	['VariableFact', ['leftPrev', True]]                      : 0.0025220680958385876
+	['PositionXFact', [202, 10.0]]                            : 0.0025220680958385876
+	['VelocityXFact', [202, 0]]                               : 0.002269861286254729
+	['PositionYFact', [202, 5.0]]                             : 0.002269861286254729
+	['AnimationFact', [202, 'Black Guy', 2.0, 2.0]]           : 0.002269861286254729
+	['RelationshipFactX', [202, 201, 'East', 'West', -2.0]]   : 0.002269861286254729
+	['RelationshipFactX', [201, 202, 'West', 'East', 2.0]]    : 0.002269861286254729
+	['PositionXFact', [201, 2.0]]                             : 0.002269861286254729
+	['AnimationFact', [202, 'chicken', 1.0, 1.0]]             : 0.002269861286254729
+	['AnimationFact', [202, 'dog', 1.0, 1.0]]                 : 0.002269861286254729
+	['AnimationFact', [201, 'Zombie', 2.0, 2.0]]              : 0.00201765447667087
+	['PositionYFact', [202, 6.0]]                             : 0.00201765447667087
+	['PositionXFact', [201, 9.0]]                             : 0.00201765447667087
+	['VelocityYFact', [202, -1.0]]                            : 0.00201765447667087
+	['PositionXFact', [202, 2.0]]                             : 0.00201765447667087
+	['VelocityXFact', [202, -21.0]]                           : 0.00201765447667087
+	['RelationshipFactX', [201, 202, 'West', 'East', 5.0]]    : 0.00201765447667087
+	['RelationshipFactX', [202, 201, 'East', 'West', -5.0]]   : 0.00201765447667087
+	['PositionXFact', [201, 12.0]]                            : 0.00201765447667087
+	['PositionYFact', [202, 3.0]]                             : 0.0017654476670870113
+	['RelationshipFactX', [201, 202, 'West', 'East', 4.0]]    : 0.0017654476670870113
+	['RelationshipFactX', [202, 201, 'East', 'West', -4.0]]   : 0.0017654476670870113
+	['VelocityYFact', [201, 1.0]]                             : 0.0017654476670870113
+	['AnimationFact', [202, 'truck', 2.0, 1.0]]               : 0.0017654476670870113
+	['RelationshipFactX', [201, 202, 'West', 'East', 0.0]]    : 0.0017654476670870113
+	['RelationshipFactX', [202, 201, 'East', 'West', 0.0]]    : 0.0017654476670870113
+	['RelationshipFactY', [202, 201, 'South', 'North', -2.0]] : 0.0015132408575031526
+	['RelationshipFactY', [201, 202, 'North', 'South', 2.0]]  : 0.0015132408575031526
+	['VelocityXFact', [201, 2.0]]                             : 0.0015132408575031526
+	['RelationshipFactX', [201, 201, 'North', 'North', 0.0]]  : 0.0015132408575031526
+	['PositionXFact', [202, 7.0]]                             : 0.0015132408575031526
+	['RelationshipFactY', [201, 202, 'North', 'South', 0.0]]  : 0.0012610340479192938
+	['RelationshipFactY', [202, 201, 'South', 'North', 0.0]]  : 0.0012610340479192938
+	['RelationshipFactX', [202, 201, 'North', 'North', 0.0]]  : 0.0012610340479192938
+	['RelationshipFactX', [201, 202, 'North', 'North', 0.0]]  : 0.0012610340479192938
+	['PositionXFact', [202, 1.0]]                             : 0.0012610340479192938
+	['VariableFact', ['spacePrev', True]]                     : 0.0012610340479192938
+	['PositionXFact', [202, 8.0]]                             : 0.0012610340479192938
+	['RelationshipFactX', [202, 201, 'East', 'West', -1.0]]   : 0.0012610340479192938
+	['RelationshipFactX', [201, 202, 'West', 'East', 1.0]]    : 0.0012610340479192938
+	['PositionYFact', [201, 1.0]]                             : 0.001008827238335435
+	['PositionXFact', [201, 0.0]]                             : 0.001008827238335435
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 0.001008827238335435
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 0.001008827238335435
+	['RelationshipFactX', [202, 201, 'East', 'West', -3.0]]   : 0.001008827238335435
+	['RelationshipFactX', [201, 202, 'West', 'East', 3.0]]    : 0.001008827238335435
+	['RelationshipFactX', [201, 202, 'East', 'West', -3.0]]   : 0.001008827238335435
+	['RelationshipFactX', [202, 201, 'West', 'East', 3.0]]    : 0.001008827238335435
+	['RelationshipFactY', [202, 201, 'South', 'South', 0.0]]  : 0.001008827238335435
+	['RelationshipFactY', [201, 202, 'South', 'South', 0.0]]  : 0.001008827238335435
+	['AnimationFact', [202, 'Zombie', 2.0, 2.0]]              : 0.0007566204287515763
+	['VariableFact', ['rightPrev', True]]                     : 0.0007566204287515763
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 0.0007566204287515763
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 0.0007566204287515763
+	['RelationshipFactX', [201, 201, 'West', 'East', 0.0]]    : 0.0007566204287515763
+	['RelationshipFactX', [201, 201, 'East', 'West', 0.0]]    : 0.0007566204287515763
+	['PositionXFact', [201, 3.0]]                             : 0.0007566204287515763
+	['RelationshipFactY', [202, 201, 'East', 'North', 0.0]]   : 0.0007566204287515763
+	['RelationshipFactY', [201, 202, 'North', 'East', 0.0]]   : 0.0007566204287515763
+	['VelocityXFact', [202, -3.0]]                            : 0.0007566204287515763
+	['VelocityYFact', [201, 2.0]]                             : 0.0007566204287515763
+	['AnimationFact', [201, 'Gun', 2.0, 1.0]]                 : 0.0007566204287515763
+	['PositionXFact', [201, 14.0]]                            : 0.0007566204287515763
+	['PositionXFact', [201, 7.0]]                             : 0.0007566204287515763
+	['VelocityXFact', [202, -20.0]]                           : 0.0005044136191677175
+	['PositionXFact', [201, 17.0]]                            : 0.0005044136191677175
+	['VelocityXFact', [202, -4.0]]                            : 0.0005044136191677175
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 0.0005044136191677175
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 0.0005044136191677175
+	['RelationshipFactX', [201, 202, 'West', 'East', 15.0]]   : 0.0005044136191677175
+	['RelationshipFactX', [202, 201, 'East', 'West', -15.0]]  : 0.0005044136191677175
+	['RelationshipFactY', [202, 201, 'North', 'South', 1.0]]  : 0.0005044136191677175
+	['RelationshipFactY', [201, 202, 'South', 'North', -1.0]] : 0.0005044136191677175
+	['PositionYFact', [202, 2.0]]                             : 0.0005044136191677175
+	['VelocityYFact', [201, -2.0]]                            : 0.0005044136191677175
+	['PositionYFact', [201, 8.0]]                             : 0.0005044136191677175
+	['PositionXFact', [202, 6.0]]                             : 0.0005044136191677175
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 0.0005044136191677175
+	['VelocityYFact', [202, 1.0]]                             : 0.0005044136191677175
+	['PositionXFact', [202, 11.0]]                            : 0.0005044136191677175
+	['AnimationFact', [201, 'treepine', 2.0, 4.0]]            : 0.0005044136191677175
+	['AnimationFact', [201, 'dog', 1.0, 1.0]]                 : 0.00025220680958385876
+	['VelocityYFact', [202, -2.0]]                            : 0.00025220680958385876
+	['RelationshipFactX', [201, 201, 'East', 'West', -9.0]]   : 0.00025220680958385876
+	['RelationshipFactX', [201, 201, 'West', 'East', 4.0]]    : 0.00025220680958385876
+	['RelationshipFactX', [201, 201, 'West', 'East', 9.0]]    : 0.00025220680958385876
+	['RelationshipFactX', [201, 201, 'West', 'East', 15.0]]   : 0.00025220680958385876
+	['RelationshipFactY', [201, 201, 'South', 'North', -4.0]] : 0.00025220680958385876
+	['RelationshipFactX', [201, 201, 'East', 'West', -4.0]]   : 0.00025220680958385876
+	['RelationshipFactX', [201, 201, 'East', 'West', -15.0]]  : 0.00025220680958385876
+	['RelationshipFactY', [201, 201, 'North', 'South', 4.0]]  : 0.00025220680958385876
+	['PositionYFact', [202, 1.0]]                             : 0.00025220680958385876
+	['RelationshipFactY', [202, 201, 'South', 'North', -4.0]] : 0.00025220680958385876
+	['RelationshipFactY', [201, 202, 'North', 'South', 4.0]]  : 0.00025220680958385876
+	['RelationshipFactY', [201, 201, 'North', 'South', 1.0]]  : 0.00025220680958385876
+	['RelationshipFactY', [201, 201, 'South', 'North', -1.0]] : 0.00025220680958385876
+	['RelationshipFactY', [201, 202, 'South', 'North', -2.0]] : 0.00025220680958385876
+	['RelationshipFactY', [202, 201, 'North', 'South', 2.0]]  : 0.00025220680958385876
+	['VelocityXFact', [202, -6.0]]                            : 0.00025220680958385876
+	['RelationshipFactX', [201, 202, 'East', 'West', -5.0]]   : 0.00025220680958385876
+	['RelationshipFactX', [202, 201, 'West', 'East', 5.0]]    : 0.00025220680958385876
+	['RelationshipFactX', [202, 201, 'West', 'East', 4.0]]    : 0.00025220680958385876
+	['RelationshipFactX', [201, 202, 'East', 'West', -4.0]]   : 0.00025220680958385876
+	['PositionXFact', [201, 1.0]]                             : 0.00025220680958385876
+	['VelocityXFact', [201, 21.0]]                            : 0.00025220680958385876
+	['PositionXFact', [201, 21.0]]                            : 0.00025220680958385876
+	['RelationshipFactX', [201, 202, 'West', 'East', 16.0]]   : 0.00025220680958385876
+	['RelationshipFactX', [202, 201, 'East', 'West', -16.0]]  : 0.00025220680958385876
+	['PositionXFact', [201, 20.0]]                            : 0.00025220680958385876
+	['RelationshipFactY', [201, 202, 'East', 'North', 0.0]]   : 0.00025220680958385876
+	['RelationshipFactY', [202, 201, 'North', 'East', 0.0]]   : 0.00025220680958385876
+	['PositionXFact', [201, 19.0]]                            : 0.00025220680958385876
+	['RelationshipFactX', [201, 202, 'West', 'East', 14.0]]   : 0.00025220680958385876
+	['RelationshipFactX', [202, 201, 'East', 'West', -14.0]]  : 0.00025220680958385876
+	['PositionXFact', [201, 18.0]]                            : 0.00025220680958385876
+	['RelationshipFactX', [201, 202, 'West', 'East', 13.0]]   : 0.00025220680958385876
+	['RelationshipFactX', [202, 201, 'East', 'West', -13.0]]  : 0.00025220680958385876
+	['PositionXFact', [201, 15.0]]                            : 0.00025220680958385876
+	['AnimationFact', [201, 'truck', 2.0, 1.0]]               : 0.00025220680958385876
+	['AnimationFact', [201, 'chicken', 1.0, 1.0]]             : 0.00025220680958385876
+	['PositionXFact', [202, 5.0]]                             : 0.00025220680958385876
+	['PositionXFact', [202, 12.0]]                            : 0.00025220680958385876
+	['VariableFact', ['down', True]]                          : 0.00025220680958385876
+	['VariableFact', ['downPrev', True]]                      : 0.00025220680958385876
+
+CENTER: Bird6_44	LEN OF CONDITIONS: 131
+	['VelocityYFact', [201, 0]]                               : 0.07775211701308699
+	['VelocityXFact', [201, 0]]                               : 0.054657428791377985
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 0.04387990762124711
+	['PositionYFact', [201, 0.0]]                             : 0.04003079291762895
+	['VariableFact', ['up', False]]                           : 0.036181678214010776
+	['VariableFact', ['upPrev', False]]                       : 0.036181678214010776
+	['VariableFact', ['downPrev', False]]                     : 0.036181678214010776
+	['VariableFact', ['leftPrev', False]]                     : 0.03541185527328714
+	['VariableFact', ['rightPrev', False]]                    : 0.03541185527328714
+	['VariableFact', ['down', False]]                         : 0.03387220939183987
+	['VariableFact', ['right', False]]                        : 0.03387220939183987
+	['VariableFact', ['left', False]]                         : 0.033102386451116246
+	['VariableFact', ['spacePrev', False]]                    : 0.029253271747498075
+	['VelocityYFact', [202, 1.0]]                             : 0.02771362586605081
+	['VariableFact', ['space', False]]                        : 0.023094688221709007
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 0.023094688221709007
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 0.023094688221709007
+	['VelocityXFact', [201, -1.0]]                            : 0.022324865280985373
+	['VelocityXFact', [202, 0]]                               : 0.01924557351809084
+	['PositionYFact', [201, 2.0]]                             : 0.015396458814472672
+	['PositionXFact', [202, 5.0]]                             : 0.015396458814472672
+	['PositionYFact', [201, 6.0]]                             : 0.014626635873749037
+	['PositionXFact', [201, 8.0]]                             : 0.011547344110854504
+	['VariableFact', ['space', True]]                         : 0.010007698229407237
+	['VelocityXFact', [202, 0.0]]                             : 0.009237875288683603
+	['AnimationFact', [201, 'grassBlock', 1.0, 1.0]]          : 0.007698229407236336
+	['PositionXFact', [201, 10.0]]                            : 0.007698229407236336
+	['PositionXFact', [201, 11.0]]                            : 0.007698229407236336
+	['PositionXFact', [201, 13.0]]                            : 0.007698229407236336
+	['AnimationFact', [202, 'dog', 1.0, 1.0]]                 : 0.006928406466512702
+	['PositionXFact', [201, 9.0]]                             : 0.006928406466512702
+	['PositionYFact', [201, 3.0]]                             : 0.006928406466512702
+	['AnimationFact', [201, 'chick', 1.0, 1.0]]               : 0.006928406466512702
+	['PositionXFact', [202, 4.0]]                             : 0.006158583525789068
+	['VelocityYFact', [201, 0.0]]                             : 0.006158583525789068
+	['VelocityYFact', [202, 3.0]]                             : 0.005388760585065435
+	['PositionYFact', [202, 6.0]]                             : 0.005388760585065435
+	['RelationshipFactY', [201, 202, 'South', 'North', -2.0]] : 0.005388760585065435
+	['RelationshipFactY', [202, 201, 'North', 'South', 2.0]]  : 0.005388760585065435
+	['PositionXFact', [201, 3.0]]                             : 0.004618937644341801
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 0.004618937644341801
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 0.004618937644341801
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 0.004618937644341801
+	['PositionYFact', [201, 5.0]]                             : 0.004618937644341801
+	['PositionYFact', [202, 1.0]]                             : 0.004618937644341801
+	['PositionXFact', [201, 5.0]]                             : 0.003849114703618168
+	['AnimationFact', [202, 'truck', 2.0, 1.0]]               : 0.003849114703618168
+	['PositionXFact', [201, 12.0]]                            : 0.003849114703618168
+	['RelationshipFactX', [201, 202, 'West', 'East', 5.0]]    : 0.003849114703618168
+	['RelationshipFactY', [201, 202, 'East', 'South', 0.0]]   : 0.003849114703618168
+	['RelationshipFactX', [202, 201, 'East', 'West', -5.0]]   : 0.003849114703618168
+	['RelationshipFactY', [202, 201, 'South', 'East', 0.0]]   : 0.003849114703618168
+	['PositionYFact', [202, 3.0]]                             : 0.003079291762894534
+	['RelationshipFactX', [201, 202, 'North', 'North', 0.0]]  : 0.003079291762894534
+	['RelationshipFactX', [202, 201, 'North', 'North', 0.0]]  : 0.003079291762894534
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 0.003079291762894534
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 0.003079291762894534
+	['VelocityYFact', [202, 2.0]]                             : 0.003079291762894534
+	['PositionXFact', [201, 14.0]]                            : 0.003079291762894534
+	['PositionXFact', [201, 0.0]]                             : 0.0023094688221709007
+	['RelationshipFactY', [201, 202, 'South', 'South', 0.0]]  : 0.0023094688221709007
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 0.0023094688221709007
+	['RelationshipFactX', [201, 201, 'West', 'East', 0.0]]    : 0.0023094688221709007
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 0.0023094688221709007
+	['RelationshipFactX', [201, 201, 'West', 'East', 4.0]]    : 0.0023094688221709007
+	['RelationshipFactX', [201, 201, 'East', 'West', 0.0]]    : 0.0023094688221709007
+	['RelationshipFactX', [201, 201, 'East', 'West', -4.0]]   : 0.0023094688221709007
+	['PositionYFact', [202, 4.0]]                             : 0.0023094688221709007
+	['VariableFact', ['down', True]]                          : 0.0023094688221709007
+	['PositionXFact', [201, 4.0]]                             : 0.0023094688221709007
+	['PositionYFact', [201, 7.0]]                             : 0.0023094688221709007
+	['RelationshipFactX', [202, 201, 'West', 'East', 3.0]]    : 0.001539645881447267
+	['RelationshipFactX', [201, 202, 'East', 'West', -3.0]]   : 0.001539645881447267
+	['RelationshipFactX', [201, 201, 'North', 'North', 0.0]]  : 0.001539645881447267
+	['PositionYFact', [202, 5.0]]                             : 0.001539645881447267
+	['PositionXFact', [202, 3.0]]                             : 0.001539645881447267
+	['RelationshipFactX', [201, 202, 'West', 'East', 0.0]]    : 0.001539645881447267
+	['RelationshipFactX', [201, 202, 'West', 'East', 4.0]]    : 0.001539645881447267
+	['RelationshipFactX', [202, 201, 'East', 'West', 0.0]]    : 0.001539645881447267
+	['RelationshipFactY', [202, 201, 'North', 'East', 0.0]]   : 0.001539645881447267
+	['RelationshipFactX', [202, 201, 'East', 'West', -4.0]]   : 0.001539645881447267
+	['RelationshipFactY', [202, 201, 'North', 'South', 1.0]]  : 0.001539645881447267
+	['RelationshipFactY', [201, 202, 'South', 'North', -1.0]] : 0.001539645881447267
+	['VelocityXFact', [201, 0.0]]                             : 0.001539645881447267
+	['PositionXFact', [201, 17.0]]                            : 0.001539645881447267
+	['AnimationFact', [201, 'truck', 2.0, 1.0]]               : 0.001539645881447267
+	['PositionXFact', [201, 2.0]]                             : 0.001539645881447267
+	['AnimationFact', [202, 'chicken', 1.0, 1.0]]             : 0.001539645881447267
+	['PositionXFact', [202, 21.0]]                            : 0.001539645881447267
+	['RelationshipFactX', [201, 202, 'East', 'West', -17.0]]  : 0.001539645881447267
+	['RelationshipFactX', [202, 201, 'West', 'East', 17.0]]   : 0.001539645881447267
+	['VelocityXFact', [201, -2.0]]                            : 0.001539645881447267
+	['VariableFact', ['left', True]]                          : 0.001539645881447267
+	['RelationshipFactY', [202, 201, 'South', 'South', 0.0]]  : 0.0007698229407236335
+	['RelationshipFactY', [202, 201, 'South', 'North', -2.0]] : 0.0007698229407236335
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 0.0007698229407236335
+	['RelationshipFactY', [201, 202, 'North', 'South', 2.0]]  : 0.0007698229407236335
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 0.0007698229407236335
+	['RelationshipFactX', [201, 202, 'West', 'East', 2.0]]    : 0.0007698229407236335
+	['RelationshipFactX', [202, 201, 'East', 'West', -2.0]]   : 0.0007698229407236335
+	['RelationshipFactX', [202, 201, 'West', 'East', 0.0]]    : 0.0007698229407236335
+	['RelationshipFactY', [202, 201, 'North', 'South', 4.0]]  : 0.0007698229407236335
+	['RelationshipFactX', [201, 202, 'East', 'West', 0.0]]    : 0.0007698229407236335
+	['RelationshipFactY', [201, 202, 'South', 'North', -4.0]] : 0.0007698229407236335
+	['RelationshipFactX', [201, 202, 'East', 'West', -4.0]]   : 0.0007698229407236335
+	['RelationshipFactX', [202, 201, 'West', 'East', 4.0]]    : 0.0007698229407236335
+	['PositionYFact', [202, 8.0]]                             : 0.0007698229407236335
+	['VelocityXFact', [201, -4.0]]                            : 0.0007698229407236335
+	['RelationshipFactX', [201, 202, 'West', 'East', 11.0]]   : 0.0007698229407236335
+	['RelationshipFactX', [202, 201, 'East', 'West', -11.0]]  : 0.0007698229407236335
+	['VelocityXFact', [202, 8.0]]                             : 0.0007698229407236335
+	['VariableFact', ['spacePrev', True]]                     : 0.0007698229407236335
+	['RelationshipFactX', [201, 202, 'West', 'East', 12.0]]   : 0.0007698229407236335
+	['RelationshipFactX', [202, 201, 'East', 'West', -12.0]]  : 0.0007698229407236335
+	['VelocityXFact', [202, 1.0]]                             : 0.0007698229407236335
+	['PositionXFact', [202, 14.0]]                            : 0.0007698229407236335
+	['VelocityXFact', [202, 21.0]]                            : 0.0007698229407236335
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 0.0007698229407236335
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 0.0007698229407236335
+	['VelocityXFact', [202, -1.0]]                            : 0.0007698229407236335
+	['RelationshipFactX', [201, 202, 'East', 'West', -1.0]]   : 0.0007698229407236335
+	['RelationshipFactX', [202, 201, 'West', 'East', 1.0]]    : 0.0007698229407236335
+	['AnimationFact', [202, 'Black Guy', 2.0, 2.0]]           : 0.0007698229407236335
+	['PositionXFact', [202, 9.0]]                             : 0.0007698229407236335
+	['VelocityXFact', [201, 1.0]]                             : 0.0007698229407236335
+	['AnimationFact', [201, 'chicken', 1.0, 1.0]]             : 0.0007698229407236335
+	['RelationshipFactX', [202, 201, 'North', 'East', 0.0]]   : 0.0007698229407236335
+	['RelationshipFactX', [201, 202, 'East', 'North', 0.0]]   : 0.0007698229407236335
+	['PositionXFact', [201, 21.0]]                            : 0.0007698229407236335
+	['PositionXFact', [202, 11.0]]                            : 0.0007698229407236335
+	['PositionXFact', [202, 6.0]]                             : 0.0007698229407236335
+
+CENTER: Bird9_14	LEN OF CONDITIONS: 141
+	['VelocityYFact', [201, 0]]                               : 0.046553808948004836
+	['PositionYFact', [201, 0.0]]                             : 0.04171704957678356
+	['VariableFact', ['up', False]]                           : 0.041112454655380895
+	['VariableFact', ['spacePrev', False]]                    : 0.041112454655380895
+	['VariableFact', ['upPrev', False]]                       : 0.041112454655380895
+	['VariableFact', ['space', False]]                        : 0.04050785973397823
+	['VariableFact', ['down', False]]                         : 0.04050785973397823
+	['VariableFact', ['downPrev', False]]                     : 0.04050785973397823
+	['VariableFact', ['leftPrev', False]]                     : 0.04050785973397823
+	['VariableFact', ['rightPrev', False]]                    : 0.04050785973397823
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 0.0380894800483676
+	['VariableFact', ['left', False]]                         : 0.037484885126964934
+	['VariableFact', ['right', False]]                        : 0.037484885126964934
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 0.03506650544135429
+	['PositionXFact', [202, 5.0]]                             : 0.034461910519951636
+	['VelocityXFact', [201, -2.0]]                            : 0.03204353083434099
+	['VelocityXFact', [202, 0]]                               : 0.02902055622732769
+	['VelocityYFact', [202, -2.0]]                            : 0.02418379685610641
+	['VelocityXFact', [201, 0]]                               : 0.016324062877871828
+	['PositionXFact', [201, 3.0]]                             : 0.016324062877871828
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 0.015114873035066506
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 0.015114873035066506
+	['PositionYFact', [202, 4.0]]                             : 0.015114873035066506
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 0.012696493349455865
+	['RelationshipFactX', [201, 202, 'East', 'West', -1.0]]   : 0.012696493349455865
+	['RelationshipFactX', [202, 201, 'West', 'East', 1.0]]    : 0.012696493349455865
+	['VelocityYFact', [202, -1.0]]                            : 0.010882708585247884
+	['VelocityYFact', [201, 0.0]]                             : 0.008464328899637243
+	['PositionYFact', [201, 2.0]]                             : 0.008464328899637243
+	['VelocityXFact', [202, 0.0]]                             : 0.008464328899637243
+	['PositionXFact', [201, 5.0]]                             : 0.007859733978234583
+	['PositionXFact', [201, 9.0]]                             : 0.006045949214026602
+	['VelocityYFact', [202, -3.0]]                            : 0.006045949214026602
+	['RelationshipFactX', [202, 201, 'North', 'North', 0.0]]  : 0.0036275695284159614
+	['RelationshipFactX', [201, 202, 'North', 'North', 0.0]]  : 0.0036275695284159614
+	['AnimationFact', [202, 'truck', 2.0, 1.0]]               : 0.0036275695284159614
+	['PositionXFact', [201, 7.0]]                             : 0.0036275695284159614
+	['PositionYFact', [202, 8.0]]                             : 0.0036275695284159614
+	['RelationshipFactX', [201, 202, 'West', 'East', 1.0]]    : 0.0036275695284159614
+	['RelationshipFactY', [201, 202, 'South', 'North', -4.0]] : 0.0036275695284159614
+	['RelationshipFactX', [202, 201, 'East', 'West', -1.0]]   : 0.0036275695284159614
+	['RelationshipFactY', [202, 201, 'North', 'South', 4.0]]  : 0.0036275695284159614
+	['VelocityXFact', [201, 1.0]]                             : 0.003022974607013301
+	['PositionYFact', [202, 2.0]]                             : 0.003022974607013301
+	['AnimationFact', [201, 'Zombie', 2.0, 2.0]]              : 0.0024183796856106408
+	['PositionXFact', [201, 0.0]]                             : 0.0024183796856106408
+	['VelocityXFact', [201, -1.0]]                            : 0.0024183796856106408
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 0.0024183796856106408
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 0.0024183796856106408
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 0.0024183796856106408
+	['PositionYFact', [202, 5.0]]                             : 0.0024183796856106408
+	['RelationshipFactY', [201, 202, 'South', 'North', -1.0]] : 0.0024183796856106408
+	['RelationshipFactY', [202, 201, 'North', 'South', 1.0]]  : 0.0024183796856106408
+	['PositionYFact', [202, 9.0]]                             : 0.0024183796856106408
+	['RelationshipFactX', [201, 202, 'West', 'East', 3.0]]    : 0.0024183796856106408
+	['RelationshipFactY', [201, 202, 'South', 'North', -5.0]] : 0.0024183796856106408
+	['RelationshipFactX', [202, 201, 'East', 'West', -3.0]]   : 0.0024183796856106408
+	['RelationshipFactY', [202, 201, 'North', 'South', 5.0]]  : 0.0024183796856106408
+	['AnimationFact', [202, 'Black Guy', 2.0, 2.0]]           : 0.0018137847642079807
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 0.0018137847642079807
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 0.0018137847642079807
+	['PositionYFact', [201, 6.0]]                             : 0.0018137847642079807
+	['RelationshipFactX', [202, 201, 'East', 'West', 0.0]]    : 0.0018137847642079807
+	['RelationshipFactX', [201, 202, 'West', 'East', 0.0]]    : 0.0018137847642079807
+	['PositionXFact', [201, 8.0]]                             : 0.0018137847642079807
+	['PositionYFact', [201, 5.0]]                             : 0.0012091898428053204
+	['AnimationFact', [201, 'Black Guy', 2.0, 2.0]]           : 0.0012091898428053204
+	['PositionYFact', [202, 3.0]]                             : 0.0012091898428053204
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 0.0012091898428053204
+	['RelationshipFactX', [201, 202, 'West', 'East', 4.0]]    : 0.0012091898428053204
+	['RelationshipFactX', [201, 201, 'West', 'East', 4.0]]    : 0.0012091898428053204
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 0.0012091898428053204
+	['RelationshipFactX', [201, 202, 'West', 'East', 15.0]]   : 0.0012091898428053204
+	['RelationshipFactX', [202, 201, 'East', 'West', -4.0]]   : 0.0012091898428053204
+	['RelationshipFactX', [202, 201, 'East', 'West', -15.0]]  : 0.0012091898428053204
+	['RelationshipFactX', [201, 201, 'East', 'West', -4.0]]   : 0.0012091898428053204
+	['RelationshipFactX', [201, 201, 'North', 'North', 0.0]]  : 0.0012091898428053204
+	['PositionYFact', [202, 0.0]]                             : 0.0012091898428053204
+	['RelationshipFactX', [201, 202, 'East', 'West', -4.0]]   : 0.0012091898428053204
+	['RelationshipFactY', [201, 202, 'East', 'North', 0.0]]   : 0.0012091898428053204
+	['RelationshipFactX', [202, 201, 'West', 'East', 4.0]]    : 0.0012091898428053204
+	['RelationshipFactY', [202, 201, 'North', 'East', 0.0]]   : 0.0012091898428053204
+	['PositionXFact', [201, 12.0]]                            : 0.0012091898428053204
+	['AnimationFact', [201, 'truck', 2.0, 1.0]]               : 0.0012091898428053204
+	['AnimationFact', [201, 'grassBlock', 1.0, 1.0]]          : 0.0012091898428053204
+	['PositionXFact', [201, 10.0]]                            : 0.0012091898428053204
+	['PositionYFact', [201, 3.0]]                             : 0.0012091898428053204
+	['PositionXFact', [201, 13.0]]                            : 0.0012091898428053204
+	['VelocityYFact', [201, -1.0]]                            : 0.0012091898428053204
+	['PositionXFact', [201, 6.0]]                             : 0.0006045949214026602
+	['PositionXFact', [201, 17.0]]                            : 0.0006045949214026602
+	['PositionYFact', [201, 1.0]]                             : 0.0006045949214026602
+	['VelocityXFact', [202, 1.0]]                             : 0.0006045949214026602
+	['PositionXFact', [202, 0.0]]                             : 0.0006045949214026602
+	['PositionYFact', [201, 7.0]]                             : 0.0006045949214026602
+	['VariableFact', ['right', True]]                         : 0.0006045949214026602
+	['VariableFact', ['rightPrev', True]]                     : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'East', 'West', -9.0]]   : 0.0006045949214026602
+	['RelationshipFactY', [201, 202, 'North', 'South', 0.0]]  : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'West', 'East', 9.0]]    : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'West', 'East', 15.0]]   : 0.0006045949214026602
+	['RelationshipFactY', [201, 201, 'South', 'North', -4.0]] : 0.0006045949214026602
+	['RelationshipFactY', [202, 201, 'South', 'North', 0.0]]  : 0.0006045949214026602
+	['RelationshipFactY', [202, 201, 'South', 'North', -2.0]] : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'East', 'West', -15.0]]  : 0.0006045949214026602
+	['RelationshipFactY', [201, 201, 'North', 'South', 4.0]]  : 0.0006045949214026602
+	['RelationshipFactY', [201, 202, 'North', 'South', 2.0]]  : 0.0006045949214026602
+	['PositionXFact', [202, 4.0]]                             : 0.0006045949214026602
+	['RelationshipFactY', [202, 201, 'South', 'North', -1.0]] : 0.0006045949214026602
+	['RelationshipFactY', [201, 202, 'North', 'South', 1.0]]  : 0.0006045949214026602
+	['PositionXFact', [202, 3.0]]                             : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'West', 'East', 0.0]]    : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'East', 'West', 0.0]]    : 0.0006045949214026602
+	['VelocityXFact', [201, 20.0]]                            : 0.0006045949214026602
+	['VariableFact', ['space', True]]                         : 0.0006045949214026602
+	['VelocityXFact', [201, 0.0]]                             : 0.0006045949214026602
+	['PositionYFact', [202, 6.0]]                             : 0.0006045949214026602
+	['RelationshipFactX', [201, 202, 'West', 'East', 6.0]]    : 0.0006045949214026602
+	['RelationshipFactY', [201, 202, 'South', 'North', -2.0]] : 0.0006045949214026602
+	['RelationshipFactX', [202, 201, 'East', 'West', -6.0]]   : 0.0006045949214026602
+	['RelationshipFactY', [202, 201, 'North', 'South', 2.0]]  : 0.0006045949214026602
+	['PositionXFact', [202, 10.0]]                            : 0.0006045949214026602
+	['RelationshipFactX', [202, 201, 'West', 'East', 3.0]]    : 0.0006045949214026602
+	['RelationshipFactX', [202, 201, 'West', 'East', 8.0]]    : 0.0006045949214026602
+	['RelationshipFactX', [201, 202, 'East', 'West', -3.0]]   : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'West', 'East', 3.0]]    : 0.0006045949214026602
+	['RelationshipFactX', [201, 202, 'East', 'West', -8.0]]   : 0.0006045949214026602
+	['RelationshipFactX', [201, 201, 'East', 'West', -3.0]]   : 0.0006045949214026602
+	['VelocityXFact', [201, 21.0]]                            : 0.0006045949214026602
+	['PositionXFact', [201, 21.0]]                            : 0.0006045949214026602
+	['PositionXFact', [201, 15.0]]                            : 0.0006045949214026602
+	['RelationshipFactX', [201, 202, 'West', 'East', 9.0]]    : 0.0006045949214026602
+	['RelationshipFactY', [201, 202, 'South', 'South', 0.0]]  : 0.0006045949214026602
+	['RelationshipFactX', [202, 201, 'East', 'West', -9.0]]   : 0.0006045949214026602
+	['RelationshipFactY', [202, 201, 'South', 'South', 0.0]]  : 0.0006045949214026602
+	['PositionXFact', [201, 11.0]]                            : 0.0006045949214026602
+	['AnimationFact', [202, 'dog', 1.0, 1.0]]                 : 0.0006045949214026602
+	['VelocityXFact', [202, -1.0]]                            : 0.0006045949214026602
+	['PositionXFact', [202, 11.0]]                            : 0.0006045949214026602
+
+CENTER: Freeplay5_1	LEN OF CONDITIONS: 230
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 0.09476447023069484
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 0.05332228208316066
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 0.05332228208316066
+	['VelocityYFact', [201, 0]]                               : 0.0359165630611963
+	['VelocityXFact', [201, 0]]                               : 0.029285812957590827
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 0.01989225031081641
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 0.01989225031081641
+	['RelationshipFactX', [201, 201, 'East', 'West', -3.0]]   : 0.019063406547865726
+	['RelationshipFactX', [201, 201, 'West', 'East', 3.0]]    : 0.019063406547865726
+	['RelationshipFactY', [201, 201, 'North', 'South', 4.0]]  : 0.01671501588617212
+	['RelationshipFactY', [201, 201, 'South', 'North', -4.0]] : 0.01671501588617212
+	['PositionYFact', [201, 5.0]]                             : 0.014919187733112309
+	['AnimationFact', [201, 'truck', 2.0, 1.0]]               : 0.013123359580052493
+	['PositionYFact', [201, 2.0]]                             : 0.012570797071418704
+	['RelationshipFactY', [201, 201, 'South', 'North', -1.0]] : 0.012570797071418704
+	['RelationshipFactY', [201, 201, 'North', 'South', 1.0]]  : 0.012570797071418704
+	['RelationshipFactX', [201, 201, 'East', 'West', -6.0]]   : 0.012432656444260257
+	['RelationshipFactX', [201, 201, 'West', 'East', 6.0]]    : 0.012432656444260257
+	['AnimationFact', [201, 'adventure lady', 2.0, 1.0]]      : 0.010913109545517337
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 0.010498687664041995
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 0.010498687664041995
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 0.010222406409725101
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 0.010222406409725101
+	['RelationshipFactX', [201, 201, 'East', 'West', -1.0]]   : 0.009393562646774416
+	['RelationshipFactX', [201, 201, 'West', 'East', 1.0]]    : 0.009393562646774416
+	['RelationshipFactX', [201, 201, 'East', 'West', -8.0]]   : 0.008012156375189943
+	['RelationshipFactX', [201, 201, 'West', 'East', 8.0]]    : 0.008012156375189943
+	['VelocityXFact', [201, 1.0]]                             : 0.007874015748031496
+	['RelationshipFactX', [201, 201, 'North', 'North', 0.0]]  : 0.007735875120873049
+	['RelationshipFactX', [201, 201, 'East', 'West', -10.0]]  : 0.007735875120873049
+	['RelationshipFactX', [201, 201, 'West', 'East', 10.0]]   : 0.007735875120873049
+	['RelationshipFactX', [201, 201, 'East', 'West', -7.0]]   : 0.0074595938665561546
+	['RelationshipFactX', [201, 201, 'West', 'East', 7.0]]    : 0.0074595938665561546
+	['RelationshipFactX', [201, 201, 'West', 'East', 4.0]]    : 0.0074595938665561546
+	['RelationshipFactX', [201, 201, 'East', 'West', -4.0]]   : 0.0074595938665561546
+	['RelationshipFactX', [201, 201, 'North', 'West', 0.0]]   : 0.0074595938665561546
+	['RelationshipFactX', [201, 201, 'North', 'East', 0.0]]   : 0.0074595938665561546
+	['RelationshipFactX', [201, 201, 'West', 'East', 0.0]]    : 0.007183312612239259
+	['RelationshipFactX', [201, 201, 'East', 'West', 0.0]]    : 0.007183312612239259
+	['RelationshipFactY', [202, 201, 'North', 'South', 2.0]]  : 0.006907031357922365
+	['RelationshipFactY', [201, 202, 'South', 'North', -2.0]] : 0.006907031357922365
+	['VariableFact', ['up', False]]                           : 0.0063544688492885755
+	['VariableFact', ['upPrev', False]]                       : 0.0063544688492885755
+	['VariableFact', ['leftPrev', False]]                     : 0.0063544688492885755
+	['PositionXFact', [201, 10.0]]                            : 0.0063544688492885755
+	['VariableFact', ['left', False]]                         : 0.006216328222130129
+	['VariableFact', ['spacePrev', False]]                    : 0.006216328222130129
+	['VariableFact', ['rightPrev', False]]                    : 0.006216328222130129
+	['RelationshipFactX', [201, 201, 'West', 'East', 9.0]]    : 0.006216328222130129
+	['RelationshipFactX', [201, 201, 'East', 'West', -9.0]]   : 0.006216328222130129
+	['VariableFact', ['downPrev', False]]                     : 0.005940046967813234
+	['RelationshipFactX', [201, 201, 'East', 'West', -13.0]]  : 0.005940046967813234
+	['RelationshipFactX', [201, 201, 'West', 'East', 13.0]]   : 0.005940046967813234
+	['VariableFact', ['down', False]]                         : 0.005801906340654786
+	['RelationshipFactX', [201, 201, 'West', 'East', 5.0]]    : 0.005801906340654786
+	['RelationshipFactX', [201, 201, 'East', 'West', -5.0]]   : 0.005801906340654786
+	['VariableFact', ['space', False]]                        : 0.005525625086337892
+	['RelationshipFactY', [201, 202, 'North', 'South', 2.0]]  : 0.005249343832020997
+	['RelationshipFactY', [202, 201, 'South', 'North', -2.0]] : 0.005249343832020997
+	['PositionXFact', [201, 5.0]]                             : 0.0051112032048625505
+	['VariableFact', ['right', False]]                        : 0.004973062577704103
+	['PositionYFact', [201, 0.0]]                             : 0.004973062577704103
+	['AnimationFact', [201, 'Black Guy', 2.0, 2.0]]           : 0.004420500069070314
+	['PositionYFact', [201, 3.0]]                             : 0.004144218814753419
+	['AnimationFact', [201, 'chick', 1.0, 1.0]]               : 0.004006078187594971
+	['RelationshipFactX', [201, 201, 'East', 'North', 0.0]]   : 0.004006078187594971
+	['RelationshipFactX', [201, 201, 'East', 'East', 0.0]]    : 0.004006078187594971
+	['PositionXFact', [201, 9.0]]                             : 0.0038679375604365246
+	['VelocityYFact', [201, 0.0]]                             : 0.0037297969332780773
+	['VelocityYFact', [202, 0]]                               : 0.0035916563061196296
+	['PositionXFact', [201, 17.0]]                            : 0.0035916563061196296
+	['RelationshipFactX', [202, 201, 'West', 'East', 2.0]]    : 0.0034535156789611823
+	['RelationshipFactX', [201, 202, 'East', 'West', -2.0]]   : 0.0034535156789611823
+	['RelationshipFactX', [201, 201, 'West', 'East', 14.0]]   : 0.003315375051802735
+	['RelationshipFactX', [201, 201, 'East', 'West', -14.0]]  : 0.003315375051802735
+	['PositionXFact', [201, 13.0]]                            : 0.003315375051802735
+	['RelationshipFactX', [202, 201, 'East', 'West', -3.0]]   : 0.0031772344246442877
+	['RelationshipFactX', [201, 202, 'West', 'East', 3.0]]    : 0.0031772344246442877
+	['AnimationFact', [201, 'Zombie', 2.0, 2.0]]              : 0.0030390937974858405
+	['RelationshipFactX', [201, 201, 'East', 'West', -12.0]]  : 0.0030390937974858405
+	['RelationshipFactX', [201, 201, 'West', 'East', 12.0]]   : 0.0030390937974858405
+	['PositionXFact', [201, 20.0]]                            : 0.0030390937974858405
+	['VelocityXFact', [202, 0]]                               : 0.002762812543168946
+	['VelocityXFact', [201, 0.0]]                             : 0.002762812543168946
+	['PositionXFact', [201, 1.0]]                             : 0.002762812543168946
+	['RelationshipFactX', [201, 201, 'West', 'East', 17.0]]   : 0.002762812543168946
+	['RelationshipFactX', [201, 201, 'East', 'West', -17.0]]  : 0.002762812543168946
+	['RelationshipFactX', [201, 202, 'West', 'East', 0.0]]    : 0.0026246719160104987
+	['RelationshipFactX', [202, 201, 'East', 'West', 0.0]]    : 0.0026246719160104987
+	['RelationshipFactX', [201, 202, 'West', 'East', 2.0]]    : 0.0024865312888520514
+	['RelationshipFactX', [202, 201, 'East', 'West', -2.0]]   : 0.0024865312888520514
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 0.0024865312888520514
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 0.002348390661693604
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 0.002348390661693604
+	['PositionYFact', [201, 7.0]]                             : 0.002348390661693604
+	['RelationshipFactX', [202, 201, 'West', 'East', 0.0]]    : 0.0020721094073767096
+	['RelationshipFactX', [201, 202, 'East', 'West', 0.0]]    : 0.0020721094073767096
+	['PositionXFact', [201, 15.0]]                            : 0.0020721094073767096
+	['RelationshipFactX', [202, 201, 'North', 'North', 0.0]]  : 0.0019339687802182623
+	['RelationshipFactX', [201, 202, 'North', 'North', 0.0]]  : 0.0019339687802182623
+	['RelationshipFactY', [201, 202, 'North', 'South', 0.0]]  : 0.0019339687802182623
+	['RelationshipFactY', [202, 201, 'South', 'North', 0.0]]  : 0.0019339687802182623
+	['PositionXFact', [201, 8.0]]                             : 0.0017958281530598148
+	['RelationshipFactY', [202, 201, 'North', 'South', 4.0]]  : 0.0017958281530598148
+	['RelationshipFactY', [201, 202, 'South', 'North', -4.0]] : 0.0017958281530598148
+	['RelationshipFactX', [202, 201, 'East', 'West', -10.0]]  : 0.0017958281530598148
+	['RelationshipFactX', [201, 202, 'West', 'East', 10.0]]   : 0.0017958281530598148
+	['PositionXFact', [201, 4.0]]                             : 0.0017958281530598148
+	['AnimationFact', [202, 'truck', 2.0, 1.0]]               : 0.0016576875259013675
+	['RelationshipFactY', [201, 201, 'North', 'South', 3.0]]  : 0.0016576875259013675
+	['RelationshipFactY', [201, 201, 'South', 'North', -3.0]] : 0.0016576875259013675
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 0.0016576875259013675
+	['RelationshipFactY', [201, 201, 'South', 'South', 0.0]]  : 0.0016576875259013675
+	['VelocityXFact', [202, -1.0]]                            : 0.0015195468987429202
+	['PositionYFact', [202, 5.0]]                             : 0.0015195468987429202
+	['RelationshipFactX', [202, 201, 'East', 'West', -6.0]]   : 0.0015195468987429202
+	['RelationshipFactX', [201, 202, 'West', 'East', 6.0]]    : 0.0015195468987429202
+	['PositionYFact', [201, 1.0]]                             : 0.001381406271584473
+	['VariableFact', ['right', True]]                         : 0.001381406271584473
+	['VelocityXFact', [201, -1.0]]                            : 0.001381406271584473
+	['PositionYFact', [202, 2.0]]                             : 0.001381406271584473
+	['RelationshipFactX', [201, 202, 'East', 'West', -4.0]]   : 0.001381406271584473
+	['RelationshipFactX', [201, 202, 'East', 'West', -8.0]]   : 0.001381406271584473
+	['RelationshipFactX', [202, 201, 'West', 'East', 4.0]]    : 0.001381406271584473
+	['RelationshipFactX', [202, 201, 'West', 'East', 8.0]]    : 0.001381406271584473
+	['VelocityYFact', [201, -1.0]]                            : 0.001381406271584473
+	['PositionYFact', [201, 6.0]]                             : 0.0012432656444260257
+	['PositionXFact', [201, 3.0]]                             : 0.0011051250172675784
+	['RelationshipFactX', [201, 202, 'West', 'East', 1.0]]    : 0.0011051250172675784
+	['RelationshipFactX', [202, 201, 'East', 'West', -1.0]]   : 0.0011051250172675784
+	['RelationshipFactX', [202, 201, 'West', 'East', 1.0]]    : 0.0011051250172675784
+	['RelationshipFactX', [201, 202, 'East', 'West', -1.0]]   : 0.0011051250172675784
+	['RelationshipFactX', [201, 201, 'East', 'West', -11.0]]  : 0.0011051250172675784
+	['RelationshipFactX', [201, 201, 'West', 'East', 11.0]]   : 0.0011051250172675784
+	['PositionXFact', [201, 11.0]]                            : 0.0011051250172675784
+	['RelationshipFactX', [201, 202, 'East', 'West', -6.0]]   : 0.0011051250172675784
+	['RelationshipFactX', [202, 201, 'West', 'East', 6.0]]    : 0.0011051250172675784
+	['PositionXFact', [201, 12.0]]                            : 0.0009669843901091311
+	['PositionYFact', [202, 3.0]]                             : 0.0009669843901091311
+	['RelationshipFactX', [201, 202, 'East', 'West', -3.0]]   : 0.0009669843901091311
+	['RelationshipFactX', [202, 201, 'West', 'East', 3.0]]    : 0.0009669843901091311
+	['PositionXFact', [201, 16.0]]                            : 0.0009669843901091311
+	['PositionXFact', [201, 0.0]]                             : 0.0009669843901091311
+	['VelocityYFact', [202, 0.0]]                             : 0.0009669843901091311
+	['PositionXFact', [202, 5.0]]                             : 0.0009669843901091311
+	['AnimationFact', [202, 'Zombie', 2.0, 2.0]]              : 0.0008288437629506838
+	['PositionXFact', [201, 2.0]]                             : 0.0008288437629506838
+	['PositionXFact', [201, 14.0]]                            : 0.0008288437629506838
+	['VariableFact', ['space', True]]                         : 0.0008288437629506838
+	['AnimationFact', [202, 'adventure lady', 2.0, 1.0]]      : 0.0008288437629506838
+	['RelationshipFactY', [201, 202, 'South', 'North', -1.0]] : 0.0008288437629506838
+	['RelationshipFactY', [202, 201, 'North', 'South', 1.0]]  : 0.0008288437629506838
+	['RelationshipFactX', [202, 201, 'East', 'West', -8.0]]   : 0.0008288437629506838
+	['RelationshipFactX', [202, 201, 'East', 'West', -13.0]]  : 0.0008288437629506838
+	['RelationshipFactX', [201, 202, 'West', 'East', 8.0]]    : 0.0008288437629506838
+	['RelationshipFactX', [201, 202, 'West', 'East', 13.0]]   : 0.0008288437629506838
+	['AnimationFact', [202, 'dog', 1.0, 1.0]]                 : 0.0008288437629506838
+	['AnimationFact', [201, 'grassBlock', 1.0, 1.0]]          : 0.0008288437629506838
+	['RelationshipFactY', [201, 201, 'East', 'South', 0.0]]   : 0.0008288437629506838
+	['RelationshipFactY', [201, 201, 'South', 'East', 0.0]]   : 0.0008288437629506838
+	['AnimationFact', [202, 'Black Guy', 2.0, 2.0]]           : 0.0006907031357922365
+	['PositionXFact', [202, 6.0]]                             : 0.0006907031357922365
+	['RelationshipFactY', [202, 201, 'North', 'East', 0.0]]   : 0.0006907031357922365
+	['RelationshipFactX', [201, 201, 'East', 'West', -18.0]]  : 0.0006907031357922365
+	['RelationshipFactX', [201, 201, 'East', 'West', -15.0]]  : 0.0006907031357922365
+	['RelationshipFactX', [201, 201, 'West', 'East', 18.0]]   : 0.0006907031357922365
+	['RelationshipFactX', [201, 201, 'West', 'East', 15.0]]   : 0.0006907031357922365
+	['PositionXFact', [202, 15.0]]                            : 0.0006907031357922365
+	['RelationshipFactX', [202, 201, 'West', 'East', 12.0]]   : 0.0006907031357922365
+	['RelationshipFactX', [201, 202, 'East', 'West', -12.0]]  : 0.0006907031357922365
+	['RelationshipFactX', [201, 202, 'West', 'East', 5.0]]    : 0.0006907031357922365
+	['RelationshipFactX', [202, 201, 'East', 'West', -5.0]]   : 0.0006907031357922365
+	['PositionXFact', [202, 2.0]]                             : 0.0006907031357922365
+	['RelationshipFactY', [202, 201, 'South', 'North', -3.0]] : 0.0006907031357922365
+	['RelationshipFactY', [201, 202, 'North', 'South', 3.0]]  : 0.0006907031357922365
+	['PositionYFact', [202, 7.0]]                             : 0.0005525625086337892
+	['RelationshipFactY', [201, 202, 'North', 'South', 4.0]]  : 0.0005525625086337892
+	['RelationshipFactY', [202, 201, 'South', 'North', -4.0]] : 0.0005525625086337892
+	['PositionXFact', [201, 6.0]]                             : 0.0005525625086337892
+	['PositionYFact', [202, 4.0]]                             : 0.0005525625086337892
+	['AnimationFact', [201, 'Gun', 2.0, 1.0]]                 : 0.0005525625086337892
+	['AnimationFact', [201, 'white girl', 2.0, 2.0]]          : 0.0005525625086337892
+	['PositionXFact', [202, 13.0]]                            : 0.0005525625086337892
+	['RelationshipFactX', [201, 202, 'East', 'West', -10.0]]  : 0.0005525625086337892
+	['RelationshipFactX', [202, 201, 'West', 'East', 10.0]]   : 0.0005525625086337892
+	['RelationshipFactY', [201, 202, 'East', 'North', 0.0]]   : 0.0005525625086337892
+	['RelationshipFactY', [201, 202, 'North', 'South', 1.0]]  : 0.0005525625086337892
+	['RelationshipFactY', [202, 201, 'South', 'North', -1.0]] : 0.0005525625086337892
+	['VelocityYFact', [201, 1.0]]                             : 0.0005525625086337892
+	['VariableFact', ['down', True]]                          : 0.0005525625086337892
+	['RelationshipFactX', [202, 201, 'East', 'West', -12.0]]  : 0.0005525625086337892
+	['RelationshipFactX', [201, 202, 'West', 'East', 12.0]]   : 0.0005525625086337892
+	['RelationshipFactX', [201, 202, 'West', 'East', 7.0]]    : 0.0004144218814753419
+	['RelationshipFactX', [202, 201, 'East', 'West', -7.0]]   : 0.0004144218814753419
+	['PositionXFact', [201, 18.0]]                            : 0.0004144218814753419
+	['VelocityXFact', [202, 1.0]]                             : 0.0004144218814753419
+	['PositionXFact', [202, 4.0]]                             : 0.0004144218814753419
+	['RelationshipFactX', [201, 202, 'North', 'West', 0.0]]   : 0.0004144218814753419
+	['VelocityYFact', [202, -1.0]]                            : 0.0004144218814753419
+	['VelocityXFact', [202, 0.0]]                             : 0.0004144218814753419
+	['AnimationFact', [202, 'explosion2', 1.0, 1.0]]          : 0.0004144218814753419
+	['RelationshipFactX', [202, 201, 'East', 'West', -11.0]]  : 0.0004144218814753419
+	['RelationshipFactX', [201, 202, 'West', 'East', 11.0]]   : 0.0004144218814753419
+	['VariableFact', ['downPrev', True]]                      : 0.0004144218814753419
+	['PositionXFact', [202, 12.0]]                            : 0.0002762812543168946
+	['RelationshipFactX', [201, 202, 'East', 'West', -7.0]]   : 0.0002762812543168946
+	['RelationshipFactX', [202, 201, 'West', 'East', 7.0]]    : 0.0002762812543168946
+	['PositionYFact', [202, 1.0]]                             : 0.0002762812543168946
+	['PositionXFact', [202, 9.0]]                             : 0.0002762812543168946
+	['RelationshipFactX', [202, 201, 'East', 'East', 0.0]]    : 0.0002762812543168946
+	['PositionXFact', [202, 8.0]]                             : 0.0001381406271584473
+	['VelocityXFact', [201, -20.0]]                           : 0.0001381406271584473
+	['VelocityXFact', [201, 2.0]]                             : 0.0001381406271584473
+	['PositionXFact', [202, 3.0]]                             : 0.0001381406271584473
+	['VariableFact', ['rightPrev', True]]                     : 0.0001381406271584473
+	['VelocityYFact', [202, 3.0]]                             : 0.0001381406271584473
+	['RelationshipFactX', [202, 201, 'North', 'East', 0.0]]   : 0.0001381406271584473
+	['PositionXFact', [202, 7.0]]                             : 0.0001381406271584473
+	['RelationshipFactY', [201, 202, 'South', 'South', 0.0]]  : 0.0001381406271584473
+	['VariableFact', ['spacePrev', True]]                     : 0.0001381406271584473
+	['VelocityXFact', [202, 4.0]]                             : 0.0001381406271584473
+	['RelationshipFactX', [202, 201, 'West', 'East', 5.0]]    : 0.0001381406271584473
+	['RelationshipFactX', [201, 202, 'East', 'West', -5.0]]   : 0.0001381406271584473
+	['PositionXFact', [201, 7.0]]                             : 0.0001381406271584473
+	['VariableFact', ['left', True]]                          : 0.0001381406271584473
+	['PositionXFact', [202, 10.0]]                            : 0.0001381406271584473
+	['RelationshipFactX', [201, 202, 'North', 'East', 0.0]]   : 0.0001381406271584473
+	['RelationshipFactX', [202, 201, 'East', 'North', 0.0]]   : 0.0001381406271584473
+	['VelocityYFact', [202, 1.0]]                             : 0.0001381406271584473
+	['PositionXFact', [202, 11.0]]                            : 0.0001381406271584473
+
+CENTER: Freeplay11_14	LEN OF CONDITIONS: 110
+	['VelocityYFact', [201, 0]]                               : 0.06198608475648324
+	['VariableFact', ['up', False]]                           : 0.046173308032890575
+	['VariableFact', ['spacePrev', False]]                    : 0.046173308032890575
+	['VariableFact', ['upPrev', False]]                       : 0.046173308032890575
+	['VariableFact', ['leftPrev', False]]                     : 0.046173308032890575
+	['VariableFact', ['rightPrev', False]]                    : 0.046173308032890575
+	['VariableFact', ['space', False]]                        : 0.044275774826059454
+	['VariableFact', ['right', False]]                        : 0.04364326375711575
+	['VariableFact', ['downPrev', False]]                     : 0.04237824161922834
+	['VariableFact', ['left', False]]                         : 0.04174573055028463
+	['VelocityXFact', [201, 0]]                               : 0.04048070841239722
+	['VariableFact', ['down', False]]                         : 0.03984819734345351
+	['PositionYFact', [201, 0.0]]                             : 0.03984819734345351
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 0.03415559772296015
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 0.028462998102466792
+	['VelocityYFact', [202, 0.0]]                             : 0.02530044275774826
+	['PositionXFact', [202, 5.0]]                             : 0.024667931688804556
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 0.02403542061986085
+	['VelocityXFact', [202, 0]]                               : 0.022137887413029727
+	['PositionYFact', [201, 2.0]]                             : 0.01644528779253637
+	['VelocityXFact', [202, 0.0]]                             : 0.015180265654648957
+	['VelocityXFact', [201, -1.0]]                            : 0.01454775458570525
+	['VelocityXFact', [201, -2.0]]                            : 0.010752688172043012
+	['VelocityYFact', [202, 0]]                               : 0.010120177103099304
+	['VelocityYFact', [202, -1.0]]                            : 0.010120177103099304
+	['PositionXFact', [201, 9.0]]                             : 0.008855154965211892
+	['AnimationFact', [202, 'truck', 2.0, 1.0]]               : 0.008222643896268185
+	['PositionXFact', [201, 3.0]]                             : 0.007590132827324478
+	['PositionXFact', [201, 5.0]]                             : 0.007590132827324478
+	['VelocityYFact', [201, 0.0]]                             : 0.006957621758380772
+	['PositionYFact', [201, 6.0]]                             : 0.006325110689437065
+	['PositionXFact', [201, 2.0]]                             : 0.005060088551549652
+	['VariableFact', ['down', True]]                          : 0.005060088551549652
+	['PositionYFact', [202, 6.0]]                             : 0.004427577482605946
+	['AnimationFact', [202, 'dog', 1.0, 1.0]]                 : 0.003795066413662239
+	['AnimationFact', [202, 'Black Guy', 2.0, 2.0]]           : 0.003795066413662239
+	['AnimationFact', [201, 'chick', 1.0, 1.0]]               : 0.003795066413662239
+	['PositionXFact', [201, 8.0]]                             : 0.003795066413662239
+	['PositionYFact', [202, 5.0]]                             : 0.0031625553447185324
+	['PositionYFact', [202, 4.0]]                             : 0.0031625553447185324
+	['PositionXFact', [202, 3.0]]                             : 0.0031625553447185324
+	['RelationshipFactX', [201, 202, 'East', 'West', -2.0]]   : 0.0031625553447185324
+	['RelationshipFactY', [201, 202, 'South', 'North', -2.0]] : 0.0031625553447185324
+	['RelationshipFactX', [202, 201, 'West', 'East', 2.0]]    : 0.0031625553447185324
+	['RelationshipFactY', [202, 201, 'North', 'South', 2.0]]  : 0.0031625553447185324
+	['AnimationFact', [201, 'grassBlock', 1.0, 1.0]]          : 0.0031625553447185324
+	['PositionXFact', [201, 10.0]]                            : 0.0031625553447185324
+	['PositionXFact', [202, 4.0]]                             : 0.002530044275774826
+	['RelationshipFactX', [201, 201, 'North', 'North', 0.0]]  : 0.002530044275774826
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 0.002530044275774826
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 0.002530044275774826
+	['VelocityXFact', [202, 1.0]]                             : 0.002530044275774826
+	['AnimationFact', [201, 'chicken', 1.0, 1.0]]             : 0.002530044275774826
+	['PositionXFact', [201, 14.0]]                            : 0.002530044275774826
+	['PositionXFact', [201, 13.0]]                            : 0.002530044275774826
+	['RelationshipFactX', [202, 201, 'West', 'East', 1.0]]    : 0.0018975332068311196
+	['RelationshipFactX', [201, 202, 'East', 'West', -1.0]]   : 0.0018975332068311196
+	['PositionYFact', [201, 3.0]]                             : 0.0018975332068311196
+	['PositionYFact', [202, 8.0]]                             : 0.0018975332068311196
+	['PositionXFact', [202, 9.0]]                             : 0.0018975332068311196
+	['PositionYFact', [202, 1.0]]                             : 0.0018975332068311196
+	['PositionXFact', [201, 4.0]]                             : 0.0018975332068311196
+	['PositionYFact', [201, 7.0]]                             : 0.0018975332068311196
+	['PositionXFact', [201, 12.0]]                            : 0.0018975332068311196
+	['RelationshipFactY', [202, 201, 'North', 'South', 1.0]]  : 0.001265022137887413
+	['RelationshipFactY', [202, 201, 'South', 'North', 0.0]]  : 0.001265022137887413
+	['RelationshipFactY', [201, 202, 'South', 'North', -1.0]] : 0.001265022137887413
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 0.001265022137887413
+	['RelationshipFactY', [201, 202, 'North', 'South', 0.0]]  : 0.001265022137887413
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 0.001265022137887413
+	['RelationshipFactX', [202, 201, 'West', 'East', 0.0]]    : 0.001265022137887413
+	['RelationshipFactX', [201, 202, 'East', 'West', 0.0]]    : 0.001265022137887413
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 0.001265022137887413
+	['PositionXFact', [202, 1.0]]                             : 0.001265022137887413
+	['PositionXFact', [201, 19.0]]                            : 0.001265022137887413
+	['PositionYFact', [202, 7.0]]                             : 0.001265022137887413
+	['PositionYFact', [201, 5.0]]                             : 0.001265022137887413
+	['PositionXFact', [201, 11.0]]                            : 0.001265022137887413
+	['RelationshipFactY', [202, 201, 'South', 'North', -1.0]] : 0.0006325110689437065
+	['RelationshipFactY', [201, 202, 'North', 'South', 1.0]]  : 0.0006325110689437065
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 0.0006325110689437065
+	['RelationshipFactX', [201, 202, 'West', 'East', 0.0]]    : 0.0006325110689437065
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 0.0006325110689437065
+	['RelationshipFactX', [201, 202, 'West', 'East', 4.0]]    : 0.0006325110689437065
+	['RelationshipFactX', [202, 201, 'East', 'West', 0.0]]    : 0.0006325110689437065
+	['RelationshipFactX', [202, 201, 'East', 'West', -4.0]]   : 0.0006325110689437065
+	['VariableFact', ['left', True]]                          : 0.0006325110689437065
+	['PositionYFact', [202, 2.0]]                             : 0.0006325110689437065
+	['AnimationFact', [202, 'adventure lady', 2.0, 1.0]]      : 0.0006325110689437065
+	['PositionYFact', [202, 3.0]]                             : 0.0006325110689437065
+	['PositionXFact', [202, 10.0]]                            : 0.0006325110689437065
+	['VariableFact', ['space', True]]                         : 0.0006325110689437065
+	['PositionXFact', [202, 2.0]]                             : 0.0006325110689437065
+	['RelationshipFactX', [202, 201, 'East', 'West', -15.0]]  : 0.0006325110689437065
+	['RelationshipFactX', [201, 202, 'West', 'East', 15.0]]   : 0.0006325110689437065
+	['VelocityYFact', [202, 1.0]]                             : 0.0006325110689437065
+	['RelationshipFactX', [201, 202, 'West', 'East', 13.0]]   : 0.0006325110689437065
+	['RelationshipFactY', [201, 202, 'South', 'North', -3.0]] : 0.0006325110689437065
+	['RelationshipFactX', [202, 201, 'East', 'West', -13.0]]  : 0.0006325110689437065
+	['RelationshipFactY', [202, 201, 'North', 'South', 3.0]]  : 0.0006325110689437065
+	['PositionXFact', [202, 11.0]]                            : 0.0006325110689437065
+	['PositionXFact', [202, 6.0]]                             : 0.0006325110689437065
+	['AnimationFact', [201, 'treepine', 2.0, 4.0]]            : 0.0006325110689437065
+	['PositionYFact', [201, 4.0]]                             : 0.0006325110689437065
+	['RelationshipFactX', [201, 202, 'West', 'East', 8.0]]    : 0.0006325110689437065
+	['RelationshipFactX', [202, 201, 'East', 'West', -8.0]]   : 0.0006325110689437065
+	['RelationshipFactX', [201, 202, 'North', 'North', 0.0]]  : 0.0006325110689437065
+	['RelationshipFactY', [201, 202, 'South', 'North', -4.0]] : 0.0006325110689437065
+	['RelationshipFactX', [202, 201, 'North', 'North', 0.0]]  : 0.0006325110689437065
+	['RelationshipFactY', [202, 201, 'North', 'South', 4.0]]  : 0.0006325110689437065
+
+CENTER: Freeplay11_30	LEN OF CONDITIONS: 218
+	['VelocityYFact', [201, 0]]                               : 0.0474414750362544
+	['VariableFact', ['downPrev', False]]                     : 0.0399834265589393
+	['VariableFact', ['down', False]]                         : 0.039776258545680544
+	['VariableFact', ['leftPrev', False]]                     : 0.03915475450590429
+	['VariableFact', ['upPrev', False]]                       : 0.038947586492645535
+	['VariableFact', ['left', False]]                         : 0.03770457841309302
+	['VariableFact', ['up', False]]                           : 0.037497410399834265
+	['VariableFact', ['rightPrev', False]]                    : 0.036047234307022995
+	['VariableFact', ['right', False]]                        : 0.03418272218769422
+	['VariableFact', ['spacePrev', False]]                    : 0.03418272218769422
+	['PositionYFact', [201, 0.0]]                             : 0.02838201781644914
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 0.02755334576341413
+	['VariableFact', ['space', False]]                        : 0.025067329604309095
+	['VelocityXFact', [201, 0]]                               : 0.022995649471721565
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 0.019888129272840272
+	['VelocityXFact', [201, -1.0]]                            : 0.01968096125958152
+	['VelocityYFact', [202, -1.0]]                            : 0.017194945100476488
+	['VelocityXFact', [202, 0]]                               : 0.01678060907395898
+	['PositionXFact', [202, 5.0]]                             : 0.015537600994406464
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 0.0145017609281127
+	['VelocityYFact', [201, 0.0]]                             : 0.014087424901595194
+	['VariableFact', ['space', True]]                         : 0.013258752848560183
+	['PositionYFact', [201, 3.0]]                             : 0.010565568676196395
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 0.00870105655686762
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 0.00870105655686762
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 0.008079552517091361
+	['PositionYFact', [201, 2.0]]                             : 0.007043712450797597
+	['VelocityXFact', [201, 0.0]]                             : 0.006629376424280091
+	['PositionYFact', [201, 6.0]]                             : 0.006215040397762586
+	['VelocityYFact', [202, 0.0]]                             : 0.006215040397762586
+	['PositionXFact', [201, 4.0]]                             : 0.006215040397762586
+	['RelationshipFactX', [201, 201, 'East', 'West', -1.0]]   : 0.006215040397762586
+	['RelationshipFactX', [201, 201, 'West', 'East', 1.0]]    : 0.006215040397762586
+	['PositionXFact', [201, 8.0]]                             : 0.0060078723845038325
+	['PositionXFact', [201, 5.0]]                             : 0.00580070437124508
+	['VelocityXFact', [202, 0.0]]                             : 0.005593536357986327
+	['PositionXFact', [201, 9.0]]                             : 0.005593536357986327
+	['AnimationFact', [201, 'chick', 1.0, 1.0]]               : 0.0053863683447275745
+	['RelationshipFactX', [201, 201, 'West', 'East', 0.0]]    : 0.005179200331468821
+	['RelationshipFactX', [201, 201, 'East', 'West', 0.0]]    : 0.005179200331468821
+	['PositionXFact', [201, 10.0]]                            : 0.004972032318210068
+	['VelocityXFact', [201, 1.0]]                             : 0.004972032318210068
+	['PositionYFact', [202, 3.0]]                             : 0.00435052827843381
+	['PositionYFact', [201, 4.0]]                             : 0.00435052827843381
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 0.00435052827843381
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 0.00435052827843381
+	['RelationshipFactX', [201, 201, 'North', 'North', 0.0]]  : 0.004143360265175057
+	['PositionXFact', [201, 2.0]]                             : 0.0039361922519163045
+	['VelocityYFact', [202, 1.0]]                             : 0.0037290242386575512
+	['RelationshipFactY', [201, 201, 'South', 'North', -4.0]] : 0.0037290242386575512
+	['RelationshipFactY', [201, 201, 'North', 'South', 4.0]]  : 0.0037290242386575512
+	['PositionYFact', [202, 4.0]]                             : 0.0035218562253987984
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 0.0035218562253987984
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 0.0035218562253987984
+	['RelationshipFactX', [201, 202, 'East', 'West', 0.0]]    : 0.0035218562253987984
+	['RelationshipFactX', [202, 201, 'West', 'East', 0.0]]    : 0.0035218562253987984
+	['AnimationFact', [202, 'dog', 1.0, 1.0]]                 : 0.0033146882121400456
+	['PositionYFact', [202, 1.0]]                             : 0.0033146882121400456
+	['AnimationFact', [201, 'truck', 2.0, 1.0]]               : 0.0033146882121400456
+	['VariableFact', ['right', True]]                         : 0.0033146882121400456
+	['AnimationFact', [201, 'grassBlock', 1.0, 1.0]]          : 0.0033146882121400456
+	['RelationshipFactX', [201, 201, 'West', 'East', 4.0]]    : 0.003107520198881293
+	['RelationshipFactX', [201, 201, 'East', 'West', -4.0]]   : 0.003107520198881293
+	['RelationshipFactX', [201, 201, 'West', 'East', 3.0]]    : 0.003107520198881293
+	['RelationshipFactX', [201, 201, 'East', 'West', -3.0]]   : 0.003107520198881293
+	['RelationshipFactX', [201, 202, 'North', 'North', 0.0]]  : 0.003107520198881293
+	['RelationshipFactX', [202, 201, 'North', 'North', 0.0]]  : 0.003107520198881293
+	['PositionYFact', [202, 8.0]]                             : 0.00290035218562254
+	['RelationshipFactY', [201, 202, 'South', 'North', -4.0]] : 0.00290035218562254
+	['RelationshipFactY', [202, 201, 'North', 'South', 4.0]]  : 0.00290035218562254
+	['PositionXFact', [201, 15.0]]                            : 0.00290035218562254
+	['RelationshipFactX', [201, 202, 'West', 'East', 9.0]]    : 0.0026931841723637872
+	['RelationshipFactX', [202, 201, 'East', 'West', -9.0]]   : 0.0026931841723637872
+	['PositionXFact', [201, 13.0]]                            : 0.0026931841723637872
+	['PositionYFact', [202, 7.0]]                             : 0.0026931841723637872
+	['PositionXFact', [202, 4.0]]                             : 0.002486016159105034
+	['VelocityYFact', [202, 0]]                               : 0.002486016159105034
+	['VariableFact', ['up', True]]                            : 0.002486016159105034
+	['RelationshipFactY', [201, 201, 'South', 'North', -1.0]] : 0.002486016159105034
+	['RelationshipFactY', [201, 201, 'South', 'South', 0.0]]  : 0.002486016159105034
+	['RelationshipFactY', [201, 201, 'North', 'South', 1.0]]  : 0.002486016159105034
+	['RelationshipFactY', [201, 202, 'South', 'North', -3.0]] : 0.002486016159105034
+	['RelationshipFactY', [202, 201, 'North', 'South', 3.0]]  : 0.002486016159105034
+	['AnimationFact', [201, 'white girl', 2.0, 2.0]]          : 0.0020716801325875284
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 0.0020716801325875284
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 0.0020716801325875284
+	['PositionYFact', [201, 5.0]]                             : 0.0020716801325875284
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 0.0018645121193287756
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 0.0018645121193287756
+	['PositionXFact', [201, 12.0]]                            : 0.0018645121193287756
+	['PositionXFact', [201, 11.0]]                            : 0.0018645121193287756
+	['PositionXFact', [201, 14.0]]                            : 0.0018645121193287756
+	['PositionYFact', [202, 0.0]]                             : 0.0018645121193287756
+	['RelationshipFactX', [201, 201, 'North', 'East', 0.0]]   : 0.0018645121193287756
+	['RelationshipFactY', [201, 201, 'South', 'North', -3.0]] : 0.0018645121193287756
+	['RelationshipFactX', [201, 201, 'North', 'West', 0.0]]   : 0.0018645121193287756
+	['RelationshipFactX', [201, 201, 'East', 'North', 0.0]]   : 0.0018645121193287756
+	['RelationshipFactX', [201, 201, 'East', 'East', 0.0]]    : 0.0018645121193287756
+	['RelationshipFactY', [201, 201, 'North', 'South', 3.0]]  : 0.0018645121193287756
+	['VariableFact', ['spacePrev', True]]                     : 0.0016573441060700228
+	['RelationshipFactY', [201, 202, 'South', 'South', 0.0]]  : 0.0016573441060700228
+	['RelationshipFactY', [202, 201, 'South', 'South', 0.0]]  : 0.0016573441060700228
+	['RelationshipFactX', [202, 201, 'West', 'East', 3.0]]    : 0.0016573441060700228
+	['RelationshipFactX', [201, 202, 'East', 'West', -3.0]]   : 0.0016573441060700228
+	['VelocityXFact', [202, 1.0]]                             : 0.0016573441060700228
+	['RelationshipFactY', [201, 202, 'North', 'South', 1.0]]  : 0.0016573441060700228
+	['RelationshipFactY', [202, 201, 'South', 'North', -1.0]] : 0.0016573441060700228
+	['AnimationFact', [201, 'chicken', 1.0, 1.0]]             : 0.0016573441060700228
+	['AnimationFact', [201, 'crate', 2.0, 2.0]]               : 0.0016573441060700228
+	['PositionYFact', [201, 7.0]]                             : 0.0016573441060700228
+	['AnimationFact', [201, 'dog', 1.0, 1.0]]                 : 0.0016573441060700228
+	['AnimationFact', [202, 'truck', 2.0, 1.0]]               : 0.00145017609281127
+	['RelationshipFactX', [201, 202, 'West', 'East', 1.0]]    : 0.00145017609281127
+	['RelationshipFactX', [202, 201, 'East', 'West', -1.0]]   : 0.00145017609281127
+	['RelationshipFactX', [202, 201, 'West', 'East', 1.0]]    : 0.00145017609281127
+	['RelationshipFactY', [202, 201, 'North', 'South', 2.0]]  : 0.00145017609281127
+	['RelationshipFactX', [201, 202, 'East', 'West', -1.0]]   : 0.00145017609281127
+	['RelationshipFactY', [201, 202, 'South', 'North', -2.0]] : 0.00145017609281127
+	['PositionYFact', [202, 2.0]]                             : 0.00145017609281127
+	['RelationshipFactY', [201, 202, 'East', 'North', 0.0]]   : 0.00145017609281127
+	['RelationshipFactY', [202, 201, 'North', 'East', 0.0]]   : 0.00145017609281127
+	['AnimationFact', [201, 'Black Guy', 2.0, 2.0]]           : 0.00145017609281127
+	['AnimationFact', [202, 'Black Guy', 2.0, 2.0]]           : 0.00145017609281127
+	['PositionXFact', [202, 9.0]]                             : 0.00145017609281127
+	['RelationshipFactY', [201, 202, 'East', 'South', 0.0]]   : 0.001243008079552517
+	['RelationshipFactY', [202, 201, 'South', 'East', 0.0]]   : 0.001243008079552517
+	['VelocityXFact', [201, 20.0]]                            : 0.001243008079552517
+	['PositionXFact', [201, 0.0]]                             : 0.001243008079552517
+	['RelationshipFactY', [202, 201, 'South', 'North', -2.0]] : 0.001243008079552517
+	['RelationshipFactY', [201, 202, 'North', 'South', 2.0]]  : 0.001243008079552517
+	['PositionXFact', [201, 3.0]]                             : 0.001243008079552517
+	['RelationshipFactX', [202, 201, 'West', 'East', 2.0]]    : 0.001243008079552517
+	['RelationshipFactX', [201, 202, 'East', 'West', -2.0]]   : 0.001243008079552517
+	['RelationshipFactY', [201, 201, 'East', 'South', 0.0]]   : 0.001243008079552517
+	['RelationshipFactY', [201, 201, 'South', 'East', 0.0]]   : 0.001243008079552517
+	['PositionXFact', [202, 11.0]]                            : 0.0010358400662937642
+	['PositionXFact', [202, 12.0]]                            : 0.0010358400662937642
+	['PositionXFact', [201, 17.0]]                            : 0.0010358400662937642
+	['RelationshipFactX', [201, 202, 'West', 'East', 0.0]]    : 0.0010358400662937642
+	['RelationshipFactX', [202, 201, 'East', 'West', 0.0]]    : 0.0010358400662937642
+	['VelocityYFact', [202, 3.0]]                             : 0.0008286720530350114
+	['PositionXFact', [202, 6.0]]                             : 0.0008286720530350114
+	['RelationshipFactX', [202, 201, 'East', 'West', -3.0]]   : 0.0008286720530350114
+	['RelationshipFactX', [201, 202, 'West', 'East', 3.0]]    : 0.0008286720530350114
+	['VariableFact', ['rightPrev', True]]                     : 0.0008286720530350114
+	['PositionXFact', [202, 2.0]]                             : 0.0008286720530350114
+	['RelationshipFactY', [201, 202, 'South', 'North', -1.0]] : 0.0008286720530350114
+	['RelationshipFactY', [202, 201, 'North', 'South', 1.0]]  : 0.0008286720530350114
+	['PositionXFact', [201, 16.0]]                            : 0.0006215040397762585
+	['RelationshipFactX', [201, 202, 'West', 'East', 11.0]]   : 0.0006215040397762585
+	['RelationshipFactX', [202, 201, 'East', 'West', -11.0]]  : 0.0006215040397762585
+	['VariableFact', ['left', True]]                          : 0.0006215040397762585
+	['RelationshipFactX', [201, 202, 'North', 'West', 0.0]]   : 0.0006215040397762585
+	['VelocityXFact', [201, -3.0]]                            : 0.0006215040397762585
+	['AnimationFact', [202, 'adventure lady', 2.0, 1.0]]      : 0.0006215040397762585
+	['PositionXFact', [201, 6.0]]                             : 0.0006215040397762585
+	['VelocityXFact', [201, -2.0]]                            : 0.0006215040397762585
+	['PositionXFact', [202, 8.0]]                             : 0.0006215040397762585
+	['VelocityXFact', [201, 3.0]]                             : 0.0006215040397762585
+	['VelocityYFact', [201, 1.0]]                             : 0.0006215040397762585
+	['VelocityXFact', [202, 2.0]]                             : 0.0004143360265175057
+	['PositionYFact', [202, 5.0]]                             : 0.0004143360265175057
+	['RelationshipFactX', [201, 202, 'West', 'East', 14.0]]   : 0.0004143360265175057
+	['RelationshipFactX', [202, 201, 'East', 'West', -14.0]]  : 0.0004143360265175057
+	['VelocityYFact', [202, -2.0]]                            : 0.0004143360265175057
+	['RelationshipFactX', [201, 202, 'West', 'East', 4.0]]    : 0.0004143360265175057
+	['RelationshipFactX', [202, 201, 'East', 'West', -4.0]]   : 0.0004143360265175057
+	['AnimationFact', [201, 'Gun', 2.0, 1.0]]                 : 0.0004143360265175057
+	['AnimationFact', [201, 'Zombie', 2.0, 2.0]]              : 0.0004143360265175057
+	['AnimationFact', [201, 'adventure lady', 2.0, 1.0]]      : 0.0004143360265175057
+	['RelationshipFactX', [202, 201, 'East', 'West', -5.0]]   : 0.0004143360265175057
+	['RelationshipFactX', [201, 202, 'West', 'East', 5.0]]    : 0.0004143360265175057
+	['VelocityYFact', [201, -1.0]]                            : 0.0004143360265175057
+	['PositionXFact', [201, 19.0]]                            : 0.0004143360265175057
+	['RelationshipFactX', [201, 202, 'West', 'East', 13.0]]   : 0.0004143360265175057
+	['RelationshipFactX', [202, 201, 'East', 'West', -13.0]]  : 0.0004143360265175057
+	['AnimationFact', [202, 'chicken', 1.0, 1.0]]             : 0.0004143360265175057
+	['PositionXFact', [202, 0.0]]                             : 0.0004143360265175057
+	['PositionXFact', [201, 7.0]]                             : 0.0004143360265175057
+	['RelationshipFactY', [201, 202, 'North', 'South', 0.0]]  : 0.0004143360265175057
+	['RelationshipFactX', [202, 201, 'East', 'East', 0.0]]    : 0.0004143360265175057
+	['RelationshipFactY', [202, 201, 'South', 'North', 0.0]]  : 0.0004143360265175057
+	['PositionXFact', [201, 21.0]]                            : 0.00020716801325875285
+	['RelationshipFactX', [201, 202, 'West', 'East', 16.0]]   : 0.00020716801325875285
+	['RelationshipFactX', [202, 201, 'East', 'West', -16.0]]  : 0.00020716801325875285
+	['RelationshipFactX', [202, 201, 'North', 'East', 0.0]]   : 0.00020716801325875285
+	['PositionXFact', [201, 20.0]]                            : 0.00020716801325875285
+	['AnimationFact', [202, 'explosion2', 1.0, 1.0]]          : 0.00020716801325875285
+	['VelocityXFact', [202, -2.0]]                            : 0.00020716801325875285
+	['RelationshipFactX', [202, 201, 'West', 'East', 5.0]]    : 0.00020716801325875285
+	['RelationshipFactX', [202, 201, 'West', 'East', 7.0]]    : 0.00020716801325875285
+	['RelationshipFactX', [201, 202, 'East', 'West', -5.0]]   : 0.00020716801325875285
+	['RelationshipFactX', [201, 202, 'East', 'West', -7.0]]   : 0.00020716801325875285
+	['AnimationFact', [202, 'Gun', 2.0, 1.0]]                 : 0.00020716801325875285
+	['VelocityXFact', [201, 2.0]]                             : 0.00020716801325875285
+	['RelationshipFactX', [201, 201, 'East', 'West', -7.0]]   : 0.00020716801325875285
+	['RelationshipFactX', [201, 201, 'West', 'East', 7.0]]    : 0.00020716801325875285
+	['AnimationFact', [202, 'white girl', 2.0, 2.0]]          : 0.00020716801325875285
+	['VariableFact', ['upPrev', True]]                        : 0.00020716801325875285
+	['PositionXFact', [201, 18.0]]                            : 0.00020716801325875285
+	['RelationshipFactX', [201, 202, 'West', 'East', 12.0]]   : 0.00020716801325875285
+	['RelationshipFactX', [202, 201, 'East', 'West', -12.0]]  : 0.00020716801325875285
+	['PositionYFact', [201, 1.0]]                             : 0.00020716801325875285
+	['RelationshipFactX', [201, 201, 'West', 'East', 5.0]]    : 0.00020716801325875285
+	['RelationshipFactX', [201, 201, 'East', 'West', -5.0]]   : 0.00020716801325875285
+	['RelationshipFactX', [201, 201, 'West', 'East', 9.0]]    : 0.00020716801325875285
+	['RelationshipFactX', [201, 201, 'East', 'West', -9.0]]   : 0.00020716801325875285
+	['VelocityXFact', [202, 9.0]]                             : 0.00020716801325875285
+	['VelocityXFact', [202, 10.0]]                            : 0.00020716801325875285
+	['VelocityXFact', [202, -1.0]]                            : 0.00020716801325875285
+	['VelocityXFact', [202, 21.0]]                            : 0.00020716801325875285
+	['VelocityYFact', [202, -3.0]]                            : 0.00020716801325875285
+	['RelationshipFactX', [201, 202, 'North', 'East', 0.0]]   : 0.00020716801325875285
+	['RelationshipFactX', [202, 201, 'East', 'North', 0.0]]   : 0.00020716801325875285
+	['PositionYFact', [201, 9.0]]                             : 0.00020716801325875285
+	['AnimationFact', [201, 'treepine', 2.0, 4.0]]            : 0.00020716801325875285
+	['VariableFact', ['down', True]]                          : 0.00020716801325875285
+	['PositionYFact', [201, 8.0]]                             : 0.00020716801325875285
+
+CENTER: Freeplay12_9	LEN OF CONDITIONS: 223
+	['VariableFact', ['upPrev', False]]                       : 0.04851694915254237
+	['VariableFact', ['downPrev', False]]                     : 0.04851694915254237
+	['VariableFact', ['up', False]]                           : 0.04809322033898305
+	['VariableFact', ['down', False]]                         : 0.04777542372881356
+	['VariableFact', ['spacePrev', False]]                    : 0.0451271186440678
+	['VariableFact', ['leftPrev', False]]                     : 0.04396186440677966
+	['VariableFact', ['space', False]]                        : 0.04290254237288135
+	['VariableFact', ['rightPrev', False]]                    : 0.040572033898305083
+	['VariableFact', ['left', False]]                         : 0.040360169491525426
+	['VelocityYFact', [201, 0]]                               : 0.03538135593220339
+	['VariableFact', ['right', False]]                        : 0.03411016949152542
+	['VelocityYFact', [202, 0]]                               : 0.03294491525423729
+	['PositionYFact', [201, 4.0]]                             : 0.026906779661016948
+	['PositionYFact', [202, 4.0]]                             : 0.026059322033898304
+	['VelocityXFact', [202, 0.0]]                             : 0.017796610169491526
+	['VelocityXFact', [201, 0]]                               : 0.01694915254237288
+	['VelocityXFact', [202, 1.0]]                             : 0.014936440677966102
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 0.013665254237288135
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 0.013665254237288135
+	['VelocityXFact', [201, 0.0]]                             : 0.013241525423728813
+	['AnimationFact', [201, 'crate', 2.0, 2.0]]               : 0.0125
+	['AnimationFact', [202, 'crate', 2.0, 2.0]]               : 0.01239406779661017
+	['VelocityYFact', [201, 0.0]]                             : 0.011864406779661017
+	['PositionYFact', [202, 0.0]]                             : 0.010699152542372881
+	['VariableFact', ['right', True]]                         : 0.01038135593220339
+	['AnimationFact', [202, 'white girl', 2.0, 2.0]]          : 0.01038135593220339
+	['AnimationFact', [201, 'white girl', 2.0, 2.0]]          : 0.010169491525423728
+	['VelocityXFact', [201, 1.0]]                             : 0.009851694915254238
+	['VelocityYFact', [202, 0.0]]                             : 0.009427966101694916
+	['PositionYFact', [201, 0.0]]                             : 0.008792372881355932
+	['AnimationFact', [201, 'chick', 1.0, 1.0]]               : 0.00826271186440678
+	['AnimationFact', [202, 'longblock', 1.0, 4.0]]           : 0.007838983050847457
+	['PositionXFact', [202, 9.0]]                             : 0.007521186440677966
+	['PositionXFact', [201, 8.0]]                             : 0.007097457627118644
+	['VariableFact', ['left', True]]                          : 0.006673728813559322
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 0.00625
+	['RelationshipFactX', [201, 202, 'East', 'West', 0.0]]    : 0.0057203389830508475
+	['RelationshipFactX', [202, 201, 'West', 'East', 0.0]]    : 0.0057203389830508475
+	['VelocityXFact', [202, 0]]                               : 0.005614406779661017
+	['PositionXFact', [201, 6.0]]                             : 0.005508474576271186
+	['PositionXFact', [201, 5.0]]                             : 0.004766949152542373
+	['RelationshipFactX', [202, 201, 'East', 'West', 0.0]]    : 0.004766949152542373
+	['RelationshipFactX', [201, 202, 'West', 'East', 0.0]]    : 0.004766949152542373
+	['VelocityYFact', [201, -1.0]]                            : 0.004025423728813559
+	['AnimationFact', [201, 'Black Guy', 2.0, 2.0]]           : 0.004025423728813559
+	['PositionYFact', [201, 6.0]]                             : 0.004025423728813559
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 0.0038135593220338985
+	['PositionXFact', [201, 4.0]]                             : 0.0036016949152542373
+	['PositionYFact', [201, 7.0]]                             : 0.0036016949152542373
+	['PositionXFact', [202, 6.0]]                             : 0.0034957627118644067
+	['PositionXFact', [201, 11.0]]                            : 0.003389830508474576
+	['PositionXFact', [201, 9.0]]                             : 0.0032838983050847456
+	['PositionXFact', [202, 10.0]]                            : 0.003072033898305085
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 0.003072033898305085
+	['RelationshipFactY', [202, 201, 'South', 'North', -3.0]] : 0.0029661016949152543
+	['RelationshipFactY', [201, 202, 'North', 'South', 3.0]]  : 0.0029661016949152543
+	['RelationshipFactX', [201, 202, 'East', 'West', -2.0]]   : 0.0029661016949152543
+	['RelationshipFactX', [202, 201, 'West', 'East', 2.0]]    : 0.0029661016949152543
+	['VelocityXFact', [201, -1.0]]                            : 0.0028601694915254237
+	['AnimationFact', [202, 'Black Guy', 2.0, 2.0]]           : 0.0028601694915254237
+	['PositionXFact', [202, 8.0]]                             : 0.0028601694915254237
+	['VariableFact', ['rightPrev', True]]                     : 0.002754237288135593
+	['PositionXFact', [201, 10.0]]                            : 0.0026483050847457626
+	['VariableFact', ['leftPrev', True]]                      : 0.002542372881355932
+	['VelocityXFact', [202, 2.0]]                             : 0.002542372881355932
+	['PositionYFact', [201, 2.0]]                             : 0.002542372881355932
+	['AnimationFact', [202, 'chicken', 1.0, 1.0]]             : 0.002436440677966102
+	['VariableFact', ['space', True]]                         : 0.0023305084745762713
+	['VelocityXFact', [202, -1.0]]                            : 0.0022245762711864407
+	['PositionXFact', [201, 7.0]]                             : 0.00211864406779661
+	['PositionXFact', [201, 12.0]]                            : 0.0019067796610169492
+	['PositionYFact', [202, 6.0]]                             : 0.0019067796610169492
+	['PositionYFact', [201, 3.0]]                             : 0.001694915254237288
+	['VelocityXFact', [201, 2.0]]                             : 0.001694915254237288
+	['PositionXFact', [202, 21.0]]                            : 0.0015889830508474577
+	['PositionYFact', [202, 5.0]]                             : 0.0015889830508474577
+	['PositionXFact', [202, 11.0]]                            : 0.0015889830508474577
+	['RelationshipFactX', [202, 201, 'East', 'West', -2.0]]   : 0.0015889830508474577
+	['RelationshipFactX', [201, 202, 'West', 'East', 2.0]]    : 0.0015889830508474577
+	['VelocityXFact', [202, 3.0]]                             : 0.0015889830508474577
+	['VelocityXFact', [202, 21.0]]                            : 0.0014830508474576272
+	['PositionYFact', [201, 5.0]]                             : 0.0014830508474576272
+	['VelocityXFact', [202, 20.0]]                            : 0.0014830508474576272
+	['AnimationFact', [202, 'truck', 2.0, 1.0]]               : 0.0014830508474576272
+	['PositionXFact', [202, 7.0]]                             : 0.0014830508474576272
+	['AnimationFact', [201, 'grassBlock', 1.0, 1.0]]          : 0.0014830508474576272
+	['PositionXFact', [201, 13.0]]                            : 0.0014830508474576272
+	['PositionXFact', [202, 4.0]]                             : 0.0013771186440677966
+	['AnimationFact', [201, 'chicken', 1.0, 1.0]]             : 0.0013771186440677966
+	['RelationshipFactX', [202, 201, 'East', 'West', -1.0]]   : 0.001271186440677966
+	['RelationshipFactX', [201, 202, 'West', 'East', 1.0]]    : 0.001271186440677966
+	['RelationshipFactX', [201, 202, 'East', 'West', -1.0]]   : 0.001271186440677966
+	['RelationshipFactX', [202, 201, 'West', 'East', 1.0]]    : 0.001271186440677966
+	['PositionYFact', [202, 3.0]]                             : 0.0011652542372881357
+	['AnimationFact', [202, 'Zombie', 2.0, 2.0]]              : 0.001059322033898305
+	['AnimationFact', [201, 'Zombie', 2.0, 2.0]]              : 0.001059322033898305
+	['VelocityYFact', [202, -1.0]]                            : 0.001059322033898305
+	['PositionXFact', [202, 2.0]]                             : 0.001059322033898305
+	['VelocityXFact', [201, 3.0]]                             : 0.001059322033898305
+	['PositionXFact', [202, 12.0]]                            : 0.0009533898305084746
+	['PositionXFact', [201, 14.0]]                            : 0.0009533898305084746
+	['AnimationFact', [202, 'dog', 1.0, 1.0]]                 : 0.0009533898305084746
+	['RelationshipFactY', [201, 202, 'North', 'South', 0.0]]  : 0.000847457627118644
+	['RelationshipFactY', [202, 201, 'South', 'North', 0.0]]  : 0.000847457627118644
+	['PositionXFact', [202, 5.0]]                             : 0.000847457627118644
+	['AnimationFact', [201, 'treepine', 2.0, 4.0]]            : 0.000847457627118644
+	['RelationshipFactX', [201, 202, 'East', 'West', -3.0]]   : 0.0007415254237288136
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 0.0007415254237288136
+	['RelationshipFactX', [202, 201, 'West', 'East', 3.0]]    : 0.0007415254237288136
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 0.0007415254237288136
+	['RelationshipFactY', [202, 201, 'South', 'North', -2.0]] : 0.0007415254237288136
+	['RelationshipFactY', [201, 202, 'North', 'South', 2.0]]  : 0.0007415254237288136
+	['VelocityYFact', [202, 1.0]]                             : 0.0007415254237288136
+	['PositionYFact', [201, 1.0]]                             : 0.000635593220338983
+	['VariableFact', ['spacePrev', True]]                     : 0.000635593220338983
+	['PositionXFact', [201, 2.0]]                             : 0.000635593220338983
+	['RelationshipFactY', [202, 201, 'South', 'South', 0.0]]  : 0.000635593220338983
+	['RelationshipFactY', [201, 202, 'South', 'South', 0.0]]  : 0.000635593220338983
+	['RelationshipFactX', [202, 201, 'North', 'North', 0.0]]  : 0.0005296610169491525
+	['RelationshipFactX', [201, 202, 'North', 'North', 0.0]]  : 0.0005296610169491525
+	['RelationshipFactY', [201, 202, 'South', 'North', -2.0]] : 0.0005296610169491525
+	['RelationshipFactY', [202, 201, 'North', 'South', 2.0]]  : 0.0005296610169491525
+	['RelationshipFactY', [201, 202, 'South', 'North', -1.0]] : 0.0005296610169491525
+	['RelationshipFactY', [202, 201, 'North', 'South', 1.0]]  : 0.0005296610169491525
+	['RelationshipFactY', [202, 201, 'South', 'North', -1.0]] : 0.0005296610169491525
+	['RelationshipFactY', [201, 202, 'North', 'South', 1.0]]  : 0.0005296610169491525
+	['PositionXFact', [202, 13.0]]                            : 0.0005296610169491525
+	['PositionXFact', [202, 20.0]]                            : 0.000423728813559322
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 0.000423728813559322
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 0.000423728813559322
+	['PositionXFact', [202, 14.0]]                            : 0.000423728813559322
+	['PositionXFact', [201, 21.0]]                            : 0.000423728813559322
+	['VelocityYFact', [201, 1.0]]                             : 0.000423728813559322
+	['PositionYFact', [202, 2.0]]                             : 0.000423728813559322
+	['RelationshipFactX', [202, 201, 'West', 'East', 15.0]]   : 0.0003177966101694915
+	['RelationshipFactX', [201, 202, 'East', 'West', -15.0]]  : 0.0003177966101694915
+	['PositionXFact', [201, 1.0]]                             : 0.0003177966101694915
+	['RelationshipFactX', [202, 201, 'North', 'East', 0.0]]   : 0.0003177966101694915
+	['VelocityXFact', [201, 21.0]]                            : 0.0003177966101694915
+	['RelationshipFactX', [202, 201, 'West', 'East', 14.0]]   : 0.0003177966101694915
+	['RelationshipFactX', [201, 202, 'East', 'West', -14.0]]  : 0.0003177966101694915
+	['PositionXFact', [202, 19.0]]                            : 0.0003177966101694915
+	['RelationshipFactX', [202, 201, 'West', 'East', 13.0]]   : 0.0003177966101694915
+	['RelationshipFactX', [201, 202, 'East', 'West', -13.0]]  : 0.0003177966101694915
+	['AnimationFact', [202, 'adventure lady', 2.0, 1.0]]      : 0.0003177966101694915
+	['RelationshipFactX', [201, 202, 'West', 'East', 13.0]]   : 0.0003177966101694915
+	['RelationshipFactX', [202, 201, 'East', 'West', -13.0]]  : 0.0003177966101694915
+	['AnimationFact', [201, 'dog', 1.0, 1.0]]                 : 0.000211864406779661
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 0.000211864406779661
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 0.000211864406779661
+	['RelationshipFactX', [201, 202, 'North', 'West', 0.0]]   : 0.000211864406779661
+	['RelationshipFactX', [201, 201, 'North', 'West', 0.0]]   : 0.000211864406779661
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 0.000211864406779661
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 0.000211864406779661
+	['RelationshipFactX', [201, 201, 'East', 'West', -3.0]]   : 0.000211864406779661
+	['RelationshipFactX', [201, 201, 'North', 'East', 0.0]]   : 0.000211864406779661
+	['RelationshipFactX', [201, 201, 'West', 'East', 3.0]]    : 0.000211864406779661
+	['RelationshipFactX', [201, 202, 'East', 'West', -16.0]]  : 0.000211864406779661
+	['RelationshipFactX', [201, 201, 'East', 'West', -16.0]]  : 0.000211864406779661
+	['RelationshipFactX', [202, 201, 'West', 'East', 16.0]]   : 0.000211864406779661
+	['RelationshipFactX', [201, 201, 'West', 'East', 16.0]]   : 0.000211864406779661
+	['VelocityXFact', [202, 18.0]]                            : 0.000211864406779661
+	['PositionYFact', [201, 8.0]]                             : 0.000211864406779661
+	['RelationshipFactY', [202, 201, 'South', 'North', -4.0]] : 0.000211864406779661
+	['RelationshipFactY', [201, 202, 'North', 'South', 4.0]]  : 0.000211864406779661
+	['VelocityYFact', [201, 2.0]]                             : 0.000211864406779661
+	['VelocityXFact', [202, 19.0]]                            : 0.000211864406779661
+	['PositionXFact', [201, 0.0]]                             : 0.000211864406779661
+	['VelocityXFact', [202, 4.0]]                             : 0.000211864406779661
+	['RelationshipFactY', [201, 202, 'East', 'North', 0.0]]   : 0.000211864406779661
+	['RelationshipFactY', [202, 201, 'North', 'East', 0.0]]   : 0.000211864406779661
+	['PositionXFact', [201, 18.0]]                            : 0.000211864406779661
+	['PositionXFact', [201, 17.0]]                            : 0.000211864406779661
+	['VelocityXFact', [202, 7.0]]                             : 0.000211864406779661
+	['VelocityXFact', [202, 8.0]]                             : 0.000211864406779661
+	['PositionXFact', [201, 15.0]]                            : 0.000211864406779661
+	['VelocityXFact', [202, 9.0]]                             : 0.000211864406779661
+	['AnimationFact', [201, 'truck', 2.0, 1.0]]               : 0.000211864406779661
+	['PositionYFact', [202, 1.0]]                             : 0.000211864406779661
+	['RelationshipFactX', [201, 202, 'North', 'East', 0.0]]   : 0.000211864406779661
+	['RelationshipFactX', [202, 201, 'East', 'North', 0.0]]   : 0.000211864406779661
+	['RelationshipFactY', [201, 201, 'South', 'North', -4.0]] : 0.0001059322033898305
+	['RelationshipFactY', [201, 201, 'North', 'South', 4.0]]  : 0.0001059322033898305
+	['PositionYFact', [202, 7.0]]                             : 0.0001059322033898305
+	['RelationshipFactY', [201, 202, 'South', 'North', -4.0]] : 0.0001059322033898305
+	['RelationshipFactY', [202, 201, 'North', 'South', 4.0]]  : 0.0001059322033898305
+	['RelationshipFactY', [201, 201, 'South', 'North', -1.0]] : 0.0001059322033898305
+	['RelationshipFactY', [201, 201, 'North', 'South', 1.0]]  : 0.0001059322033898305
+	['PositionXFact', [201, 3.0]]                             : 0.0001059322033898305
+	['RelationshipFactY', [202, 201, 'East', 'North', 0.0]]   : 0.0001059322033898305
+	['RelationshipFactY', [201, 202, 'North', 'East', 0.0]]   : 0.0001059322033898305
+	['VelocityYFact', [201, -2.0]]                            : 0.0001059322033898305
+	['AnimationFact', [201, 'adventure lady', 2.0, 1.0]]      : 0.0001059322033898305
+	['AnimationFact', [202, 'grassBlock', 1.0, 1.0]]          : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'East', 'West', -6.0]]   : 0.0001059322033898305
+	['RelationshipFactX', [202, 201, 'West', 'East', 6.0]]    : 0.0001059322033898305
+	['PositionXFact', [202, 0.0]]                             : 0.0001059322033898305
+	['PositionXFact', [202, 15.0]]                            : 0.0001059322033898305
+	['RelationshipFactX', [202, 201, 'West', 'East', 4.0]]    : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'East', 'West', -4.0]]   : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'East', 'West', -5.0]]   : 0.0001059322033898305
+	['RelationshipFactX', [202, 201, 'West', 'East', 5.0]]    : 0.0001059322033898305
+	['PositionXFact', [201, 20.0]]                            : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'West', 'East', 11.0]]   : 0.0001059322033898305
+	['RelationshipFactX', [202, 201, 'East', 'West', -11.0]]  : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'West', 'East', 16.0]]   : 0.0001059322033898305
+	['RelationshipFactX', [202, 201, 'East', 'West', -16.0]]  : 0.0001059322033898305
+	['VelocityXFact', [202, 5.0]]                             : 0.0001059322033898305
+	['PositionXFact', [201, 19.0]]                            : 0.0001059322033898305
+	['VelocityXFact', [202, 6.0]]                             : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'West', 'East', 7.0]]    : 0.0001059322033898305
+	['RelationshipFactX', [202, 201, 'East', 'West', -7.0]]   : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'West', 'East', 5.0]]    : 0.0001059322033898305
+	['RelationshipFactX', [202, 201, 'East', 'West', -5.0]]   : 0.0001059322033898305
+	['PositionXFact', [201, 16.0]]                            : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'West', 'East', 3.0]]    : 0.0001059322033898305
+	['RelationshipFactX', [202, 201, 'East', 'West', -3.0]]   : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'West', 'East', 12.0]]   : 0.0001059322033898305
+	['RelationshipFactX', [202, 201, 'East', 'West', -12.0]]  : 0.0001059322033898305
+	['VelocityXFact', [202, 10.0]]                            : 0.0001059322033898305
+	['VelocityYFact', [202, 3.0]]                             : 0.0001059322033898305
+	['PositionXFact', [202, 1.0]]                             : 0.0001059322033898305
+	['RelationshipFactX', [201, 202, 'East', 'North', 0.0]]   : 0.0001059322033898305
+
+CENTER: Freeplay9_3	LEN OF CONDITIONS: 194
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 0.036721311475409836
+	['VelocityYFact', [201, 0]]                               : 0.036065573770491806
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 0.024262295081967214
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 0.024262295081967214
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 0.022295081967213116
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 0.022295081967213116
+	['VelocityXFact', [201, 0]]                               : 0.02098360655737705
+	['VariableFact', ['up', False]]                           : 0.020327868852459016
+	['VariableFact', ['down', False]]                         : 0.020327868852459016
+	['VariableFact', ['upPrev', False]]                       : 0.020327868852459016
+	['VariableFact', ['downPrev', False]]                     : 0.020327868852459016
+	['VariableFact', ['leftPrev', False]]                     : 0.020327868852459016
+	['VariableFact', ['space', False]]                        : 0.019672131147540985
+	['VariableFact', ['spacePrev', False]]                    : 0.019672131147540985
+	['VariableFact', ['rightPrev', False]]                    : 0.019672131147540985
+	['AnimationFact', [201, 'Black Guy', 2.0, 2.0]]           : 0.01901639344262295
+	['VelocityXFact', [201, 0.0]]                             : 0.018360655737704918
+	['VariableFact', ['right', False]]                        : 0.017704918032786884
+	['VariableFact', ['left', False]]                         : 0.017049180327868854
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 0.015737704918032787
+	['VelocityXFact', [202, 1.0]]                             : 0.015081967213114755
+	['PositionYFact', [201, 3.0]]                             : 0.014426229508196721
+	['PositionYFact', [201, 0.0]]                             : 0.014426229508196721
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 0.01377049180327869
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 0.01377049180327869
+	['VelocityYFact', [201, 0.0]]                             : 0.01377049180327869
+	['RelationshipFactX', [201, 201, 'West', 'East', 0.0]]    : 0.01180327868852459
+	['RelationshipFactX', [201, 201, 'East', 'West', 0.0]]    : 0.01180327868852459
+	['PositionYFact', [201, 2.0]]                             : 0.010491803278688525
+	['VelocityYFact', [202, 0]]                               : 0.009836065573770493
+	['VelocityXFact', [201, 1.0]]                             : 0.009180327868852459
+	['RelationshipFactX', [201, 202, 'East', 'West', -13.0]]  : 0.009180327868852459
+	['RelationshipFactX', [202, 201, 'West', 'East', 13.0]]   : 0.009180327868852459
+	['PositionXFact', [201, 6.0]]                             : 0.009180327868852459
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 0.008524590163934427
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 0.008524590163934427
+	['RelationshipFactX', [201, 201, 'East', 'West', -4.0]]   : 0.008524590163934427
+	['RelationshipFactX', [201, 201, 'West', 'East', 4.0]]    : 0.008524590163934427
+	['PositionYFact', [202, 0.0]]                             : 0.008524590163934427
+	['VelocityYFact', [202, 0.0]]                             : 0.007868852459016393
+	['AnimationFact', [202, 'chicken', 1.0, 1.0]]             : 0.007868852459016393
+	['PositionXFact', [202, 21.0]]                            : 0.007868852459016393
+	['RelationshipFactX', [201, 201, 'North', 'North', 0.0]]  : 0.006557377049180328
+	['RelationshipFactX', [201, 201, 'East', 'West', -1.0]]   : 0.006557377049180328
+	['RelationshipFactX', [201, 201, 'West', 'East', 1.0]]    : 0.006557377049180328
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 0.005901639344262295
+	['RelationshipFactY', [201, 201, 'North', 'South', 4.0]]  : 0.005901639344262295
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 0.005901639344262295
+	['RelationshipFactY', [201, 201, 'South', 'North', -4.0]] : 0.005901639344262295
+	['PositionYFact', [202, 3.0]]                             : 0.005901639344262295
+	['PositionXFact', [201, 3.0]]                             : 0.005901639344262295
+	['PositionXFact', [201, 9.0]]                             : 0.005245901639344262
+	['PositionXFact', [201, 5.0]]                             : 0.005245901639344262
+	['RelationshipFactX', [202, 201, 'West', 'East', 2.0]]    : 0.0045901639344262295
+	['RelationshipFactX', [201, 202, 'East', 'West', -2.0]]   : 0.0045901639344262295
+	['VelocityXFact', [202, 0.0]]                             : 0.0045901639344262295
+	['AnimationFact', [202, 'truck', 2.0, 1.0]]               : 0.0045901639344262295
+	['PositionYFact', [201, 5.0]]                             : 0.003934426229508197
+	['RelationshipFactY', [202, 201, 'North', 'South', 2.0]]  : 0.003934426229508197
+	['RelationshipFactX', [201, 201, 'East', 'West', -3.0]]   : 0.003934426229508197
+	['RelationshipFactX', [201, 201, 'West', 'East', 3.0]]    : 0.003934426229508197
+	['RelationshipFactY', [201, 202, 'South', 'North', -2.0]] : 0.003934426229508197
+	['AnimationFact', [202, 'Black Guy', 2.0, 2.0]]           : 0.003934426229508197
+	['RelationshipFactX', [202, 201, 'East', 'West', 0.0]]    : 0.003934426229508197
+	['RelationshipFactX', [201, 202, 'West', 'East', 0.0]]    : 0.003934426229508197
+	['RelationshipFactX', [202, 201, 'West', 'East', 0.0]]    : 0.003934426229508197
+	['RelationshipFactX', [201, 202, 'East', 'West', 0.0]]    : 0.003934426229508197
+	['AnimationFact', [201, 'Gun', 2.0, 1.0]]                 : 0.003934426229508197
+	['PositionXFact', [201, 4.0]]                             : 0.003934426229508197
+	['AnimationFact', [201, 'white girl', 2.0, 2.0]]          : 0.003934426229508197
+	['PositionXFact', [201, 2.0]]                             : 0.003934426229508197
+	['RelationshipFactY', [202, 201, 'South', 'North', 0.0]]  : 0.003278688524590164
+	['RelationshipFactY', [201, 202, 'North', 'South', 0.0]]  : 0.003278688524590164
+	['AnimationFact', [201, 'Zombie', 2.0, 2.0]]              : 0.003278688524590164
+	['RelationshipFactX', [202, 201, 'North', 'North', 0.0]]  : 0.003278688524590164
+	['RelationshipFactX', [201, 202, 'North', 'North', 0.0]]  : 0.003278688524590164
+	['VariableFact', ['left', True]]                          : 0.003278688524590164
+	['RelationshipFactX', [202, 201, 'East', 'West', -1.0]]   : 0.003278688524590164
+	['RelationshipFactX', [201, 202, 'West', 'East', 1.0]]    : 0.003278688524590164
+	['AnimationFact', [202, 'Zombie', 2.0, 2.0]]              : 0.002622950819672131
+	['PositionXFact', [201, 13.0]]                            : 0.002622950819672131
+	['PositionYFact', [201, 7.0]]                             : 0.002622950819672131
+	['PositionYFact', [201, 1.0]]                             : 0.002622950819672131
+	['PositionXFact', [202, 20.0]]                            : 0.002622950819672131
+	['VariableFact', ['right', True]]                         : 0.002622950819672131
+	['RelationshipFactX', [201, 201, 'East', 'West', -8.0]]   : 0.002622950819672131
+	['RelationshipFactX', [201, 201, 'West', 'East', 8.0]]    : 0.002622950819672131
+	['RelationshipFactX', [201, 202, 'East', 'West', -3.0]]   : 0.002622950819672131
+	['RelationshipFactX', [202, 201, 'West', 'East', 3.0]]    : 0.002622950819672131
+	['VelocityYFact', [202, -1.0]]                            : 0.002622950819672131
+	['RelationshipFactY', [201, 202, 'South', 'South', 0.0]]  : 0.002622950819672131
+	['RelationshipFactY', [202, 201, 'North', 'East', 0.0]]   : 0.002622950819672131
+	['PositionXFact', [201, 8.0]]                             : 0.002622950819672131
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 0.002622950819672131
+	['RelationshipFactY', [201, 201, 'South', 'North', -1.0]] : 0.002622950819672131
+	['RelationshipFactY', [201, 201, 'South', 'South', 0.0]]  : 0.002622950819672131
+	['RelationshipFactY', [201, 201, 'North', 'South', 1.0]]  : 0.002622950819672131
+	['PositionXFact', [201, 11.0]]                            : 0.0019672131147540984
+	['RelationshipFactX', [202, 201, 'West', 'East', 7.0]]    : 0.0019672131147540984
+	['RelationshipFactX', [201, 202, 'East', 'West', -7.0]]   : 0.0019672131147540984
+	['RelationshipFactY', [201, 202, 'North', 'South', 2.0]]  : 0.0019672131147540984
+	['RelationshipFactY', [202, 201, 'South', 'North', -2.0]] : 0.0019672131147540984
+	['RelationshipFactX', [201, 202, 'West', 'East', 2.0]]    : 0.0019672131147540984
+	['RelationshipFactX', [202, 201, 'East', 'West', -2.0]]   : 0.0019672131147540984
+	['PositionYFact', [202, 4.0]]                             : 0.0019672131147540984
+	['PositionXFact', [202, 7.0]]                             : 0.0019672131147540984
+	['PositionXFact', [202, 14.0]]                            : 0.0019672131147540984
+	['PositionXFact', [201, 17.0]]                            : 0.0019672131147540984
+	['RelationshipFactX', [202, 201, 'West', 'East', 8.0]]    : 0.0019672131147540984
+	['RelationshipFactX', [202, 201, 'West', 'East', 10.0]]   : 0.0019672131147540984
+	['RelationshipFactX', [201, 202, 'East', 'West', -8.0]]   : 0.0019672131147540984
+	['RelationshipFactX', [201, 201, 'East', 'West', -11.0]]  : 0.0019672131147540984
+	['RelationshipFactX', [201, 202, 'East', 'West', -10.0]]  : 0.0019672131147540984
+	['RelationshipFactX', [201, 201, 'East', 'West', -13.0]]  : 0.0019672131147540984
+	['RelationshipFactX', [201, 201, 'West', 'East', 11.0]]   : 0.0019672131147540984
+	['RelationshipFactX', [201, 201, 'West', 'East', 13.0]]   : 0.0019672131147540984
+	['RelationshipFactX', [201, 201, 'North', 'East', 0.0]]   : 0.0019672131147540984
+	['RelationshipFactY', [201, 201, 'South', 'North', -3.0]] : 0.0019672131147540984
+	['RelationshipFactX', [201, 201, 'North', 'West', 0.0]]   : 0.0019672131147540984
+	['RelationshipFactX', [201, 201, 'East', 'North', 0.0]]   : 0.0019672131147540984
+	['RelationshipFactX', [201, 201, 'East', 'East', 0.0]]    : 0.0019672131147540984
+	['RelationshipFactY', [201, 201, 'North', 'South', 3.0]]  : 0.0019672131147540984
+	['PositionYFact', [202, 5.0]]                             : 0.0013114754098360656
+	['RelationshipFactX', [202, 201, 'East', 'West', -7.0]]   : 0.0013114754098360656
+	['RelationshipFactX', [201, 202, 'West', 'East', 7.0]]    : 0.0013114754098360656
+	['RelationshipFactX', [201, 201, 'West', 'East', 7.0]]    : 0.0013114754098360656
+	['RelationshipFactX', [201, 201, 'East', 'West', -7.0]]   : 0.0013114754098360656
+	['PositionXFact', [201, 15.0]]                            : 0.0013114754098360656
+	['PositionYFact', [202, 7.0]]                             : 0.0013114754098360656
+	['PositionXFact', [201, 20.0]]                            : 0.0013114754098360656
+	['PositionXFact', [201, 16.0]]                            : 0.0013114754098360656
+	['RelationshipFactX', [201, 202, 'East', 'West', -12.0]]  : 0.0013114754098360656
+	['RelationshipFactX', [201, 201, 'East', 'West', -12.0]]  : 0.0013114754098360656
+	['RelationshipFactX', [202, 201, 'West', 'East', 12.0]]   : 0.0013114754098360656
+	['RelationshipFactX', [201, 201, 'West', 'East', 12.0]]   : 0.0013114754098360656
+	['RelationshipFactX', [201, 202, 'East', 'West', -11.0]]  : 0.0013114754098360656
+	['RelationshipFactX', [202, 201, 'West', 'East', 11.0]]   : 0.0013114754098360656
+	['RelationshipFactX', [202, 201, 'West', 'East', 15.0]]   : 0.0013114754098360656
+	['RelationshipFactX', [201, 202, 'East', 'West', -15.0]]  : 0.0013114754098360656
+	['RelationshipFactY', [201, 202, 'North', 'South', 1.0]]  : 0.0013114754098360656
+	['RelationshipFactY', [202, 201, 'South', 'North', -1.0]] : 0.0013114754098360656
+	['RelationshipFactX', [201, 202, 'East', 'West', -1.0]]   : 0.0013114754098360656
+	['RelationshipFactY', [201, 202, 'South', 'North', -3.0]] : 0.0013114754098360656
+	['RelationshipFactX', [202, 201, 'West', 'East', 1.0]]    : 0.0013114754098360656
+	['RelationshipFactY', [202, 201, 'North', 'South', 3.0]]  : 0.0013114754098360656
+	['PositionXFact', [202, 5.0]]                             : 0.0013114754098360656
+	['RelationshipFactY', [202, 201, 'North', 'South', 1.0]]  : 0.0013114754098360656
+	['RelationshipFactY', [201, 202, 'South', 'North', -1.0]] : 0.0013114754098360656
+	['PositionXFact', [202, 11.0]]                            : 0.0013114754098360656
+	['RelationshipFactX', [202, 201, 'West', 'East', 5.0]]    : 0.0013114754098360656
+	['RelationshipFactX', [201, 202, 'East', 'West', -5.0]]   : 0.0013114754098360656
+	['PositionXFact', [201, 10.0]]                            : 0.0013114754098360656
+	['PositionYFact', [201, 6.0]]                             : 0.0013114754098360656
+	['AnimationFact', [201, 'grassBlock', 1.0, 1.0]]          : 0.0013114754098360656
+	['RelationshipFactY', [201, 201, 'East', 'South', 0.0]]   : 0.0013114754098360656
+	['RelationshipFactY', [201, 202, 'North', 'South', 3.0]]  : 0.0013114754098360656
+	['RelationshipFactY', [201, 201, 'South', 'East', 0.0]]   : 0.0013114754098360656
+	['RelationshipFactY', [202, 201, 'South', 'North', -3.0]] : 0.0013114754098360656
+	['PositionXFact', [202, 4.0]]                             : 0.0006557377049180328
+	['PositionXFact', [201, 18.0]]                            : 0.0006557377049180328
+	['RelationshipFactX', [202, 201, 'East', 'West', -12.0]]  : 0.0006557377049180328
+	['RelationshipFactX', [202, 201, 'East', 'West', -3.0]]   : 0.0006557377049180328
+	['RelationshipFactX', [201, 202, 'West', 'East', 12.0]]   : 0.0006557377049180328
+	['RelationshipFactX', [201, 202, 'West', 'East', 3.0]]    : 0.0006557377049180328
+	['VariableFact', ['rightPrev', True]]                     : 0.0006557377049180328
+	['RelationshipFactY', [202, 201, 'North', 'South', 4.0]]  : 0.0006557377049180328
+	['RelationshipFactY', [201, 202, 'South', 'North', -4.0]] : 0.0006557377049180328
+	['VelocityXFact', [201, -20.0]]                           : 0.0006557377049180328
+	['VelocityXFact', [201, -1.0]]                            : 0.0006557377049180328
+	['PositionXFact', [201, 7.0]]                             : 0.0006557377049180328
+	['PositionYFact', [202, 1.0]]                             : 0.0006557377049180328
+	['RelationshipFactY', [202, 201, 'South', 'North', -4.0]] : 0.0006557377049180328
+	['RelationshipFactY', [201, 202, 'North', 'South', 4.0]]  : 0.0006557377049180328
+	['PositionXFact', [202, 1.0]]                             : 0.0006557377049180328
+	['RelationshipFactX', [201, 202, 'West', 'East', 6.0]]    : 0.0006557377049180328
+	['RelationshipFactX', [202, 201, 'East', 'West', -6.0]]   : 0.0006557377049180328
+	['PositionXFact', [202, 8.0]]                             : 0.0006557377049180328
+	['RelationshipFactX', [201, 202, 'North', 'East', 0.0]]   : 0.0006557377049180328
+	['RelationshipFactX', [202, 201, 'North', 'West', 0.0]]   : 0.0006557377049180328
+	['RelationshipFactY', [202, 201, 'North', 'South', 5.0]]  : 0.0006557377049180328
+	['RelationshipFactY', [201, 202, 'South', 'North', -5.0]] : 0.0006557377049180328
+	['PositionXFact', [202, 17.0]]                            : 0.0006557377049180328
+	['VariableFact', ['space', True]]                         : 0.0006557377049180328
+	['VariableFact', ['spacePrev', True]]                     : 0.0006557377049180328
+	['VelocityXFact', [202, 3.0]]                             : 0.0006557377049180328
+	['AnimationFact', [202, 'explosion', 2.0, 2.0]]           : 0.0006557377049180328
+	['PositionXFact', [202, 9.0]]                             : 0.0006557377049180328
+	['RelationshipFactX', [201, 201, 'East', 'West', -5.0]]   : 0.0006557377049180328
+	['RelationshipFactX', [201, 201, 'West', 'East', 5.0]]    : 0.0006557377049180328
+	['PositionXFact', [201, 12.0]]                            : 0.0006557377049180328
+	['AnimationFact', [202, 'dog', 1.0, 1.0]]                 : 0.0006557377049180328
+	['PositionYFact', [202, 2.0]]                             : 0.0006557377049180328
+	['RelationshipFactX', [201, 202, 'North', 'West', 0.0]]   : 0.0006557377049180328
+	['RelationshipFactX', [202, 201, 'East', 'East', 0.0]]    : 0.0006557377049180328
+
+CENTER: Freeplay9_24	LEN OF CONDITIONS: 177
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 0.04562870080111459
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 0.04562870080111459
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 0.039010797631487286
+	['VelocityXFact', [201, 0]]                               : 0.035527690700104496
+	['VelocityYFact', [201, 0]]                               : 0.035527690700104496
+	['RelationshipFactX', [201, 201, 'East', 'West', -1.0]]   : 0.03239289446185998
+	['RelationshipFactX', [201, 201, 'West', 'East', 1.0]]    : 0.03239289446185998
+	['RelationshipFactY', [201, 201, 'South', 'North', -4.0]] : 0.0219435736677116
+	['RelationshipFactY', [201, 201, 'North', 'South', 4.0]]  : 0.0219435736677116
+	['RelationshipFactX', [201, 201, 'West', 'East', 0.0]]    : 0.020202020202020204
+	['RelationshipFactX', [201, 201, 'East', 'West', 0.0]]    : 0.020202020202020204
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 0.019505398815743643
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 0.019505398815743643
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 0.01671891327063741
+	['RelationshipFactX', [201, 201, 'West', 'East', 4.0]]    : 0.01567398119122257
+	['RelationshipFactX', [201, 201, 'East', 'West', -4.0]]   : 0.01567398119122257
+	['RelationshipFactX', [201, 201, 'East', 'West', -3.0]]   : 0.014977359804946012
+	['RelationshipFactX', [201, 201, 'West', 'East', 3.0]]    : 0.014977359804946012
+	['RelationshipFactX', [201, 201, 'North', 'North', 0.0]]  : 0.013235806339254615
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 0.012539184952978056
+	['RelationshipFactY', [201, 201, 'South', 'North', -1.0]] : 0.012539184952978056
+	['RelationshipFactY', [201, 201, 'South', 'South', 0.0]]  : 0.012539184952978056
+	['RelationshipFactY', [201, 201, 'North', 'South', 1.0]]  : 0.012539184952978056
+	['PositionYFact', [201, 2.0]]                             : 0.012190874259839777
+	['PositionYFact', [201, 0.0]]                             : 0.011842563566701497
+	['PositionXFact', [201, 8.0]]                             : 0.010101010101010102
+	['RelationshipFactY', [201, 201, 'South', 'North', -3.0]] : 0.010101010101010102
+	['RelationshipFactY', [201, 201, 'North', 'South', 3.0]]  : 0.010101010101010102
+	['RelationshipFactX', [201, 201, 'North', 'East', 0.0]]   : 0.009404388714733543
+	['RelationshipFactX', [201, 201, 'North', 'West', 0.0]]   : 0.009404388714733543
+	['RelationshipFactX', [201, 201, 'East', 'North', 0.0]]   : 0.009404388714733543
+	['RelationshipFactX', [201, 201, 'East', 'East', 0.0]]    : 0.009404388714733543
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 0.009056078021595262
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 0.009056078021595262
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 0.007662835249042145
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 0.007662835249042145
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 0.007662835249042145
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 0.007662835249042145
+	['VariableFact', ['up', False]]                           : 0.0073145245559038665
+	['VariableFact', ['upPrev', False]]                       : 0.0073145245559038665
+	['VariableFact', ['rightPrev', False]]                    : 0.0073145245559038665
+	['VariableFact', ['right', False]]                        : 0.006966213862765587
+	['VariableFact', ['downPrev', False]]                     : 0.006966213862765587
+	['VariableFact', ['leftPrev', False]]                     : 0.006966213862765587
+	['RelationshipFactY', [202, 201, 'North', 'South', 2.0]]  : 0.006966213862765587
+	['RelationshipFactY', [201, 202, 'South', 'North', -2.0]] : 0.006966213862765587
+	['VariableFact', ['spacePrev', False]]                    : 0.0066179031696273075
+	['PositionYFact', [201, 6.0]]                             : 0.0066179031696273075
+	['VariableFact', ['down', False]]                         : 0.006269592476489028
+	['PositionXFact', [201, 10.0]]                            : 0.006269592476489028
+	['PositionXFact', [201, 13.0]]                            : 0.006269592476489028
+	['AnimationFact', [201, 'grassBlock', 1.0, 1.0]]          : 0.006269592476489028
+	['RelationshipFactY', [201, 201, 'East', 'South', 0.0]]   : 0.006269592476489028
+	['RelationshipFactY', [201, 201, 'South', 'East', 0.0]]   : 0.006269592476489028
+	['VariableFact', ['left', False]]                         : 0.0059212817833507484
+	['RelationshipFactX', [201, 202, 'West', 'East', 0.0]]    : 0.0059212817833507484
+	['RelationshipFactX', [202, 201, 'East', 'West', 0.0]]    : 0.0059212817833507484
+	['VariableFact', ['space', False]]                        : 0.00557297109021247
+	['RelationshipFactX', [202, 201, 'East', 'West', -1.0]]   : 0.00557297109021247
+	['RelationshipFactX', [201, 202, 'West', 'East', 1.0]]    : 0.00557297109021247
+	['RelationshipFactY', [201, 202, 'South', 'North', -4.0]] : 0.00522466039707419
+	['RelationshipFactY', [202, 201, 'North', 'South', 4.0]]  : 0.00522466039707419
+	['PositionXFact', [201, 11.0]]                            : 0.004876349703935911
+	['VelocityXFact', [202, 0.0]]                             : 0.004528039010797631
+	['RelationshipFactX', [201, 202, 'East', 'West', 0.0]]    : 0.004528039010797631
+	['RelationshipFactX', [202, 201, 'West', 'East', 0.0]]    : 0.004528039010797631
+	['PositionYFact', [201, 3.0]]                             : 0.004528039010797631
+	['PositionXFact', [201, 12.0]]                            : 0.0038314176245210726
+	['VelocityYFact', [202, 0.0]]                             : 0.0034831069313827935
+	['RelationshipFactY', [202, 201, 'North', 'East', 0.0]]   : 0.0034831069313827935
+	['RelationshipFactX', [202, 201, 'West', 'East', 2.0]]    : 0.0034831069313827935
+	['RelationshipFactX', [201, 202, 'East', 'West', -2.0]]   : 0.0034831069313827935
+	['VelocityXFact', [201, 0.0]]                             : 0.0034831069313827935
+	['PositionYFact', [201, 5.0]]                             : 0.003134796238244514
+	['AnimationFact', [202, 'dog', 1.0, 1.0]]                 : 0.003134796238244514
+	['RelationshipFactX', [201, 202, 'East', 'West', -1.0]]   : 0.003134796238244514
+	['RelationshipFactX', [202, 201, 'West', 'East', 1.0]]    : 0.003134796238244514
+	['VelocityYFact', [201, 0.0]]                             : 0.003134796238244514
+	['VelocityXFact', [201, -1.0]]                            : 0.003134796238244514
+	['PositionXFact', [201, 9.0]]                             : 0.002786485545106235
+	['RelationshipFactX', [201, 202, 'West', 'East', 3.0]]    : 0.002786485545106235
+	['RelationshipFactX', [202, 201, 'East', 'West', -3.0]]   : 0.002786485545106235
+	['RelationshipFactX', [202, 201, 'North', 'North', 0.0]]  : 0.002786485545106235
+	['RelationshipFactX', [201, 202, 'North', 'North', 0.0]]  : 0.002786485545106235
+	['RelationshipFactY', [201, 202, 'East', 'North', 0.0]]   : 0.002786485545106235
+	['AnimationFact', [201, 'Zombie', 2.0, 2.0]]              : 0.002786485545106235
+	['PositionXFact', [201, 5.0]]                             : 0.0024381748519679554
+	['AnimationFact', [202, 'truck', 2.0, 1.0]]               : 0.0024381748519679554
+	['PositionXFact', [201, 3.0]]                             : 0.0024381748519679554
+	['RelationshipFactX', [201, 202, 'West', 'East', 2.0]]    : 0.0024381748519679554
+	['RelationshipFactX', [202, 201, 'East', 'West', -2.0]]   : 0.0024381748519679554
+	['VelocityYFact', [202, 1.0]]                             : 0.0024381748519679554
+	['VelocityYFact', [201, 1.0]]                             : 0.0024381748519679554
+	['RelationshipFactX', [201, 202, 'West', 'East', 7.0]]    : 0.0020898641588296763
+	['RelationshipFactX', [202, 201, 'East', 'West', -7.0]]   : 0.0020898641588296763
+	['RelationshipFactY', [201, 202, 'North', 'South', 0.0]]  : 0.0020898641588296763
+	['RelationshipFactY', [202, 201, 'South', 'North', 0.0]]  : 0.0020898641588296763
+	['RelationshipFactX', [201, 202, 'North', 'West', 0.0]]   : 0.0020898641588296763
+	['RelationshipFactX', [202, 201, 'East', 'East', 0.0]]    : 0.0020898641588296763
+	['RelationshipFactY', [201, 202, 'North', 'South', 1.0]]  : 0.0020898641588296763
+	['RelationshipFactY', [202, 201, 'South', 'North', -1.0]] : 0.0020898641588296763
+	['PositionYFact', [201, 7.0]]                             : 0.0020898641588296763
+	['PositionYFact', [202, 2.0]]                             : 0.0017415534656913968
+	['VelocityXFact', [202, -1.0]]                            : 0.0017415534656913968
+	['PositionYFact', [202, 4.0]]                             : 0.0017415534656913968
+	['VariableFact', ['space', True]]                         : 0.0017415534656913968
+	['AnimationFact', [201, 'dog', 1.0, 1.0]]                 : 0.0017415534656913968
+	['PositionXFact', [202, 0.0]]                             : 0.0013932427725531174
+	['VariableFact', ['left', True]]                          : 0.0013932427725531174
+	['PositionXFact', [202, 11.0]]                            : 0.0013932427725531174
+	['PositionYFact', [202, 6.0]]                             : 0.0013932427725531174
+	['AnimationFact', [201, 'chick', 1.0, 1.0]]               : 0.0013932427725531174
+	['VelocityYFact', [201, -1.0]]                            : 0.0013932427725531174
+	['RelationshipFactX', [201, 202, 'North', 'East', 0.0]]   : 0.0010449320794148381
+	['RelationshipFactX', [202, 201, 'East', 'North', 0.0]]   : 0.0010449320794148381
+	['RelationshipFactX', [201, 202, 'East', 'West', -3.0]]   : 0.0010449320794148381
+	['RelationshipFactX', [202, 201, 'West', 'East', 3.0]]    : 0.0010449320794148381
+	['RelationshipFactY', [201, 202, 'South', 'North', -6.0]] : 0.0010449320794148381
+	['RelationshipFactY', [202, 201, 'North', 'South', 6.0]]  : 0.0010449320794148381
+	['PositionXFact', [201, 7.0]]                             : 0.0010449320794148381
+	['RelationshipFactY', [201, 201, 'North', 'South', 5.0]]  : 0.0010449320794148381
+	['RelationshipFactY', [201, 201, 'South', 'North', -5.0]] : 0.0010449320794148381
+	['AnimationFact', [201, 'Black Guy', 2.0, 2.0]]           : 0.0010449320794148381
+	['AnimationFact', [202, 'Zombie', 2.0, 2.0]]              : 0.0010449320794148381
+	['PositionYFact', [202, 7.0]]                             : 0.0010449320794148381
+	['PositionXFact', [201, 16.0]]                            : 0.0010449320794148381
+	['VariableFact', ['down', True]]                          : 0.0010449320794148381
+	['RelationshipFactX', [201, 201, 'West', 'East', 5.0]]    : 0.0010449320794148381
+	['RelationshipFactX', [201, 201, 'East', 'West', -5.0]]   : 0.0010449320794148381
+	['RelationshipFactX', [201, 201, 'East', 'West', -10.0]]  : 0.0010449320794148381
+	['RelationshipFactX', [201, 201, 'West', 'East', 10.0]]   : 0.0010449320794148381
+	['RelationshipFactX', [201, 202, 'West', 'East', 4.0]]    : 0.0006966213862765587
+	['RelationshipFactX', [202, 201, 'East', 'West', -4.0]]   : 0.0006966213862765587
+	['RelationshipFactY', [201, 202, 'North', 'South', 3.0]]  : 0.0006966213862765587
+	['RelationshipFactY', [202, 201, 'South', 'North', -3.0]] : 0.0006966213862765587
+	['PositionXFact', [202, 10.0]]                            : 0.0006966213862765587
+	['VariableFact', ['spacePrev', True]]                     : 0.0006966213862765587
+	['VelocityYFact', [202, -1.0]]                            : 0.0006966213862765587
+	['PositionXFact', [202, 9.0]]                             : 0.0006966213862765587
+	['PositionYFact', [201, 8.0]]                             : 0.0006966213862765587
+	['PositionXFact', [201, 4.0]]                             : 0.0006966213862765587
+	['PositionYFact', [201, 1.0]]                             : 0.0006966213862765587
+	['RelationshipFactX', [202, 201, 'East', 'West', -12.0]]  : 0.0006966213862765587
+	['RelationshipFactX', [201, 202, 'West', 'East', 12.0]]   : 0.0006966213862765587
+	['PositionYFact', [201, 4.0]]                             : 0.0006966213862765587
+	['RelationshipFactY', [202, 201, 'North', 'South', 1.0]]  : 0.0006966213862765587
+	['RelationshipFactY', [201, 202, 'South', 'North', -1.0]] : 0.0006966213862765587
+	['PositionYFact', [202, 1.0]]                             : 0.00034831069313827936
+	['RelationshipFactY', [201, 202, 'South', 'South', 0.0]]  : 0.00034831069313827936
+	['PositionXFact', [202, 3.0]]                             : 0.00034831069313827936
+	['PositionXFact', [202, 7.0]]                             : 0.00034831069313827936
+	['VariableFact', ['right', True]]                         : 0.00034831069313827936
+	['PositionXFact', [202, 1.0]]                             : 0.00034831069313827936
+	['RelationshipFactX', [201, 202, 'West', 'East', 6.0]]    : 0.00034831069313827936
+	['RelationshipFactX', [202, 201, 'East', 'West', -6.0]]   : 0.00034831069313827936
+	['RelationshipFactY', [201, 202, 'North', 'South', 2.0]]  : 0.00034831069313827936
+	['RelationshipFactY', [202, 201, 'South', 'North', -2.0]] : 0.00034831069313827936
+	['PositionXFact', [202, 12.0]]                            : 0.00034831069313827936
+	['VariableFact', ['leftPrev', True]]                      : 0.00034831069313827936
+	['PositionYFact', [202, 8.0]]                             : 0.00034831069313827936
+	['PositionXFact', [202, 2.0]]                             : 0.00034831069313827936
+	['PositionXFact', [201, 2.0]]                             : 0.00034831069313827936
+	['PositionXFact', [202, 16.0]]                            : 0.00034831069313827936
+	['RelationshipFactX', [201, 201, 'West', 'East', 7.0]]    : 0.00034831069313827936
+	['RelationshipFactX', [201, 201, 'East', 'West', -7.0]]   : 0.00034831069313827936
+	['RelationshipFactX', [201, 201, 'East', 'West', -12.0]]  : 0.00034831069313827936
+	['RelationshipFactX', [201, 202, 'East', 'West', -12.0]]  : 0.00034831069313827936
+	['RelationshipFactX', [201, 202, 'East', 'West', -10.0]]  : 0.00034831069313827936
+	['RelationshipFactX', [201, 201, 'West', 'East', 12.0]]   : 0.00034831069313827936
+	['RelationshipFactX', [202, 201, 'West', 'East', 12.0]]   : 0.00034831069313827936
+	['RelationshipFactX', [202, 201, 'West', 'East', 10.0]]   : 0.00034831069313827936
+	['VelocityXFact', [201, 1.0]]                             : 0.00034831069313827936
+	['VelocityXFact', [202, 1.0]]                             : 0.00034831069313827936
+	['PositionXFact', [202, 5.0]]                             : 0.00034831069313827936
+	['PositionXFact', [201, 14.0]]                            : 0.00034831069313827936
+	['VariableFact', ['downPrev', True]]                      : 0.00034831069313827936
+	['RelationshipFactY', [201, 202, 'South', 'East', 0.0]]   : 0.00034831069313827936
+

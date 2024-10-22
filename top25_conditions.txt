@@ -1,0 +1,247 @@
+########################
+202 = MATCH
+201 = NOT MATCHED
+########################
+CENTER: Freeplay11_7 | 169 datapoints | total set conditions: 187
+	['VariableFact', ['up', False]]                           : 169 0.90374
+	['VariableFact', ['upPrev', False]]                       : 169 0.90374
+	['VariableFact', ['down', False]]                         : 168 0.89840
+	['VariableFact', ['downPrev', False]]                     : 168 0.89840
+	['VelocityYFact', [201, 0]]                               : 159 0.85027
+	['VariableFact', ['rightPrev', False]]                    : 158 0.84492
+	['VariableFact', ['leftPrev', False]]                     : 153 0.81818
+	['VariableFact', ['left', False]]                         : 151 0.80749
+	['VariableFact', ['spacePrev', False]]                    : 146 0.78075
+	['VelocityXFact', [201, 0]]                               : 138 0.73797
+	['VariableFact', ['right', False]]                        : 136 0.72727
+	['VariableFact', ['space', False]]                        : 127 0.67914
+	['VelocityXFact', [202, -1.0]]                            : 107 0.57219
+	['VelocityYFact', [202, 0]]                               : 98 0.52406
+	['AnimationFact', [201, 'chick', 1.0, 1.0]]               : 71 0.37968
+	['PositionYFact', [202, 0.0]]                             : 67 0.35829
+	['AnimationFact', [202, 'longblock', 1.0, 4.0]]           : 66 0.35294
+	['PositionYFact', [201, 4.0]]                             : 61 0.32620
+	['PositionYFact', [202, 4.0]]                             : 58 0.31016
+	['VelocityXFact', [201, 0.0]]                             : 50 0.26738
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 48 0.25668
+	['VelocityYFact', [202, 0.0]]                             : 46 0.24599
+	['PositionYFact', [201, 0.0]]                             : 46 0.24599
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 45 0.24064
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 45 0.24064
+
+CENTER: Bird6_44 | 47 datapoints | total set conditions: 131
+	['VelocityYFact', [201, 0]]                               : 101 0.77099
+	['VelocityXFact', [201, 0]]                               : 71 0.54198
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 57 0.43511
+	['PositionYFact', [201, 0.0]]                             : 52 0.39695
+	['VariableFact', ['up', False]]                           : 47 0.35878
+	['VariableFact', ['upPrev', False]]                       : 47 0.35878
+	['VariableFact', ['downPrev', False]]                     : 47 0.35878
+	['VariableFact', ['leftPrev', False]]                     : 46 0.35115
+	['VariableFact', ['rightPrev', False]]                    : 46 0.35115
+	['VariableFact', ['down', False]]                         : 44 0.33588
+	['VariableFact', ['right', False]]                        : 44 0.33588
+	['VariableFact', ['left', False]]                         : 43 0.32824
+	['VariableFact', ['spacePrev', False]]                    : 38 0.29008
+	['VelocityYFact', [202, 1.0]]                             : 36 0.27481
+	['VariableFact', ['space', False]]                        : 30 0.22901
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 30 0.22901
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 30 0.22901
+	['VelocityXFact', [201, -1.0]]                            : 29 0.22137
+	['VelocityXFact', [202, 0]]                               : 25 0.19084
+	['PositionYFact', [201, 2.0]]                             : 20 0.15267
+	['PositionXFact', [202, 5.0]]                             : 20 0.15267
+	['PositionYFact', [201, 6.0]]                             : 19 0.14504
+	['PositionXFact', [201, 8.0]]                             : 15 0.11450
+	['VariableFact', ['space', True]]                         : 13 0.09924
+	['VelocityXFact', [202, 0.0]]                             : 12 0.09160
+
+CENTER: Bird9_14 | 68 datapoints | total set conditions: 141
+	['VelocityYFact', [201, 0]]                               : 77 0.54610
+	['PositionYFact', [201, 0.0]]                             : 69 0.48936
+	['VariableFact', ['up', False]]                           : 68 0.48227
+	['VariableFact', ['spacePrev', False]]                    : 68 0.48227
+	['VariableFact', ['upPrev', False]]                       : 68 0.48227
+	['VariableFact', ['space', False]]                        : 67 0.47518
+	['VariableFact', ['down', False]]                         : 67 0.47518
+	['VariableFact', ['downPrev', False]]                     : 67 0.47518
+	['VariableFact', ['leftPrev', False]]                     : 67 0.47518
+	['VariableFact', ['rightPrev', False]]                    : 67 0.47518
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 63 0.44681
+	['VariableFact', ['left', False]]                         : 62 0.43972
+	['VariableFact', ['right', False]]                        : 62 0.43972
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 58 0.41135
+	['PositionXFact', [202, 5.0]]                             : 57 0.40426
+	['VelocityXFact', [201, -2.0]]                            : 53 0.37589
+	['VelocityXFact', [202, 0]]                               : 48 0.34043
+	['VelocityYFact', [202, -2.0]]                            : 40 0.28369
+	['VelocityXFact', [201, 0]]                               : 27 0.19149
+	['PositionXFact', [201, 3.0]]                             : 27 0.19149
+	['RelationshipFactY', [201, 202, 'South', 'North', 0.0]]  : 25 0.17730
+	['RelationshipFactY', [202, 201, 'North', 'South', 0.0]]  : 25 0.17730
+	['PositionYFact', [202, 4.0]]                             : 25 0.17730
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 21 0.14894
+	['RelationshipFactX', [201, 202, 'East', 'West', -1.0]]   : 21 0.14894
+
+CENTER: Freeplay5_1 | 46 datapoints | total set conditions: 230
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 686 2.98261
+	['RelationshipFactY', [201, 201, 'North', 'South', 2.0]]  : 386 1.67826
+	['RelationshipFactY', [201, 201, 'South', 'North', -2.0]] : 386 1.67826
+	['VelocityYFact', [201, 0]]                               : 260 1.13043
+	['VelocityXFact', [201, 0]]                               : 212 0.92174
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 144 0.62609
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 144 0.62609
+	['RelationshipFactX', [201, 201, 'East', 'West', -3.0]]   : 138 0.60000
+	['RelationshipFactX', [201, 201, 'West', 'East', 3.0]]    : 138 0.60000
+	['RelationshipFactY', [201, 201, 'North', 'South', 4.0]]  : 121 0.52609
+	['RelationshipFactY', [201, 201, 'South', 'North', -4.0]] : 121 0.52609
+	['PositionYFact', [201, 5.0]]                             : 108 0.46957
+	['AnimationFact', [201, 'truck', 2.0, 1.0]]               : 95 0.41304
+	['PositionYFact', [201, 2.0]]                             : 91 0.39565
+	['RelationshipFactY', [201, 201, 'South', 'North', -1.0]] : 91 0.39565
+	['RelationshipFactY', [201, 201, 'North', 'South', 1.0]]  : 91 0.39565
+	['RelationshipFactX', [201, 201, 'East', 'West', -6.0]]   : 90 0.39130
+	['RelationshipFactX', [201, 201, 'West', 'East', 6.0]]    : 90 0.39130
+	['AnimationFact', [201, 'adventure lady', 2.0, 1.0]]      : 79 0.34348
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 76 0.33043
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 76 0.33043
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 74 0.32174
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 74 0.32174
+	['RelationshipFactX', [201, 201, 'East', 'West', -1.0]]   : 68 0.29565
+	['RelationshipFactX', [201, 201, 'West', 'East', 1.0]]    : 68 0.29565
+
+CENTER: Freeplay11_14 | 73 datapoints | total set conditions: 110
+	['VelocityYFact', [201, 0]]                               : 98 0.89091
+	['VariableFact', ['up', False]]                           : 73 0.66364
+	['VariableFact', ['spacePrev', False]]                    : 73 0.66364
+	['VariableFact', ['upPrev', False]]                       : 73 0.66364
+	['VariableFact', ['leftPrev', False]]                     : 73 0.66364
+	['VariableFact', ['rightPrev', False]]                    : 73 0.66364
+	['VariableFact', ['space', False]]                        : 70 0.63636
+	['VariableFact', ['right', False]]                        : 69 0.62727
+	['VariableFact', ['downPrev', False]]                     : 67 0.60909
+	['VariableFact', ['left', False]]                         : 66 0.60000
+	['VelocityXFact', [201, 0]]                               : 64 0.58182
+	['VariableFact', ['down', False]]                         : 63 0.57273
+	['PositionYFact', [201, 0.0]]                             : 63 0.57273
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 54 0.49091
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 45 0.40909
+	['VelocityYFact', [202, 0.0]]                             : 40 0.36364
+	['PositionXFact', [202, 5.0]]                             : 39 0.35455
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 38 0.34545
+	['VelocityXFact', [202, 0]]                               : 35 0.31818
+	['PositionYFact', [201, 2.0]]                             : 26 0.23636
+	['VelocityXFact', [202, 0.0]]                             : 24 0.21818
+	['VelocityXFact', [201, -1.0]]                            : 23 0.20909
+	['VelocityXFact', [201, -2.0]]                            : 17 0.15455
+	['VelocityYFact', [202, 0]]                               : 16 0.14545
+	['VelocityYFact', [202, -1.0]]                            : 16 0.14545
+
+CENTER: Freeplay11_30 | 195 datapoints | total set conditions: 218
+	['VelocityYFact', [201, 0]]                               : 229 1.05046
+	['VariableFact', ['downPrev', False]]                     : 193 0.88532
+	['VariableFact', ['down', False]]                         : 192 0.88073
+	['VariableFact', ['leftPrev', False]]                     : 189 0.86697
+	['VariableFact', ['upPrev', False]]                       : 188 0.86239
+	['VariableFact', ['left', False]]                         : 182 0.83486
+	['VariableFact', ['up', False]]                           : 181 0.83028
+	['VariableFact', ['rightPrev', False]]                    : 174 0.79817
+	['VariableFact', ['right', False]]                        : 165 0.75688
+	['VariableFact', ['spacePrev', False]]                    : 165 0.75688
+	['PositionYFact', [201, 0.0]]                             : 137 0.62844
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 133 0.61009
+	['VariableFact', ['space', False]]                        : 121 0.55505
+	['VelocityXFact', [201, 0]]                               : 111 0.50917
+	['AnimationFact', [202, 'chick', 1.0, 1.0]]               : 96 0.44037
+	['VelocityXFact', [201, -1.0]]                            : 95 0.43578
+	['VelocityYFact', [202, -1.0]]                            : 83 0.38073
+	['VelocityXFact', [202, 0]]                               : 81 0.37156
+	['PositionXFact', [202, 5.0]]                             : 75 0.34404
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 70 0.32110
+	['VelocityYFact', [201, 0.0]]                             : 68 0.31193
+	['VariableFact', ['space', True]]                         : 64 0.29358
+	['PositionYFact', [201, 3.0]]                             : 51 0.23394
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 42 0.19266
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 42 0.19266
+
+CENTER: Freeplay12_9 | 465 datapoints | total set conditions: 223
+	['VariableFact', ['upPrev', False]]                       : 458 2.05381
+	['VariableFact', ['downPrev', False]]                     : 458 2.05381
+	['VariableFact', ['up', False]]                           : 454 2.03587
+	['VariableFact', ['down', False]]                         : 451 2.02242
+	['VariableFact', ['spacePrev', False]]                    : 426 1.91031
+	['VariableFact', ['leftPrev', False]]                     : 415 1.86099
+	['VariableFact', ['space', False]]                        : 405 1.81614
+	['VariableFact', ['rightPrev', False]]                    : 383 1.71749
+	['VariableFact', ['left', False]]                         : 381 1.70852
+	['VelocityYFact', [201, 0]]                               : 334 1.49776
+	['VariableFact', ['right', False]]                        : 322 1.44395
+	['VelocityYFact', [202, 0]]                               : 311 1.39462
+	['PositionYFact', [201, 4.0]]                             : 254 1.13901
+	['PositionYFact', [202, 4.0]]                             : 246 1.10314
+	['VelocityXFact', [202, 0.0]]                             : 168 0.75336
+	['VelocityXFact', [201, 0]]                               : 160 0.71749
+	['VelocityXFact', [202, 1.0]]                             : 141 0.63229
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 129 0.57848
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 129 0.57848
+	['VelocityXFact', [201, 0.0]]                             : 125 0.56054
+	['AnimationFact', [201, 'crate', 2.0, 2.0]]               : 118 0.52915
+	['AnimationFact', [202, 'crate', 2.0, 2.0]]               : 117 0.52466
+	['VelocityYFact', [201, 0.0]]                             : 112 0.50224
+	['PositionYFact', [202, 0.0]]                             : 101 0.45291
+	['VariableFact', ['right', True]]                         : 98 0.43946
+
+CENTER: Freeplay9_3 | 31 datapoints | total set conditions: 194
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 56 0.28866
+	['VelocityYFact', [201, 0]]                               : 55 0.28351
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 37 0.19072
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 37 0.19072
+	['RelationshipFactY', [202, 201, 'North', 'North', 0.0]]  : 34 0.17526
+	['RelationshipFactY', [201, 202, 'North', 'North', 0.0]]  : 34 0.17526
+	['VelocityXFact', [201, 0]]                               : 32 0.16495
+	['VariableFact', ['up', False]]                           : 31 0.15979
+	['VariableFact', ['down', False]]                         : 31 0.15979
+	['VariableFact', ['upPrev', False]]                       : 31 0.15979
+	['VariableFact', ['downPrev', False]]                     : 31 0.15979
+	['VariableFact', ['leftPrev', False]]                     : 31 0.15979
+	['VariableFact', ['space', False]]                        : 30 0.15464
+	['VariableFact', ['spacePrev', False]]                    : 30 0.15464
+	['VariableFact', ['rightPrev', False]]                    : 30 0.15464
+	['AnimationFact', [201, 'Black Guy', 2.0, 2.0]]           : 29 0.14948
+	['VelocityXFact', [201, 0.0]]                             : 28 0.14433
+	['VariableFact', ['right', False]]                        : 27 0.13918
+	['VariableFact', ['left', False]]                         : 26 0.13402
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 24 0.12371
+	['VelocityXFact', [202, 1.0]]                             : 23 0.11856
+	['PositionYFact', [201, 3.0]]                             : 22 0.11340
+	['PositionYFact', [201, 0.0]]                             : 22 0.11340
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 21 0.10825
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 21 0.10825
+
+CENTER: Freeplay9_24 | 21 datapoints | total set conditions: 177
+	['RelationshipFactY', [201, 201, 'North', 'South', 0.0]]  : 131 0.74011
+	['RelationshipFactY', [201, 201, 'South', 'North', 0.0]]  : 131 0.74011
+	['RelationshipFactY', [201, 201, 'North', 'North', 0.0]]  : 112 0.63277
+	['VelocityXFact', [201, 0]]                               : 102 0.57627
+	['VelocityYFact', [201, 0]]                               : 102 0.57627
+	['RelationshipFactX', [201, 201, 'East', 'West', -1.0]]   : 93 0.52542
+	['RelationshipFactX', [201, 201, 'West', 'East', 1.0]]    : 93 0.52542
+	['RelationshipFactY', [201, 201, 'South', 'North', -4.0]] : 63 0.35593
+	['RelationshipFactY', [201, 201, 'North', 'South', 4.0]]  : 63 0.35593
+	['RelationshipFactX', [201, 201, 'West', 'East', 0.0]]    : 58 0.32768
+	['RelationshipFactX', [201, 201, 'East', 'West', 0.0]]    : 58 0.32768
+	['RelationshipFactX', [201, 201, 'East', 'West', -2.0]]   : 56 0.31638
+	['RelationshipFactX', [201, 201, 'West', 'East', 2.0]]    : 56 0.31638
+	['AnimationFact', [201, 'greenblock', 2.0, 2.0]]          : 48 0.27119
+	['RelationshipFactX', [201, 201, 'West', 'East', 4.0]]    : 45 0.25424
+	['RelationshipFactX', [201, 201, 'East', 'West', -4.0]]   : 45 0.25424
+	['RelationshipFactX', [201, 201, 'East', 'West', -3.0]]   : 43 0.24294
+	['RelationshipFactX', [201, 201, 'West', 'East', 3.0]]    : 43 0.24294
+	['RelationshipFactX', [201, 201, 'North', 'North', 0.0]]  : 38 0.21469
+	['AnimationFact', [201, 'longblock', 1.0, 4.0]]           : 36 0.20339
+	['RelationshipFactY', [201, 201, 'South', 'North', -1.0]] : 36 0.20339
+	['RelationshipFactY', [201, 201, 'South', 'South', 0.0]]  : 36 0.20339
+	['RelationshipFactY', [201, 201, 'North', 'South', 1.0]]  : 36 0.20339
+	['PositionYFact', [201, 2.0]]                             : 35 0.19774
+	['PositionYFact', [201, 0.0]]                             : 34 0.19209
+

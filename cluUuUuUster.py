@@ -605,36 +605,86 @@ def make_boolean_cond(preid, cond):
     
 
 def pattern_making(clusters):
+    print()
+    count = 0
     center_sets = {}
+    copy_sets = {}
     for center in clusters:
-        print("processing", center, " ...")
+        # print("processing", center, " ...")
         cluster = clusters[center] # list of all the datapoints in the cluster
         # set of features and their probability
         set_conditions = {} #key = condition, value = count
+        m = 0
         for dp in cluster:
             # print("DATAPOINT",dp, "IN CLUSTER:", center)
             dp_prepost, dp_conditions = rules_db[dp]
             pretype = dp_prepost[0][0]
             if pretype == "EmptyFact":
                 preid = None
+                count += 1
             else:
                 preid = dp_prepost[0][1][0]
             for cond in dp_conditions:
+                m += 1
                 boolean_cond  = str(make_boolean_cond(preid,cond))
                 # print(boolean_cond)
                 if boolean_cond in set_conditions:
                     set_conditions[boolean_cond] += 1
                 else:
                     set_conditions[boolean_cond] = 1
-        print("Center", center, "has",len(set_conditions), "conditions")
+        print(center, "has",len(set_conditions), "set conditions and", m, "total conditions")
         n = len(set_conditions)
-        for key, item in set_conditions.items():
-            prev = item
-            set_conditions[key] /= n
-            # print(key, ":", prev,"->" ,set_conditions[key])
-            print(f"{key:<{58}} : {prev} -> {set_conditions[key]}")  # Formatted output
+        copy = set_conditions.copy()
+        largest = max(set_conditions.values())
+        # for key, item in set_conditions.items():
+        #     prev = item
+        #     set_conditions[key] /= n
+        #     if largest >= n:
+        #         print(f"{key:<{58}} : {prev} -> {set_conditions[key]}")  # Formatted output
+        for key in copy:
+            copy[key] /= m
+        copy_sets[center] = copy
         center_sets[center] = set_conditions
-    print("done?")
+    print()
+    return center_sets, copy_sets
+
+center_sets, copy_sets = pattern_making(clusters)
 
 
-pattern_making(clusters)
+def process_sets(center_sets, copy):
+    with open('conditions.txt', 'w') as file:
+        file.write("########################\n")
+        file.write("202 = MATCH\n")
+        file.write("201 = NOT MATCHED\n########################\n")
+        for center in center_sets:
+            cluster = center_sets[center]
+            sorted_cluster = dict(sorted(cluster.items(), key=lambda item: item[1], reverse=True))
+            n = len(cluster)
+            file.write("CENTER: " + center + " | "+str(len(clusters[center]))+" datapoints | total set conditions: "+str(n)+"\n")
+            max_key_length = max(len(key) for key in sorted_cluster.keys())
+            for key, value in sorted_cluster.items():
+                file.write(f'\t{key.ljust(max_key_length)} : {value} {value/n:.5f}\n')
+                # file.write("\t"+key+" : "+ "\n")
+            file.write("\n")
+    with open('top25_conditions.txt', 'w') as file:
+        file.write("########################\n")
+        file.write("202 = MATCH\n")
+        file.write("201 = NOT MATCHED\n########################\n")
+        for center in center_sets:
+            cluster = center_sets[center]
+            sorted_cluster = dict(sorted(cluster.items(), key=lambda item: item[1], reverse=True))
+            n = len(cluster)
+            file.write("CENTER: " + center + " | "+str(len(clusters[center]))+" datapoints | total set conditions: "+str(n)+"\n")
+            max_key_length = max(len(key) for key in sorted_cluster.keys())
+            max_value = max(sorted_cluster.values())
+            count = 0
+            for key, value in sorted_cluster.items():
+                if count < 25:
+                    file.write(f'\t{key.ljust(max_key_length)} : {value} {value/n:.5f}\n')
+                    count += 1
+                # file.write("\t"+key+" : "+ "\n")
+            file.write("\n")
+    print("processed the sets")
+
+process_sets(center_sets, copy_sets)
+
