@@ -1,0 +1,5360 @@
+CLUSTER Bird6_44 : 47 datapoints : 131 set conditions
+
+THRESHOLD 0.1
+	DP Bird1_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 18 --> 16: 11.11% of conditions removed
+
+	DP Bird2_10
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 1.0]]
+		['AnimationFact', [2, 'chick', 1.0, 1.0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 6.0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 20 --> 16: 20.00% of conditions removed
+
+	DP Bird2_12
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 1.0]]
+		['AnimationFact', [2, 'chick', 1.0, 1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 6.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 18 --> 14: 22.22% of conditions removed
+
+	DP Bird2_19
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [2, -1.0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [2, 6.0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.1 conditions 20 --> 19: 5.00% of conditions removed
+
+	DP Bird2_24
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [2, -1.0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [2, 6.0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.1 conditions 22 --> 21: 4.55% of conditions removed
+
+	DP Bird2_30
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [2, -1.0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [2, 6.0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.1 conditions 22 --> 21: 4.55% of conditions removed
+
+	DP Bird2_36
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [2, -1.0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [2, 6.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 37 --> 21: 43.24% of conditions removed
+
+	DP Freeplay2_21
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 2.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 2.0]]
+		threshold 0.1 conditions 24 --> 19: 20.83% of conditions removed
+
+	DP Freeplay2_37
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 2.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 2.0]]
+		['PositionXFact', [2, 5.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 54 --> 22: 59.26% of conditions removed
+
+	DP Freeplay2_38
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 2.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 2.0]]
+		threshold 0.1 conditions 29 --> 21: 27.59% of conditions removed
+
+	DP Freeplay2_40
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 2.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 54 --> 21: 61.11% of conditions removed
+
+	DP Freeplay2_41
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 2.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 54 --> 21: 61.11% of conditions removed
+
+	DP Bird3_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 17: 29.17% of conditions removed
+
+	DP Bird3_10
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [1, 0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 18 --> 16: 11.11% of conditions removed
+
+	DP Bird3_18
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 15: 37.50% of conditions removed
+
+	DP Bird3_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 18 --> 17: 5.56% of conditions removed
+
+	DP Bird4_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 18 --> 18: 0.00% of conditions removed
+
+	DP Bird5_8
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 18 --> 18: 0.00% of conditions removed
+
+	DP Bird6_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		threshold 0.1 conditions 14 --> 14: 0.00% of conditions removed
+
+	DP Bird6_35
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 14: 41.67% of conditions removed
+
+	DP Bird6_39
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 15: 37.50% of conditions removed
+
+	DP Bird6_44
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		threshold 0.1 conditions 15 --> 13: 13.33% of conditions removed
+
+	DP Freeplay6_5
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Freeplay6_8
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Bird7_6
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 19 --> 18: 5.26% of conditions removed
+
+	DP Bird7_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 18: 25.00% of conditions removed
+
+	DP Freeplay7_8
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 1.0]]
+		['VelocityYFact', [1, 0]]
+		['PositionYFact', [1, 0.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 13: 45.83% of conditions removed
+
+	DP Bird8_5
+	Pre Effect:  VelocityYFact [0, 2.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		['PositionXFact', [0, 5.0]]
+		threshold 0.1 conditions 18 --> 17: 5.56% of conditions removed
+
+	DP Freeplay8_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['PositionYFact', [3, 6.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 1.0]]
+		threshold 0.1 conditions 28 --> 17: 39.29% of conditions removed
+
+	DP Bird9_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 18 --> 17: 5.56% of conditions removed
+
+	DP Bird9_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		threshold 0.1 conditions 19 --> 17: 10.53% of conditions removed
+
+	DP Freeplay9_7
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [6, 6.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [5, 8.0]]
+		['PositionYFact', [5, 6.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [4, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [3, 8.0]]
+		['PositionYFact', [3, 2.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionXFact', [0, 8.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.1 conditions 58 --> 46: 20.69% of conditions removed
+
+	DP Freeplay9_9
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [6, 6.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [5, 8.0]]
+		['PositionYFact', [5, 6.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [4, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [3, 8.0]]
+		['PositionYFact', [3, 2.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionXFact', [0, 8.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.1 conditions 57 --> 43: 24.56% of conditions removed
+
+	DP Freeplay9_14
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [6, 6.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [5, 8.0]]
+		['PositionYFact', [5, 6.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [4, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [3, 8.0]]
+		['PositionYFact', [3, 2.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionXFact', [0, 8.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.1 conditions 56 --> 44: 21.43% of conditions removed
+
+	DP Freeplay9_22
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [6, 6.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [5, 8.0]]
+		['PositionYFact', [5, 6.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [4, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [3, 8.0]]
+		['PositionYFact', [3, 2.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionXFact', [0, 8.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.1 conditions 59 --> 45: 23.73% of conditions removed
+
+	DP Freeplay9_27
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [6, 6.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [5, 8.0]]
+		['PositionYFact', [5, 6.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [4, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['PositionXFact', [3, 8.0]]
+		['PositionYFact', [3, 2.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionXFact', [0, 8.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.1 conditions 55 --> 42: 23.64% of conditions removed
+
+	DP Bird10_3
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.1 conditions 17 --> 16: 5.88% of conditions removed
+
+	DP Freeplay10_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['PositionYFact', [3, 6.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 1.0]]
+		threshold 0.1 conditions 28 --> 17: 39.29% of conditions removed
+
+	DP Bird11_5
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		['PositionXFact', [0, 5.0]]
+		threshold 0.1 conditions 18 --> 18: 0.00% of conditions removed
+
+	DP Bird12_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 18 --> 18: 0.00% of conditions removed
+
+	DP Bird12_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 17: 29.17% of conditions removed
+
+	DP Bird12_45
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.1 conditions 18 --> 18: 0.00% of conditions removed
+
+	DP Bird12_49
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 17: 29.17% of conditions removed
+
+	DP Bird12_57
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 17: 29.17% of conditions removed
+
+	DP Bird12_64
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 17: 29.17% of conditions removed
+
+	DP Bird12_71
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['PositionXFact', [1, 5.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.1 conditions 24 --> 17: 29.17% of conditions removed
+
+	DP Freeplay12_31
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['PositionYFact', [3, 6.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 1.0]]
+		threshold 0.1 conditions 28 --> 17: 39.29% of conditions removed
+Total percentage of conditions removed: 27.87%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+THRESHOLD 0.2
+	DP Bird1_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 18 --> 15: 16.67% of conditions removed
+
+	DP Bird2_10
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 1.0]]
+		['AnimationFact', [2, 'chick', 1.0, 1.0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 20 --> 15: 25.00% of conditions removed
+
+	DP Bird2_12
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 1.0]]
+		['AnimationFact', [2, 'chick', 1.0, 1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 18 --> 13: 27.78% of conditions removed
+
+	DP Bird2_19
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [2, -1.0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.2 conditions 20 --> 17: 15.00% of conditions removed
+
+	DP Bird2_24
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [2, -1.0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.2 conditions 22 --> 19: 13.64% of conditions removed
+
+	DP Bird2_30
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [2, -1.0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.2 conditions 22 --> 19: 13.64% of conditions removed
+
+	DP Bird2_36
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [2, -1.0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 37 --> 19: 48.65% of conditions removed
+
+	DP Freeplay2_21
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		threshold 0.2 conditions 24 --> 17: 29.17% of conditions removed
+
+	DP Freeplay2_37
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 54 --> 19: 64.81% of conditions removed
+
+	DP Freeplay2_38
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		threshold 0.2 conditions 29 --> 19: 34.48% of conditions removed
+
+	DP Freeplay2_40
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 54 --> 19: 64.81% of conditions removed
+
+	DP Freeplay2_41
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [3, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 54 --> 19: 64.81% of conditions removed
+
+	DP Bird3_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 15: 37.50% of conditions removed
+
+	DP Bird3_10
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 18 --> 14: 22.22% of conditions removed
+
+	DP Bird3_18
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 13: 45.83% of conditions removed
+
+	DP Bird3_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 18 --> 15: 16.67% of conditions removed
+
+	DP Bird4_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 18 --> 16: 11.11% of conditions removed
+
+	DP Bird5_8
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 18 --> 16: 11.11% of conditions removed
+
+	DP Bird6_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		threshold 0.2 conditions 14 --> 14: 0.00% of conditions removed
+
+	DP Bird6_35
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 14: 41.67% of conditions removed
+
+	DP Bird6_39
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 15: 37.50% of conditions removed
+
+	DP Bird6_44
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		threshold 0.2 conditions 15 --> 13: 13.33% of conditions removed
+
+	DP Freeplay6_5
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Freeplay6_8
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Bird7_6
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 19 --> 16: 15.79% of conditions removed
+
+	DP Bird7_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 16: 33.33% of conditions removed
+
+	DP Freeplay7_8
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 1.0]]
+		['VelocityYFact', [1, 0]]
+		['PositionYFact', [1, 0.0]]
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 13: 45.83% of conditions removed
+
+	DP Bird8_5
+	Pre Effect:  VelocityYFact [0, 2.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.2 conditions 18 --> 15: 16.67% of conditions removed
+
+	DP Freeplay8_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 1.0]]
+		threshold 0.2 conditions 28 --> 16: 42.86% of conditions removed
+
+	DP Bird9_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 18 --> 15: 16.67% of conditions removed
+
+	DP Bird9_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		threshold 0.2 conditions 19 --> 15: 21.05% of conditions removed
+
+	DP Freeplay9_7
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.2 conditions 58 --> 39: 32.76% of conditions removed
+
+	DP Freeplay9_9
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.2 conditions 57 --> 36: 36.84% of conditions removed
+
+	DP Freeplay9_14
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.2 conditions 56 --> 37: 33.93% of conditions removed
+
+	DP Freeplay9_22
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.2 conditions 59 --> 38: 35.59% of conditions removed
+
+	DP Freeplay9_27
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'greenblock', 2.0, 2.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [9, 1.0]]
+		threshold 0.2 conditions 55 --> 35: 36.36% of conditions removed
+
+	DP Bird10_3
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.2 conditions 17 --> 15: 11.76% of conditions removed
+
+	DP Freeplay10_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 1.0]]
+		threshold 0.2 conditions 28 --> 16: 42.86% of conditions removed
+
+	DP Bird11_5
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [1, -1.0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityYFact', [0, 1.0]]
+		['AnimationFact', [0, 'chick', 1.0, 1.0]]
+		threshold 0.2 conditions 18 --> 16: 11.11% of conditions removed
+
+	DP Bird12_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 18 --> 16: 11.11% of conditions removed
+
+	DP Bird12_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 15: 37.50% of conditions removed
+
+	DP Bird12_45
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.2 conditions 18 --> 16: 11.11% of conditions removed
+
+	DP Bird12_49
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 15: 37.50% of conditions removed
+
+	DP Bird12_57
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 15: 37.50% of conditions removed
+
+	DP Bird12_64
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 15: 37.50% of conditions removed
+
+	DP Bird12_71
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [0, -1.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VelocityYFact', [1, 1.0]]
+		['AnimationFact', [1, 'chick', 1.0, 1.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.2 conditions 24 --> 15: 37.50% of conditions removed
+
+	DP Freeplay12_31
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['space', False]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['spacePrev', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 1.0]]
+		threshold 0.2 conditions 28 --> 16: 42.86% of conditions removed
+Total percentage of conditions removed: 35.49%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+THRESHOLD 0.3
+	DP Bird1_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird2_10
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 20 --> 11: 45.00% of conditions removed
+
+	DP Bird2_12
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird2_19
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		threshold 0.3 conditions 20 --> 13: 35.00% of conditions removed
+
+	DP Bird2_24
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		threshold 0.3 conditions 22 --> 13: 40.91% of conditions removed
+
+	DP Bird2_30
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		threshold 0.3 conditions 22 --> 13: 40.91% of conditions removed
+
+	DP Bird2_36
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 37 --> 13: 64.86% of conditions removed
+
+	DP Freeplay2_21
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['PositionYFact', [3, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.3 conditions 24 --> 12: 50.00% of conditions removed
+
+	DP Freeplay2_37
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['PositionYFact', [3, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 54 --> 15: 72.22% of conditions removed
+
+	DP Freeplay2_38
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['PositionYFact', [3, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.3 conditions 29 --> 15: 48.28% of conditions removed
+
+	DP Freeplay2_40
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['PositionYFact', [3, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 54 --> 15: 72.22% of conditions removed
+
+	DP Freeplay2_41
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['PositionYFact', [3, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 54 --> 15: 72.22% of conditions removed
+
+	DP Bird3_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Bird3_10
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird3_18
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Bird3_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird4_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird5_8
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird6_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 14 --> 11: 21.43% of conditions removed
+
+	DP Bird6_35
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Bird6_39
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 10: 58.33% of conditions removed
+
+	DP Bird6_44
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 15 --> 10: 33.33% of conditions removed
+
+	DP Freeplay6_5
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 9: 62.50% of conditions removed
+
+	DP Freeplay6_8
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 9: 62.50% of conditions removed
+
+	DP Bird7_6
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 19 --> 11: 42.11% of conditions removed
+
+	DP Bird7_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Freeplay7_8
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [1, 0]]
+		['PositionYFact', [1, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 10: 58.33% of conditions removed
+
+	DP Bird8_5
+	Pre Effect:  VelocityYFact [0, 2.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Freeplay8_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.3 conditions 28 --> 13: 53.57% of conditions removed
+
+	DP Bird9_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird9_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 19 --> 11: 42.11% of conditions removed
+
+	DP Freeplay9_7
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 58 --> 33: 43.10% of conditions removed
+
+	DP Freeplay9_9
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 57 --> 32: 43.86% of conditions removed
+
+	DP Freeplay9_14
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 56 --> 31: 44.64% of conditions removed
+
+	DP Freeplay9_22
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 59 --> 32: 45.76% of conditions removed
+
+	DP Freeplay9_27
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['PositionYFact', [2, 0.0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['PositionYFact', [1, 0.0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 55 --> 31: 43.64% of conditions removed
+
+	DP Bird10_3
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		threshold 0.3 conditions 17 --> 11: 35.29% of conditions removed
+
+	DP Freeplay10_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.3 conditions 28 --> 13: 53.57% of conditions removed
+
+	DP Bird11_5
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [1, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird12_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird12_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Bird12_45
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		threshold 0.3 conditions 18 --> 11: 38.89% of conditions removed
+
+	DP Bird12_49
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Bird12_57
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Bird12_64
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Bird12_71
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		['PositionYFact', [0, 0.0]]
+		['VariableFact', ['up', False]]
+		['VariableFact', ['down', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		threshold 0.3 conditions 24 --> 11: 54.17% of conditions removed
+
+	DP Freeplay12_31
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VariableFact', ['up', False]]
+		['VariableFact', ['left', False]]
+		['VariableFact', ['right', False]]
+		['VariableFact', ['upPrev', False]]
+		['VariableFact', ['downPrev', False]]
+		['VariableFact', ['leftPrev', False]]
+		['VariableFact', ['rightPrev', False]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.3 conditions 28 --> 13: 53.57% of conditions removed
+Total percentage of conditions removed: 50.35%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+THRESHOLD 0.4
+	DP Bird1_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird2_10
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 20 --> 2: 90.00% of conditions removed
+
+	DP Bird2_12
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird2_19
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 20 --> 4: 80.00% of conditions removed
+
+	DP Bird2_24
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 22 --> 4: 81.82% of conditions removed
+
+	DP Bird2_30
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 22 --> 4: 81.82% of conditions removed
+
+	DP Bird2_36
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		['VelocityYFact', [2, 0]]
+		['AnimationFact', [2, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 37 --> 4: 89.19% of conditions removed
+
+	DP Freeplay2_21
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.4 conditions 24 --> 6: 75.00% of conditions removed
+
+	DP Freeplay2_37
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.4 conditions 54 --> 6: 88.89% of conditions removed
+
+	DP Freeplay2_38
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.4 conditions 29 --> 6: 79.31% of conditions removed
+
+	DP Freeplay2_40
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.4 conditions 54 --> 6: 88.89% of conditions removed
+
+	DP Freeplay2_41
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.4 conditions 54 --> 6: 88.89% of conditions removed
+
+	DP Bird3_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 2: 91.67% of conditions removed
+
+	DP Bird3_10
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird3_18
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 2: 91.67% of conditions removed
+
+	DP Bird3_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird4_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird5_8
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird6_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 14 --> 2: 85.71% of conditions removed
+
+	DP Bird6_35
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 2: 91.67% of conditions removed
+
+	DP Bird6_39
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird6_44
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 15 --> 1: 93.33% of conditions removed
+
+	DP Freeplay6_5
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		threshold 0.4 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay6_8
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		threshold 0.4 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird7_6
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 19 --> 2: 89.47% of conditions removed
+
+	DP Bird7_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 2: 91.67% of conditions removed
+
+	DP Freeplay7_8
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.4 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird8_5
+	Pre Effect:  VelocityYFact [0, 2.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Freeplay8_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.4 conditions 28 --> 6: 78.57% of conditions removed
+
+	DP Bird9_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird9_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 19 --> 2: 89.47% of conditions removed
+
+	DP Freeplay9_7
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.4 conditions 58 --> 22: 62.07% of conditions removed
+
+	DP Freeplay9_9
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.4 conditions 57 --> 22: 61.40% of conditions removed
+
+	DP Freeplay9_14
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.4 conditions 56 --> 22: 60.71% of conditions removed
+
+	DP Freeplay9_22
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.4 conditions 59 --> 22: 62.71% of conditions removed
+
+	DP Freeplay9_27
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['AnimationFact', [6, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['AnimationFact', [5, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['AnimationFact', [4, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['AnimationFact', [3, 'longblock', 1.0, 4.0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.4 conditions 55 --> 22: 60.00% of conditions removed
+
+	DP Bird10_3
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 17 --> 2: 88.24% of conditions removed
+
+	DP Freeplay10_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.4 conditions 28 --> 6: 78.57% of conditions removed
+
+	DP Bird11_5
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['AnimationFact', [1, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird12_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird12_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 2: 91.67% of conditions removed
+
+	DP Bird12_45
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 18 --> 2: 88.89% of conditions removed
+
+	DP Bird12_49
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 2: 91.67% of conditions removed
+
+	DP Bird12_57
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 2: 91.67% of conditions removed
+
+	DP Bird12_64
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 2: 91.67% of conditions removed
+
+	DP Bird12_71
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		['AnimationFact', [0, 'longblock', 1.0, 4.0]]
+		threshold 0.4 conditions 24 --> 2: 91.67% of conditions removed
+
+	DP Freeplay12_31
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.4 conditions 28 --> 6: 78.57% of conditions removed
+Total percentage of conditions removed: 82.37%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+THRESHOLD 0.5
+	DP Bird1_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird2_10
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.5 conditions 20 --> 0: 100.00% of conditions removed
+
+	DP Bird2_12
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.5 conditions 18 --> 0: 100.00% of conditions removed
+
+	DP Bird2_19
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 20 --> 2: 90.00% of conditions removed
+
+	DP Bird2_24
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_30
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_36
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [2, 0]]
+		threshold 0.5 conditions 37 --> 2: 94.59% of conditions removed
+
+	DP Freeplay2_21
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 6: 75.00% of conditions removed
+
+	DP Freeplay2_37
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.5 conditions 54 --> 6: 88.89% of conditions removed
+
+	DP Freeplay2_38
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 29 --> 6: 79.31% of conditions removed
+
+	DP Freeplay2_40
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.5 conditions 54 --> 6: 88.89% of conditions removed
+
+	DP Freeplay2_41
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.5 conditions 54 --> 6: 88.89% of conditions removed
+
+	DP Bird3_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_10
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird3_18
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird4_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird5_8
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird6_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 14 --> 1: 92.86% of conditions removed
+
+	DP Bird6_35
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird6_39
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.5 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Bird6_44
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.5 conditions 15 --> 0: 100.00% of conditions removed
+
+	DP Freeplay6_5
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay6_8
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityXFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird7_6
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Bird7_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay7_8
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird8_5
+	Pre Effect:  VelocityYFact [0, 2.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Freeplay8_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 28 --> 6: 78.57% of conditions removed
+
+	DP Bird9_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird9_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Freeplay9_7
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 58 --> 18: 68.97% of conditions removed
+
+	DP Freeplay9_9
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 57 --> 18: 68.42% of conditions removed
+
+	DP Freeplay9_14
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 56 --> 18: 67.86% of conditions removed
+
+	DP Freeplay9_22
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 59 --> 18: 69.49% of conditions removed
+
+	DP Freeplay9_27
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityXFact', [8, 0]]
+		['VelocityYFact', [8, 0]]
+		['VelocityXFact', [7, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityXFact', [6, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityXFact', [5, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityXFact', [4, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityXFact', [0, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 55 --> 18: 67.27% of conditions removed
+
+	DP Bird10_3
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 17 --> 1: 94.12% of conditions removed
+
+	DP Freeplay10_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 28 --> 6: 78.57% of conditions removed
+
+	DP Bird11_5
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_45
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_49
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_57
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_64
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_71
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.5 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay12_31
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityXFact', [3, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityXFact', [2, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityXFact', [1, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.5 conditions 28 --> 6: 78.57% of conditions removed
+Total percentage of conditions removed: 86.76%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+THRESHOLD 0.6
+	DP Bird1_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird2_10
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.6 conditions 20 --> 0: 100.00% of conditions removed
+
+	DP Bird2_12
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.6 conditions 18 --> 0: 100.00% of conditions removed
+
+	DP Bird2_19
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 20 --> 2: 90.00% of conditions removed
+
+	DP Bird2_24
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_30
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_36
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [2, 0]]
+		threshold 0.6 conditions 37 --> 2: 94.59% of conditions removed
+
+	DP Freeplay2_21
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 3: 87.50% of conditions removed
+
+	DP Freeplay2_37
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.6 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Freeplay2_38
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 29 --> 3: 89.66% of conditions removed
+
+	DP Freeplay2_40
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.6 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Freeplay2_41
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.6 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Bird3_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_10
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird3_18
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird4_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird5_8
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird6_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 14 --> 1: 92.86% of conditions removed
+
+	DP Bird6_35
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird6_39
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.6 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Bird6_44
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.6 conditions 15 --> 0: 100.00% of conditions removed
+
+	DP Freeplay6_5
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		threshold 0.6 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Freeplay6_8
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		threshold 0.6 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Bird7_6
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Bird7_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay7_8
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird8_5
+	Pre Effect:  VelocityYFact [0, 2.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Freeplay8_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 28 --> 3: 89.29% of conditions removed
+
+	DP Bird9_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird9_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Freeplay9_7
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 58 --> 9: 84.48% of conditions removed
+
+	DP Freeplay9_9
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 57 --> 9: 84.21% of conditions removed
+
+	DP Freeplay9_14
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 56 --> 9: 83.93% of conditions removed
+
+	DP Freeplay9_22
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 59 --> 9: 84.75% of conditions removed
+
+	DP Freeplay9_27
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 55 --> 9: 83.64% of conditions removed
+
+	DP Bird10_3
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 17 --> 1: 94.12% of conditions removed
+
+	DP Freeplay10_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 28 --> 3: 89.29% of conditions removed
+
+	DP Bird11_5
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_45
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_49
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_57
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_64
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_71
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.6 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay12_31
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.6 conditions 28 --> 3: 89.29% of conditions removed
+Total percentage of conditions removed: 92.22%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+THRESHOLD 0.65
+	DP Bird1_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird2_10
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.65 conditions 20 --> 0: 100.00% of conditions removed
+
+	DP Bird2_12
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.65 conditions 18 --> 0: 100.00% of conditions removed
+
+	DP Bird2_19
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 20 --> 2: 90.00% of conditions removed
+
+	DP Bird2_24
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_30
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_36
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [2, 0]]
+		threshold 0.65 conditions 37 --> 2: 94.59% of conditions removed
+
+	DP Freeplay2_21
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 3: 87.50% of conditions removed
+
+	DP Freeplay2_37
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.65 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Freeplay2_38
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 29 --> 3: 89.66% of conditions removed
+
+	DP Freeplay2_40
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.65 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Freeplay2_41
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.65 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Bird3_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_10
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird3_18
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird4_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird5_8
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird6_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 14 --> 1: 92.86% of conditions removed
+
+	DP Bird6_35
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird6_39
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.65 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Bird6_44
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.65 conditions 15 --> 0: 100.00% of conditions removed
+
+	DP Freeplay6_5
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		threshold 0.65 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Freeplay6_8
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		threshold 0.65 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Bird7_6
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Bird7_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay7_8
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird8_5
+	Pre Effect:  VelocityYFact [0, 2.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Freeplay8_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 28 --> 3: 89.29% of conditions removed
+
+	DP Bird9_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird9_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Freeplay9_7
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 58 --> 9: 84.48% of conditions removed
+
+	DP Freeplay9_9
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 57 --> 9: 84.21% of conditions removed
+
+	DP Freeplay9_14
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 56 --> 9: 83.93% of conditions removed
+
+	DP Freeplay9_22
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 59 --> 9: 84.75% of conditions removed
+
+	DP Freeplay9_27
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 55 --> 9: 83.64% of conditions removed
+
+	DP Bird10_3
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 17 --> 1: 94.12% of conditions removed
+
+	DP Freeplay10_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 28 --> 3: 89.29% of conditions removed
+
+	DP Bird11_5
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_45
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_49
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_57
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_64
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_71
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.65 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay12_31
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.65 conditions 28 --> 3: 89.29% of conditions removed
+Total percentage of conditions removed: 92.22%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+THRESHOLD 0.7
+	DP Bird1_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird2_10
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.7 conditions 20 --> 0: 100.00% of conditions removed
+
+	DP Bird2_12
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.7 conditions 18 --> 0: 100.00% of conditions removed
+
+	DP Bird2_19
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 20 --> 2: 90.00% of conditions removed
+
+	DP Bird2_24
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_30
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_36
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [2, 0]]
+		threshold 0.7 conditions 37 --> 2: 94.59% of conditions removed
+
+	DP Freeplay2_21
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 3: 87.50% of conditions removed
+
+	DP Freeplay2_37
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.7 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Freeplay2_38
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 29 --> 3: 89.66% of conditions removed
+
+	DP Freeplay2_40
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.7 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Freeplay2_41
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.7 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Bird3_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_10
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird3_18
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird4_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird5_8
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird6_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 14 --> 1: 92.86% of conditions removed
+
+	DP Bird6_35
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird6_39
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.7 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Bird6_44
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.7 conditions 15 --> 0: 100.00% of conditions removed
+
+	DP Freeplay6_5
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		threshold 0.7 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Freeplay6_8
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		threshold 0.7 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Bird7_6
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Bird7_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay7_8
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird8_5
+	Pre Effect:  VelocityYFact [0, 2.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Freeplay8_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 28 --> 3: 89.29% of conditions removed
+
+	DP Bird9_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird9_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Freeplay9_7
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 58 --> 9: 84.48% of conditions removed
+
+	DP Freeplay9_9
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 57 --> 9: 84.21% of conditions removed
+
+	DP Freeplay9_14
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 56 --> 9: 83.93% of conditions removed
+
+	DP Freeplay9_22
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 59 --> 9: 84.75% of conditions removed
+
+	DP Freeplay9_27
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 55 --> 9: 83.64% of conditions removed
+
+	DP Bird10_3
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 17 --> 1: 94.12% of conditions removed
+
+	DP Freeplay10_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 28 --> 3: 89.29% of conditions removed
+
+	DP Bird11_5
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_45
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_49
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_57
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_64
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_71
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.7 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay12_31
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.7 conditions 28 --> 3: 89.29% of conditions removed
+Total percentage of conditions removed: 92.22%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+THRESHOLD 0.75
+	DP Bird1_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird2_10
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.75 conditions 20 --> 0: 100.00% of conditions removed
+
+	DP Bird2_12
+	Pre Effect:  VelocityYFact [2, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.75 conditions 18 --> 0: 100.00% of conditions removed
+
+	DP Bird2_19
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 20 --> 2: 90.00% of conditions removed
+
+	DP Bird2_24
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_30
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 22 --> 2: 90.91% of conditions removed
+
+	DP Bird2_36
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [2, -1.0] 
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [2, 0]]
+		threshold 0.75 conditions 37 --> 2: 94.59% of conditions removed
+
+	DP Freeplay2_21
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 3: 87.50% of conditions removed
+
+	DP Freeplay2_37
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.75 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Freeplay2_38
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 29 --> 3: 89.66% of conditions removed
+
+	DP Freeplay2_40
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.75 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Freeplay2_41
+	Pre Effect:  VelocityYFact [2, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [3, 0]]
+		threshold 0.75 conditions 54 --> 3: 94.44% of conditions removed
+
+	DP Bird3_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_10
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird3_18
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, -2.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird3_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird4_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird5_8
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird6_28
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 14 --> 1: 92.86% of conditions removed
+
+	DP Bird6_35
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird6_39
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.75 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Bird6_44
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		threshold 0.75 conditions 15 --> 0: 100.00% of conditions removed
+
+	DP Freeplay6_5
+	Pre Effect:  VelocityYFact [1, 2.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		threshold 0.75 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Freeplay6_8
+	Pre Effect:  VelocityYFact [1, 3.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		threshold 0.75 conditions 24 --> 0: 100.00% of conditions removed
+
+	DP Bird7_6
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Bird7_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay7_8
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird8_5
+	Pre Effect:  VelocityYFact [0, 2.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Freeplay8_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 28 --> 3: 89.29% of conditions removed
+
+	DP Bird9_5
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird9_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [1, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 19 --> 1: 94.74% of conditions removed
+
+	DP Freeplay9_7
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 58 --> 9: 84.48% of conditions removed
+
+	DP Freeplay9_9
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, -1.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 57 --> 9: 84.21% of conditions removed
+
+	DP Freeplay9_14
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 56 --> 9: 83.93% of conditions removed
+
+	DP Freeplay9_22
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 59 --> 9: 84.75% of conditions removed
+
+	DP Freeplay9_27
+	Pre Effect:  VelocityYFact [9, 1.0] 
+	Post Effect: VelocityYFact [9, 0.0] 
+		['VelocityYFact', [8, 0]]
+		['VelocityYFact', [7, 0]]
+		['VelocityYFact', [6, 0]]
+		['VelocityYFact', [5, 0]]
+		['VelocityYFact', [4, 0]]
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 55 --> 9: 83.64% of conditions removed
+
+	DP Bird10_3
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 17 --> 1: 94.12% of conditions removed
+
+	DP Freeplay10_33
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 28 --> 3: 89.29% of conditions removed
+
+	DP Bird11_5
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_4
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_11
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_45
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 18 --> 1: 94.44% of conditions removed
+
+	DP Bird12_49
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_57
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_64
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Bird12_71
+	Pre Effect:  VelocityYFact [1, 1.0] 
+	Post Effect: VelocityYFact [0, 0.0] 
+		['VelocityYFact', [0, 0]]
+		threshold 0.75 conditions 24 --> 1: 95.83% of conditions removed
+
+	DP Freeplay12_31
+	Pre Effect:  VelocityYFact [0, 1.0] 
+	Post Effect: VelocityYFact [0, -1.0] 
+		['VelocityYFact', [3, 0]]
+		['VelocityYFact', [2, 0]]
+		['VelocityYFact', [1, 0]]
+		threshold 0.75 conditions 28 --> 3: 89.29% of conditions removed
+Total percentage of conditions removed: 92.22%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

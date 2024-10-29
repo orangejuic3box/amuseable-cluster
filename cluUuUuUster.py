@@ -20,6 +20,7 @@ import ast
 import cProfile
 import time
 import sys
+import os
 
 #set global values
 MAX_ATTEMPTS = 200
@@ -577,13 +578,17 @@ def process_clusters(clusters):
                 file.write("\n")
             print("processed", center)
     print("done")
-process_clusters(clusters)
+
+'''PUTS THE CLUSTERS INTO THE FILES'''
+# process_clusters(clusters)
+
 # print(center_names)
 
 def make_boolean_cond(preid, cond):
     #202 if matched
     #201 if it doesnt
-    cond_type, cond_fact = cond
+    cond_type, condition_fact = cond
+    cond_fact = condition_fact.copy()
     # types: velocity, position, animation, variable, relationship, empty fact
     if "Velocity" in cond_type or "Position" in cond_type or "Animation" in cond_type:
         if cond_fact[0] == preid:
@@ -601,14 +606,19 @@ def make_boolean_cond(preid, cond):
             cond_fact[1] = 201
     if "Empty" in cond_type:
         raise Exception("EMPTY")
-    return cond
-    
+    return [cond_type, cond_fact]
+
+def get_preid(dp_prepost):
+    pretype = dp_prepost[0][0]
+    if pretype == "EmptyFact":
+        preid = None
+    else:
+        preid = dp_prepost[0][1][0]
+    return preid
 
 def pattern_making(clusters):
     print()
-    count = 0
     center_sets = {}
-    copy_sets = {}
     for center in clusters:
         # print("processing", center, " ...")
         cluster = clusters[center] # list of all the datapoints in the cluster
@@ -618,12 +628,7 @@ def pattern_making(clusters):
         for dp in cluster:
             # print("DATAPOINT",dp, "IN CLUSTER:", center)
             dp_prepost, dp_conditions = rules_db[dp]
-            pretype = dp_prepost[0][0]
-            if pretype == "EmptyFact":
-                preid = None
-                count += 1
-            else:
-                preid = dp_prepost[0][1][0]
+            preid = get_preid(dp_prepost)
             for cond in dp_conditions:
                 m += 1
                 boolean_cond  = str(make_boolean_cond(preid,cond))
@@ -633,25 +638,14 @@ def pattern_making(clusters):
                 else:
                     set_conditions[boolean_cond] = 1
         print(center, "has",len(set_conditions), "set conditions and", m, "total conditions")
-        n = len(set_conditions)
-        copy = set_conditions.copy()
-        largest = max(set_conditions.values())
-        # for key, item in set_conditions.items():
-        #     prev = item
-        #     set_conditions[key] /= n
-        #     if largest >= n:
-        #         print(f"{key:<{58}} : {prev} -> {set_conditions[key]}")  # Formatted output
-        for key in copy:
-            copy[key] /= m
-        copy_sets[center] = copy
+
         center_sets[center] = set_conditions
     print()
-    return center_sets, copy_sets
+    return center_sets
 
-center_sets, copy_sets = pattern_making(clusters)
+center_sets = pattern_making(clusters)
 
-
-def process_sets(center_sets, copy):
+def process_sets(center_sets):
     with open('conditions.txt', 'w') as file:
         file.write("########################\n")
         file.write("202 = MATCH\n")
@@ -686,5 +680,112 @@ def process_sets(center_sets, copy):
             file.write("\n")
     print("processed the sets")
 
-process_sets(center_sets, copy_sets)
+# process_sets(center_sets)
+
+
+def threshold_clusters(filename, cluster, set_conditions, threshold):
+    '''
+    Parameters:
+        - filename (str) filename to write for data analysis
+        - cluster (list) list of all the names of the datapoints in a cluster
+        - set_conditions (dict) is a dictionary of the boolean set conditions 
+        for a given center cluster with the count as the value
+        - threshold (int) value for probability threshold
+
+    Go through all the datapoints in a cluster, for each dp:
+        - go through their conditions, rules_db[dp][1] and:
+            - grab the boolean version of their condition
+            - check if that boolean condition is in the set
+            - check if it passes the threshold
+                - if it passes the checks write to file
+                - if it does not pass the check do not write to file
+    '''
+    with open(filename, "a") as file:
+        total = 0
+        removed = 0
+        file.write("THRESHOLD "+str(threshold)+"\n")
+        for dp in cluster:
+            # print("DP", dp)
+            dp_prepost, dp_conditions = rules_db[dp]
+            file.write("\tDP "+dp+"\n")
+            file.write("\tPre Effect:  ")
+            for pre in dp_prepost[0]:
+                file.write(str(pre)+" ")
+            file.write("\n\tPost Effect: ")
+            for post in dp_prepost[1]:
+                file.write(str(post) + " ")
+            preid = get_preid(dp_prepost)
+            count = 0
+            file.write("\n")
+            for cond in dp_conditions:
+                # change condition to boolean ver.
+                boolean_cond = str(make_boolean_cond(preid, cond))
+                # KEEP conditon ONLY if value is BELOW THRESHOLD
+                if boolean_cond in set_conditions and (set_conditions[boolean_cond]/len(set_conditions)) <= threshold:
+                    # print(cond, "was a boolean condition passing the threshold")
+                    count += 1
+                    file.write("\t\t"+str(cond)+"\n")
+                else:
+                    removed += 1
+            total += len(dp_conditions)
+            dp_removed = ((len(dp_conditions) - count)/len(dp_conditions)) * 100
+            if cluster[-1] == dp:
+                file.write(f"\t\tthreshold {str(threshold)} conditions {str(len(dp_conditions))} --> {str(count)}: {dp_removed:.2f}% of conditions removed\n")
+            else:
+                file.write(f"\t\tthreshold {str(threshold)} conditions {str(len(dp_conditions))} --> {str(count)}: {dp_removed:.2f}% of conditions removed\n\n")
+            # print("threshold", threshold,"conditions", len(dp_conditions), "-->", count)
+            # print()
+        percentage_removed = (removed/total) * 100
+        # print(f"Total percentage of conditions removed: {percentage_removed:.2f}%")
+        file.write(f"Total percentage of conditions removed: {percentage_removed:.2f}%\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+    print("done writing")
+
+    
+
+centername = "Freeplay11_14"
+cluster = clusters[centername]
+set_conditions = center_sets[centername]
+threshold = 0.2
+
+for centername in clusters:
+    print("CLUSTER", centername, ":",len(cluster))
+
+    cluster = clusters[centername]
+    set_conditions = center_sets[centername]
+    # filename = "/conditions/conditioned clusters/"+centername + "_conditioned.txt"
+    # print(os.getcwd())
+    # print(os.path.exists(os.getcwd()+"/conditions/conditioned clusters"))
+    # print(os.path.exists(os.getcwd()+filename))
+    # print(os.path.exists("/conditions/conditioned clusters"))
+
+    # Construct the relative path correctly
+    dir_path = os.path.join(os.getcwd(), "conditions", "conditioned clusters")
+    filename = os.path.join(dir_path, centername + "_inverse_conditioned.txt")
+
+    with open(filename, "w") as file:
+        file.write("CLUSTER "+centername+" : "+str(len(cluster))+" datapoints : "+str(len(set_conditions))+" set conditions\n\n")
+
+    thresholds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.65, 0.7 ,0.75]
+    for threshold in thresholds:
+        threshold_clusters(filename, cluster, set_conditions, threshold)
+
+
+# count = 0
+# for dp in clusters["Freeplay11_14"]:
+#     if count > 3:
+#         break
+#     count += 1
+#     print(dp)
+#     print(rules_db[dp][1])
+#     print()
+
+# for cond, prob in center_sets["Freeplay11_14"].items():
+#     print(cond, prob)
+
+# for center, set_conds in center_sets.items():
+#     print(center)
+#     #process set_conditions under the threshold
+#     for cond in set_conds:
+#         print(cond)
+#     print("~~~~~~~~~~~~~~~~~~~")
 

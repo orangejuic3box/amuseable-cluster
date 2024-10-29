@@ -1,6 +1,10 @@
 ########################
 202 = MATCH
 201 = NOT MATCHED
+
+This is with probabilities
+by total number of conditions
+not total length of set conditions
 ########################
 CENTER: Freeplay11_7	LEN OF CONDITIONS: 187
 	['VariableFact', ['up', False]]                           : 0.04262295081967213
