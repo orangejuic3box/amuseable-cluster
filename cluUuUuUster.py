@@ -28,6 +28,9 @@ MAX_ATTEMPTS = 200
 
 width = 22
 height = 10
+max_ks = 12
+k = 9
+
 
 def process_json(filepath, name):
     # print(".....PROCESSING       " +filepath)
@@ -735,10 +738,18 @@ def write_threshold_clusters(clusters, center_sets):
         for threshold in thresholds:
             threshold_clusters(filename, cluster, set_conditions, threshold)
 
+def printdb():
+    for dp,val in rules_db.items():
+        prepost, cond = val
+        print(dp)
+        print(prepost)
+        print(cond)
+        print()
+
+
+rules_db = make_db(rules_db={})
 def main():
-    max_ks = 12
     '''502-516 needed for making rules_db dont delete'''
-    rules_db = make_db(rules_db={})
     centers = { "Freeplay11_7"  : 12, 
                 "Bird6_44"      : 8,
                 "Bird9_14"	  : 8, 
@@ -748,7 +759,6 @@ def main():
                 "Freeplay12_9"  : 12, 
                 "Freeplay9_3"   : 11, 
                 "Freeplay9_24"  : 12,  }
-    k = 9
     center_names = list(centers.keys())
     c = make_cluster_dictionary(centers)
     clusters, dist = calculate_clusters(center_names, rules_db, c)
@@ -758,6 +768,9 @@ def main():
     # print(center_names)
     center_sets = pattern_making(clusters)
     # process_sets(center_sets)
-
-
+    for center, val in center_sets.items():
+        print(center)
+        print(val)
+        print()
+        
 main()
