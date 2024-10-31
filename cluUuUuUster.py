@@ -476,7 +476,6 @@ def find_elbow(dist):
     elb = max(elbows, key=elbows.get)
     print("the optimal value for k is", elb)
 
-rules_db = make_db(rules_db={})
 # dist = {    2 : 12370,
                 # 3 : 8005,
                 # 4 : 5950,
@@ -500,6 +499,8 @@ rules_db = make_db(rules_db={})
                 # 11 :  3307, #3597, 3581
                 # 12 :  3047}
 
+'''502-516 needed for making rules_db dont delete'''
+rules_db = make_db(rules_db={})
 centers = { "Freeplay11_7"  : 12, 
 			"Bird6_44"      : 8,
 			"Bird9_14"	  : 8, 
@@ -510,8 +511,6 @@ centers = { "Freeplay11_7"  : 12,
 			"Freeplay9_3"   : 11, 
 			"Freeplay9_24"  : 12,  }
 k = 9
-# clusters, distortion = main(k, rules_db)
-
 center_names = list(centers.keys())
 c = make_cluster_dictionary(centers)
 clusters, dist = calculate_clusters(center_names, rules_db, c)
@@ -740,52 +739,25 @@ def threshold_clusters(filename, cluster, set_conditions, threshold):
         file.write(f"Total percentage of conditions removed: {percentage_removed:.2f}%\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
     print("done writing")
 
-    
 
-centername = "Freeplay11_14"
-cluster = clusters[centername]
-set_conditions = center_sets[centername]
-threshold = 0.2
+# centername = "Freeplay11_14"
+# cluster = clusters[centername]
+# set_conditions = center_sets[centername]
+# threshold = 0.2
 
-for centername in clusters:
-    print("CLUSTER", centername, ":",len(cluster))
+def write_threshold_clusters(clusters, center_sets):
+    for centername in clusters:
+        cluster = clusters[centername]
+        print("CLUSTER", centername, ":",len(cluster))
+        set_conditions = center_sets[centername]
 
-    cluster = clusters[centername]
-    set_conditions = center_sets[centername]
-    # filename = "/conditions/conditioned clusters/"+centername + "_conditioned.txt"
-    # print(os.getcwd())
-    # print(os.path.exists(os.getcwd()+"/conditions/conditioned clusters"))
-    # print(os.path.exists(os.getcwd()+filename))
-    # print(os.path.exists("/conditions/conditioned clusters"))
+        # Construct the relative path correctly
+        dir_path = os.path.join(os.getcwd(), "conditions", "conditioned clusters")
+        filename = os.path.join(dir_path, centername + "_inverse_conditioned.txt")
 
-    # Construct the relative path correctly
-    dir_path = os.path.join(os.getcwd(), "conditions", "conditioned clusters")
-    filename = os.path.join(dir_path, centername + "_inverse_conditioned.txt")
+        with open(filename, "w") as file:
+            file.write("CLUSTER "+centername+" : "+str(len(cluster))+" datapoints : "+str(len(set_conditions))+" set conditions\n\n")
 
-    with open(filename, "w") as file:
-        file.write("CLUSTER "+centername+" : "+str(len(cluster))+" datapoints : "+str(len(set_conditions))+" set conditions\n\n")
-
-    thresholds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.65, 0.7 ,0.75]
-    for threshold in thresholds:
-        threshold_clusters(filename, cluster, set_conditions, threshold)
-
-
-# count = 0
-# for dp in clusters["Freeplay11_14"]:
-#     if count > 3:
-#         break
-#     count += 1
-#     print(dp)
-#     print(rules_db[dp][1])
-#     print()
-
-# for cond, prob in center_sets["Freeplay11_14"].items():
-#     print(cond, prob)
-
-# for center, set_conds in center_sets.items():
-#     print(center)
-#     #process set_conditions under the threshold
-#     for cond in set_conds:
-#         print(cond)
-#     print("~~~~~~~~~~~~~~~~~~~")
-
+        thresholds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.65, 0.7 ,0.75]
+        for threshold in thresholds:
+            threshold_clusters(filename, cluster, set_conditions, threshold)
