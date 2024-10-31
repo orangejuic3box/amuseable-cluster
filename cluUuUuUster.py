@@ -443,8 +443,6 @@ def cluster(k, rules_db):
 # cProfile.run("main()")
 # for i in range(3):
 #     clusters = main()
-max_ks = 12
-
 def elbow(kminus, k, kplus):
     top = abs(kminus - k)
     bottom = abs(k - kplus)
@@ -499,21 +497,6 @@ def find_elbow(dist):
                 # 11 :  3307, #3597, 3581
                 # 12 :  3047}
 
-'''502-516 needed for making rules_db dont delete'''
-rules_db = make_db(rules_db={})
-centers = { "Freeplay11_7"  : 12, 
-			"Bird6_44"      : 8,
-			"Bird9_14"	  : 8, 
-			"Freeplay5_1"   : 11, 
-			"Freeplay11_14" : 13, 
-			"Freeplay11_30" : 13, 
-			"Freeplay12_9"  : 12, 
-			"Freeplay9_3"   : 11, 
-			"Freeplay9_24"  : 12,  }
-k = 9
-center_names = list(centers.keys())
-c = make_cluster_dictionary(centers)
-clusters, dist = calculate_clusters(center_names, rules_db, c)
 
 def process_clusters(clusters):
     with open('centers.txt', 'w') as file:
@@ -578,11 +561,6 @@ def process_clusters(clusters):
             print("processed", center)
     print("done")
 
-'''PUTS THE CLUSTERS INTO THE FILES'''
-# process_clusters(clusters)
-
-# print(center_names)
-
 def make_boolean_cond(preid, cond):
     #202 if matched
     #201 if it doesnt
@@ -642,8 +620,6 @@ def pattern_making(clusters):
     print()
     return center_sets
 
-center_sets = pattern_making(clusters)
-
 def process_sets(center_sets):
     with open('conditions.txt', 'w') as file:
         file.write("########################\n")
@@ -678,9 +654,6 @@ def process_sets(center_sets):
                 # file.write("\t"+key+" : "+ "\n")
             file.write("\n")
     print("processed the sets")
-
-# process_sets(center_sets)
-
 
 def threshold_clusters(filename, cluster, set_conditions, threshold):
     '''
@@ -761,3 +734,30 @@ def write_threshold_clusters(clusters, center_sets):
         thresholds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.65, 0.7 ,0.75]
         for threshold in thresholds:
             threshold_clusters(filename, cluster, set_conditions, threshold)
+
+def main():
+    max_ks = 12
+    '''502-516 needed for making rules_db dont delete'''
+    rules_db = make_db(rules_db={})
+    centers = { "Freeplay11_7"  : 12, 
+                "Bird6_44"      : 8,
+                "Bird9_14"	  : 8, 
+                "Freeplay5_1"   : 11, 
+                "Freeplay11_14" : 13, 
+                "Freeplay11_30" : 13, 
+                "Freeplay12_9"  : 12, 
+                "Freeplay9_3"   : 11, 
+                "Freeplay9_24"  : 12,  }
+    k = 9
+    center_names = list(centers.keys())
+    c = make_cluster_dictionary(centers)
+    clusters, dist = calculate_clusters(center_names, rules_db, c)
+    '''PUTS THE CLUSTERS INTO THE FILES'''
+    # process_clusters(clusters)
+
+    # print(center_names)
+    center_sets = pattern_making(clusters)
+    # process_sets(center_sets)
+
+
+main()
