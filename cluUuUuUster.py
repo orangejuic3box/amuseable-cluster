@@ -21,6 +21,7 @@ import cProfile
 import time
 import sys
 import os
+from collections import deque
 
 #set global values
 MAX_ATTEMPTS = 200
@@ -746,6 +747,25 @@ def printdb():
         print(cond)
         print()
 
+def build_index(center_sets):
+    index = {}
+    count = 0
+    for center, val in center_sets.items():
+        print(center, len(val))
+        for cond, freq in val.items():
+            tf = round(freq/len(val), 3) #get tf
+            if cond not in index:
+                count +=1
+                index[cond] = deque()
+                index[cond].append(0) # adding df
+            index[cond].append([center, tf]) #add docID (which cluster) and tf
+            index[cond][0] += 1 #incease df
+    print("total of", count, "unique conditions")
+    index = dict(sorted(index.items(), key=lambda item: item[1][0], reverse=True))
+
+    # sorted_index = {cond: index[cond] for cond in sorted(index)}
+    for cond in index:
+        print(cond, index[cond])
 
 rules_db = make_db(rules_db={})
 def main():
@@ -768,9 +788,6 @@ def main():
     # print(center_names)
     center_sets = pattern_making(clusters)
     # process_sets(center_sets)
-    for center, val in center_sets.items():
-        print(center)
-        print(val)
-        print()
+    index = build_index(center_sets)
         
 main()
