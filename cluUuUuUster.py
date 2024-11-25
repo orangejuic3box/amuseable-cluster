@@ -388,6 +388,8 @@ def make_db(rules_db):
         for name in names:
             filepath = "./json/"+name+str(i)+"/data.json"
             rules = process_json(filepath, name+str(i)+"_")
+            if name+str(i) == "Bird1":
+                print("Bird1", len(rules))
             # checks for overwritten keys
             for key in rules.keys():
                 if key in rules_db.keys():
@@ -769,7 +771,19 @@ def build_index(center_sets):
 
 rules_db = make_db(rules_db={})
 def main():
-    '''502-516 needed for making rules_db dont delete'''
+
+    for name, rule in rules_db.items():
+        if "Bird1_" in name:
+            number = name[name.index("_")+1:]
+            prepost, conditions = rule
+            print("RULE:",number,prepost[0], "-->", prepost[1])
+            for cond in conditions:
+                print('\t', cond)
+            
+            
+            # print(rules_db[rule])
+    
+    """ '''502-516 needed for making rules_db dont delete'''
     centers = { "Freeplay11_7"  : 12, 
                 "Bird6_44"      : 8,
                 "Bird9_14"	  : 8, 
@@ -788,6 +802,6 @@ def main():
     # print(center_names)
     center_sets = pattern_making(clusters)
     # process_sets(center_sets)
-    index = build_index(center_sets)
+    index = build_index(center_sets) """
         
 main()
