@@ -1,0 +1,719 @@
++Position ***DONE***
+- abs difference normalized over max (width or height)
+
++Variable ***DONE***
+- if keyname and value match exactly 0, else 0.5(normalized value of 1)
+
++Animation ***DONE***
+- taking component
+- sum of norm width and norm height
+- 50% name, 25% width, 25% height
+
++Relationship ***DONE***
+- if dir and val match exactly 0, if dir match normalize dist, else 0.5(normalized value of 1)
+
++Velocity
+- abs difference normalized over max (width or height)
+- cosine similarity (0, -1, 1) + 0.01
+- norm * (-cos + 0.01)
+	(similar) cos = 1, norm * -1.01
+	(far apt) cos =-1, norm * 1.01
+	(not sim) cos = 0, norm * 0.01
+
+	far apt makes sense
+	technically cos=1 will have the smallest val bc its negative but I don't want a negative number
+	cos=0 ends up being a very small number
+
+	(1-c0s/2 +0.01)
+
++Empty
+- basically rule matching but without pre and post effects
+- for each condition in emptyfact1, sum the distance to each cond in emptyfact2
+
++Breakdown of distance
+- pre and post should have more weight (40, 40, 20) or (35, 35, 30)?
+- how to handle the amount of conditions (rules with lots of conditions will inevitably have a larger distance)
+	- normalize over max possible distance between 2 facts? 
+		ie. factA = 19, factB = 24, max distance = 19*24=456
+		dist(a,b) = 386
+		norm = 386/456
+
+
+
+k=2-----------------------
+DISTORTION =  12370.105568117833
+CONVERGED ON 4
+DISTORTION =  12370.105568117833
+CONVERGED ON 6
+DISTORTION =  25696.14942744673
+CONVERGED ON 5
+DISTORTION =  12370.105568117833
+
+CONVERGED ON 3
+
+Freeplay12_9  : 706 
+Freeplay11_36 : 409 
+
+12370.105568117833+12370.105568117833
+k=3-----------------------
+DISTORTION =  8088.036002211466
+CONVERGED ON 3
+DISTORTION =  7976.159289765082
+CONVERGED ON 6
+DISTORTION =  8127.676201121017
+CONVERGED ON 3
+DISTORTION =  17127.764118612107
+CONVERGED ON 4
+DISTORTION =  8124.04470186483
+CONVERGED ON 3
+
+8088.036002211466+8127.676201121017+8124.04470186483
+
+8113.252301732433333
+k=4-----------------------
+DISTORTION =  5932.577234607439
+CONVERGED ON 3
+DISTORTION =  6018.50528857479
+CONVERGED ON 5
+DISTORTION =  5964.036809530023
+CONVERGED ON 4
+5932.577234607439+6018.50528857479+5964.036809530023
+
+5971.706444237433333
+k=5-----------------------
+DISTORTION =  4759.602160114851
+CONVERGED ON 10
+DISTORTION =  4726.062754910238
+CONVERGED ON 5
+DISTORTION =  4792.998841156446
+CONVERGED ON 5
+4759.602160114851+4726.062754910238+4792.998841156446
+
+4759.554585393846667
+k=6-----------------------
+DISTORTION =  3965.0022279409063
+CONVERGED ON 5
+DISTORTION =  3897.3733585886475
+CONVERGED ON 4
+DISTORTION =  3324.9888852184617
+CONVERGED ON 4
+3965.0022279409063+3897.3733585886475+3324.9888852184617
+
+3729.121490582666667
+k=7-----------------------
+DISTORTION =  3352.0148511338584
+CONVERGED ON 5
+DISTORTION =  3350.729790902198
+CONVERGED ON 3
+DISTORTION =  2838.767068484935
+CONVERGED ON 5
+3352.0148511338584+3350.729790902198+2838.767068484935
+
+3180.503903507
+k=8-----------------------
+DISTORTION =  2901.000862001394
+CONVERGED ON 5
+DISTORTION =  2920.6398013779035
+CONVERGED ON 4
+DISTORTION =  2914.939070001333
+CONVERGED ON 5
+2901.000862001394+2920.6398013779035+2914.939070001333
+
+2912.1932444602
+
+k=9-----------------------
+DISTORTION =  2203.9596008139615
+CONVERGED ON 4
+DISTORTION =  2198.287041470312
+CONVERGED ON 5
+DISTORTION =  2231.561966336721
+CONVERGED ON 7
+
+2203.9596008139615+2198.287041470312+2231.561966336721
+
+2211.269536207
+k=10-----------------------
+DISTORTION =  1959.0504382099884
+CONVERGED ON 5
+DISTORTION =  1970.646481723848
+CONVERGED ON 4
+DISTORTION =  1977.070318882325
+CONVERGED ON 7
+
+1977.070318882325+1970.646481723848+1959.0504382099884
+
+1968.922412938733333
+k=11-----------------------
+DISTORTION =  1785.0726378649335
+CONVERGED ON 7
+DISTORTION =  2115.6842117176384
+CONVERGED ON 6
+DISTORTION =  1793.676098162403
+CONVERGED ON 4
+
+1755.904977174923
+1741.70
+
+1785.0726378649335+2115.6842117176384+1793.676098162403
+
+1898.144315915
+k=12-----------------------
+DISTORTION =  1922.9214668543311
+CONVERGED ON 4
+1933
+
+
+k is 9
+
+
+
+
+
+
+
+
+ppw 0.4, dw 0.2
+
+2 : 12370
+3 : 14129 / 8,005
+4 : 5950
+5 : 4507
+6 : 3925
+7 : 3342
+8 : 2630
+9 : 2328
+10 : 1871
+11 : 1893
+12 : 1759
+
+optimal value is 10
+
+
+ppw 0.3, dw = 0.4
+
+2  : 20037,
+3  : 12982,
+4  :  9493,
+5  :  7893,
+6  :  6421,
+7  :  5621,
+8  :  4705,
+9  :  4156,
+10 :  3650,
+11 :  3495,
+12 :  3047
+
+optimal value is 4, 10
+
+
+
+
+
+
+
+
+distorition, elbow method, datavsisulaizer.cs
+
+Elbow: K value that maximizes change in slope abs(metric(K-1)- metric(K))/abs(metric(K)- metric(K+1))*
+
+pca principle component analysis
+tsnee? dimensionality reduction approach
+
+stdout to text
+
+find optimal value of k
+
+elbow = abs(k-1 - k)/abs(k - k+1)
+
+
+
+
+
+
+
+
+
+_________________________________________
+Freeplay12_11 : 331
+Bird6_23 : 40
+Freeplay11_32 : 202
+Freeplay12_4 : 246
+Sokoban9_29 : 14
+Freeplay11_36 : 174
+Freeplay9_19 : 38
+Bird3_9 : 30
+Freeplay6_6 : 40
+CONVERGED ON 5 in 117.53132009506226 seconds      k is 9 2590.849265436757
+9
+
+Sokoban5_10 : 25
+Bird3_9 : 66
+Bird6_23 : 35
+Freeplay5_1 : 45
+Freeplay9_3 : 20
+Freeplay11_36 : 402
+Freeplay12_4 : 240
+Freeplay1_0 : 2
+Freeplay10_20 : 280
+CONVERGED ON 4 in 136.65688395500183 seconds      k is 9 2628.5345453296004
+9
+
+Freeplay11_14 : 103
+Freeplay12_9 : 190
+Freeplay11_36 : 125
+Bird6_44 : 54
+Freeplay11_30 : 120
+Freeplay12_11 : 215
+Freeplay9_3 : 18
+Freeplay12_4 : 242
+Freeplay5_1 : 48
+CONVERGED ON 6 in 133.83127522468567 seconds      k is 9 2561.974113395916
+
+
+    # types: velocity, position, animation, variable, relationship, empty fact
+
+pre and post types: velocity, empty, animation 
+ 
+ 
+ 
+setting seeds for cluster set
+pickle file save and load cluster from seed
+
+importance of diff features in diff clusters 
+
+probalistic take set of conditions from all dps
+
+	- ignoring ids
+	- convert ids to boolean of whether the id value is the same of the pre effects
+	- id is either pre effect or not prefeffect turns into two seperate conditions in the condition set
+
+	- turn clusters into sets of features (rule condition) and their probability
+
+	- pick threshold
+
+
+
+Centers = { Freeplay11_7  : 169, 
+			Bird6_44      : 47,
+			Bird9_14	  : 68, 
+			Freeplay5_1   : 46, 
+			Freeplay11_14 : 73, 
+			Freeplay11_30 : 195, 
+			Freeplay12_9  : 465, 
+			Freeplay9_3   : 31, 
+			Freeplay9_24  : 21,  }
+
+
+ either 500 or 501
+ if empty fact no idea, all other ideas are 501
+ just check if 
+
+ just changing ids and then taking set of all conditions
+
+
+ if the same rule appears 3 times in the set of 21, proability 3/21
+
+
+ I think the crucial thing here will be looking at what happens if we set a certain threshold and remove facts that have a lower score than that threshold. 
+
+ With this setup, I think it actually might make the important facts we don't want to lose disappear from the rules, but it might be worth investigating and seeing what happens? 
+
+ You could test this just with the given rules, look at a particular cluster, pick a value that seems reasonable, and then look at what facts would be removed from the conditions based on that.
+
+
+ For Cluster "Freeplay11_14"
+ + threshold 0.5
+ - cut down to only the variable facts ([right,False,], [upPrev, False], etc.)
+
+
+ inverse - only remove super high thresholds
+
+ document would be cluster
+ set_condition would be the terms
+
+ tfidf scoring
+ 
+ coming up -> evaluation (how good is my system)
+ - looking at witheld test data, pick a sequence of frames from that data
+ - go through each frame of that game sequence and see what is the difference in rulese and conditions between frames
+ - learning engine is baseline
+ - 
+ - 
+ - 
+ - using training data (try for 3 games and try both threshold and inverse threshold)
+ - go through frames up to the current frame from 0 to i run each frame to sloppylearning and it will give out an engine
+ - go through each rule of the learned engine
+ - use threshold that removes 1/4 to 1/3 of information
+ - deepcopy the engine we got
+ - run the engine through set_conditions
+
+ from frame i predict i + 1 from both engines
+ ** just predict i+1 could help predict i + j = n
+
+
+
+ for i =1 ; i<n; i++
+ 	frames = []
+ 	for j = 0 ; j<i; j++
+ 		frames.add(framesReal[j])
+ 	engine = runsloppylearning(frames) #neede to alter to take in frames
+ 	enginesimple = threshold_set_conditions(engine)
+ 	for k = i; k<n; k++
+ 		frameErrorEng = dist(engine.predict(frameseReal[k], framesReal[k+1]))
+ 		frameErrorSimp = ""
+ 		frameErrorEngine = engine.predict(framesReal[k], framesReal[k+i]) #get error somehow 
+ 		frameErrorSimple = enginesimple.predict(framesSimple"")
+ 		csv.write(i, k, frameErrorE, frameErrorS)
+
+
+summarys statistic on how the ngines differed
+
+how many few conditions are in the simplified than the original add to csv
+
+if not:
+	pick a game and see why
+	- look at its rules from original
+	- look at its rule from simplified
+	- why is simple not good enough
+	- what needed to be removed from the original
+	- what can be a metric for what identify conditions to be removed
+
+
+	if fails grabs best possible engine -> max attempts being queryed send the engine after 
+
+
+
+
+
+
+THRESHOLD 0.6 [61, 44, 42, 46, 13, 0, 30, 0,  7]
+
+
+THRESHOLD 0.65 [59, 38, 29, 46, 9, 0, 26, 0, 7]
+
+
+THRESHOLD 0.7 [59, 38, 6, 43, 9, 0, 26, 0, 7]
+
+
+
+BIRDS 1-12 DONE!!!!!
+
+SOKOBAN 1-2,4-5,7-8,10-12 DONE!!!
+SOKOBAN 3,6,9,12 MISSING FRAME!!!
+
+FREEPLAY 1-3 DONE!!
+FREEPLAY 4-5 MISSING FRAME!!!
+FREEPLAY 6-12 DONE!!!
+
+
+
+
+particular game--> why didn't it remove 
+
+difference between learned adn simplified engine (conditions)
+
+what does the simplified engine need to make a different prediction with less error
+
+ 20 frames
+ same mechanic comes up multiple time
+ sokoban or bird
+ actually just bird
+
+	- what needed to be removed from the original
+	- what can be a metric for what identify conditions to be removed
+
+ + Report
+ - 
+
+ needed to simplify it this way to make a different prediction
+ but actually simplified it this way
+
+
+Bird5 (35 frames)
+- uses space
+- sort of avoids a hit
+- doesn't show what happens if you do get hit
+- moves one by one
+
+CONDITION PERCENTAGE HAD TO BE BELOW THE THRESHOLD
+(ONLY KEEPING "RARE" CONDITIONS) -> conditions seen often are not important (like looking at the keywords in a sentence, "the", "a", "is" are common and unimmportant words)
+
+def runExperiment():
+	engines = {}
+	simples = {}
+	for i>1:
+		engine[i] = engine
+		simples[i] = engine_simple
+	return engines, simples
+
+def lookAtResults(engines, simples):
+
+
+for each iteration print out engine rules and simple rules side by side
+	- look at whats missing
+		- what is it?
+		- is it a common conditions?
+		- was it value close to the threshold?
+		- why was it not significant enough to make a change?
+	- what should be remove to make a different prediction?
+
+- what can be a metric for what identify conditions to be removed
+
+
+
+
+
+
+
+
+
+
+
+tdidf
+
+iconic rule for clusters
+
+from initial engine generated:
+
+what conditions should be removed from the getgo, step uno, 1, i., 
+
+- looking at prevFrame into account, not just pairs of frames
+- prior frame, first time ever bird goes up, what was common BEFORE bird up -> not important
+- if consistent since the beginning, remove, when (rules based approach)
+- jump in mario, touching ground, not important, BUT would need to be on groud for jump that is important
+
+instance 1 rule is learned
+
+instance k rule is generalized (finalized)
+
+what should we have removed intially that we didnt
+what could we have known ahead of time to remove
+
+rules are not static (don't change)
+but rules are being simplified voer time
+store process of simplied over time
+
+when learning new rule, -> from the simplification process, what does it most look like
+
+staring from goal didn't remove but good to remove, how can we change process st that it removes what it should've 
+
+play around with different methods
+
+semester over :(
+sort of working next week!!!!
+use that to draft report
+1. deadline and draft
+2. show draft
+
+
+ - game plan:
+   + look at Bird5 initial engine
+   + look at Bird5 final engine
+   + look at simple initial engine
+   + look at simple final engine
+   + compare 
+
+
+potentially only remove common conds if its below a certain threshold, also gonna say if its key input, that key is important and should be kept regardless?
+
+if there's no user input this is something thats always happening
+
+threshold common conditions?
+
+look at prevous frames
+if this was NOT COMMON, keep
+
+
+look at everything up until that iteration
+
+
+main issue could be that this won't work for the first rules created in iteration 2
+
+
+
+
+
+
+
+
+
+
+RULE: ['VelocityYFact', [1, 0]]->['VelocityYFact', [1, -1.0]] ----> CENTER: Freeplay11_14 ['VelocityYFact', [0, 0.0]]->['VelocityYFact', [0, -1.0]]
+['VariableFact', ['space', False]] : 71 : 0.6454545454545455
+['VariableFact', ['up', False]] : 74 : 0.6727272727272727
+['VariableFact', ['down', False]] : 64 : 0.5818181818181818
+['VariableFact', ['left', False]] : 67 : 0.6090909090909091
+['VariableFact', ['right', False]] : 70 : 0.6363636363636364
+['VariableFact', ['spacePrev', False]] : 74 : 0.6727272727272727
+
+
+
+RULE: ['VelocityYFact', [1, 0.0]]->['VelocityYFact', [0, 1.0]] ----> CENTER: Freeplay11_30 ['VelocityYFact', [0, 0.0]]->['VelocityYFact', [0, 1.0]]
+['VelocityYFact', [201, 0]] : 231 : 1.0596330275229358
+['VariableFact', ['space', True]] : 65 : 0.2981651376146789
+['VariableFact', ['up', False]] : 183 : 0.8394495412844036
+['VariableFact', ['down', False]] : 194 : 0.8899082568807339
+['VariableFact', ['left', False]] : 184 : 0.8440366972477065
+['VariableFact', ['right', False]] : 167 : 0.7660550458715596
+['VariableFact', ['spacePrev', True]] : 9 : 0.04128440366972477
+['VariableFact', ['upPrev', False]] : 190 : 0.8715596330275229
+['VariableFact', ['downPrev', False]] : 195 : 0.8944954128440367
+['VariableFact', ['leftPrev', False]] : 191 : 0.8761467889908257
+['VariableFact', ['rightPrev', False]] : 176 : 0.8073394495412844
+['PositionXFact', [201, 0.0]] : 6 : 0.027522935779816515
+['VariableFact', ['space', False]] : 122 : 0.5596330275229358
+['VariableFact', ['spacePrev', False]] : 166 : 0.7614678899082569
+['PositionYFact', [201, 0.0]] : 139 : 0.6376146788990825
+
+
+for this new rule
+
+- what is NEW?? what was not seen before
+	- in all iteration
+	- in the prev itersion
+	- in the last 5 iterations
+
+
+we wanna keep conditions that ARE above the threshold IF
+- wasn't seen in the last iteration?
+
+
+
+i2  VelocityXFact: [0, 0]->VelocityXFact: [0, -1.0]       VelocityYFact: [1, 0]->VelocityYFact: [1, -1.0]
+- bird is falling
+- block reaches the end
+
+i3
+- bird is falling (double)
+- block is at the beginning
+
+i4  VelocityXFact: [0, -1.0]->VelocityXFact: [0, 21.0]    VelocityYFact: [1, -1.0]->VelocityYFact: [1, -2.0]
+- bird is falling 
+- block is moving
+
+i5  VelocityXFact: [0, 21.0]->VelocityXFact: [1, -1.0]    VelocityYFact: [1, -2.0]->VelocityYFact: [0, -1.0]
+- bird reaches bottom
+- block moving
+
+i6
+- bird stays at the bottom
+- block is moving
+
+i7 VelocityYFact: [1, -1.0]->VelocityYFact: [0, 0.0]
+- bird stays at the bottom
+- block is moving
+
+i8
+- bird stays at the bottom
+- block is moving
+
+i9
+- bird stays at the bottom
+- block is moving
+- space is True
+
+i10
+- bird is flying
+- block is moving
+- space is True
+
+
+
+
+the problem are the bird falling rules aka the rules with spacePrev=False conditions because spacePrev=False is too common and gets removed by the thresholding. we want to keep these rules. the first instance of these kinds of rules is in iter2 when the engine gets created for the first time basically. we could say on first creation, don't remove rules. then every engine after that can be simplified with the threshold. however we should also say that c
+
+
+how do we know spacePrev is important and not rightPrev or downPrev
+
+check if a rule is being activated?
+
+facts by component id
+get the state
+look at the fa
+
+for each state prior to the current iter:
+	get the facts by component id
+	put all the facts together
+
+get the state prior to the current one
+	get all the facts by componentid
+	if a condition WAS a fact on the prev state, REMOVe?
+
+
+
+
+
+
+
+
+paper is argument dont use terms in abstract
+what i did is important
+what is unexplored
+doesnt have to be directly solving
+broader problem - no one does co creative game mechanics
+
+
+par2 - don't mention anyone in this
+solves slightly different problem
+co creative level work is not mechanic
+
+
+clusering tell us more 
+
+
+related
+co-creative rules
+rule generation
+intro^^^^^^^^^
+
+
+novelty-> for related work
+this is cool but didn't someone else did this, mention so can say mine is also important
+not specific arthors
+
+
+
+kristin su eric butler -progression
+google scholar-> bibTex file
+how are they similiar and how are they different from what i did-> no methods necessary-> 
+10 citations, related work -> two paragraphs
+
+
+read megan's paper -> 
+read johor's paper -> rule generation
+
+
+System Overview
+the goal of system is to _______
+here's an approach
+into
+walk through what i did -> 
+need dataset->
+cluster->distance rules->
+
+
+
+
+why was it justified for the thing i did
+-> found it to best, took from someone else
+
+process of eval of
+
+
+useFrameError sruff in bullet
+all this stuff saved in the graphs
+
+
+very rough rough text just spitfire stuff into
+-> think about deadline
+
+
+
+
+
+
+
+
+
+
+

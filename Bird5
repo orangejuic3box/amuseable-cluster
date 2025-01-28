@@ -1,0 +1,13 @@
+Bird5
+
++ iteration 2-4:
+ - always removes key inputs that are inactive (FALSE)
+ - removes VelocityXY facts that are 0 (not moving in x or y direction)
+
++ itertation 4:
+ - didnt remove any conditions, al of them were below threshold (rare enough)
+
++ iteration 5-9:
+ - starts to remove the longblock animation fact
+
+ posi6/20 = iter9
